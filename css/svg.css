@@ -1,0 +1,43 @@
+body{
+    background-image: url(./images/animal-images/pexels-egor-kamelev-751694.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	}
+html,body{
+	padding: 20px;
+	max-width: 100%;
+	overflow-x:hidden;
+	}
+img{
+    position: fixed;
+    height:100px;
+	width:200px;
+	}
+#f01 {
+    background-color:#A9A9A9;
+}
+#group1:hover ellipse{
+	stroke: rgb(245, 2, 2);
+}
+#group2:hover circle{
+	stroke: rgb(245, 2, 2);
+}
+#group3:hover ellipse{
+	stroke: rgb(245, 2, 2);
+}
+#group4:hover circle{
+	stroke: rgb(245, 2, 2);
+}
+#group5:hover circle{
+	stroke: rgb(245, 2, 2);
+}
+#group6:hover circle{
+	stroke: rgb(245, 2, 2);
+}
+#group7:hover circle{
+	stroke: rgb(245, 2, 2);
+}
+#group8:hover circle{
+	stroke: rgb(245, 2, 2);
+}
