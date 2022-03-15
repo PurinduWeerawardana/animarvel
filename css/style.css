@@ -21,3 +21,11 @@
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: rgb(0, 0, 0) 0px 22px 50px 4px;
 }
+
+body {
+    background-image: url("/images/animal-images/pexels-pixabay-247431.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+}
