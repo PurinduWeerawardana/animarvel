@@ -1,0 +1,182 @@
+body {
+  color: #fff;
+}
+
+#navbar {
+  clear: both;
+  border: 1px solid white;
+  height: 60px;
+}
+
+#cart-icon {
+  color: #ffcc00;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Turret Road", cursive;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 45px;
+}
+
+#categories {
+  clear: both;
+  text-align: center;
+  margin: 20px;
+}
+
+#banner-area {
+  background-image: url("/images/animal-images/pexels-goran-vrakela-615277.jpg");
+  border: 1px solid white;
+  height: 350px;
+}
+
+.category-buttons {
+  margin: 5px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #000;
+  background-color: #e0e8ef;
+  border-width: 5px;
+  border-color: #ffcc00;
+  border-radius: 40px;
+  padding: 20px;
+  transform: translate(0px, 0px);
+  transition: 0.2s;
+}
+
+.category-buttons:hover {
+  color: #516d91;
+  background-color: #2ee59d;
+  box-shadow: -2px -1px 8px #2ee59d;
+}
+
+#item-area {
+  text-align: center;
+  border: 1px solid white;
+}
+
+.item-card {
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
+  width: 350px;
+  height: 550px;
+  border-radius: 50px;
+  background-color: #1c1c1c;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffcc00;
+}
+.item-card img {
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.item-info {
+  position: relative;
+  top: -123px;
+  width: 100%;
+  line-height: 70%;
+  text-align: center;
+}
+
+.item-info h2 {
+  font-size: 2rem;
+  font-family: "Turret Road", cursive;
+}
+
+.item-info p {
+  font-size: 1.5rem;
+}
+
+.add-to-cart {
+  padding: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.add-to-cart:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px #2ee59c8a;
+  color: #fff;
+  transform: translateY(7px);
+}
+
+.add-to-cart:active {
+  transform: translateY(-7px);
+}
+
+.item-preview :hover {
+  background-color: #2ee59d;
+  color: #fff;
+}
+
+.shop-now {
+  position: relative;
+  float: right;
+  right: 1%;
+  bottom: -90%;
+  border: none;
+  background-color: #2ee59d;
+}
+
+.shop-now span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 10px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.shop-now svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.shop-now:hover svg {
+  transform: translateX(0);
+}
+
+.shop-now:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.shop-now:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
