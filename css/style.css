@@ -1,3 +1,23 @@
-body {
+/* body {
     background-color: black;
+} */
+
+#nav-bar li {
+    font-size: 30px;
+    display: inline;
+    padding: 10px;
+    margin-left: 80px;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0px;
+    left: 300px;
+    right: 0px;
+    width: 1200px;
+    height: 80px;
+    backdrop-filter: blur(1px);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: rgb(0, 0, 0) 0px 22px 50px 4px;
 }
