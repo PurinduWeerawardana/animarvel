@@ -118,7 +118,7 @@ h1 {
   background-color: #2ee59d;
   box-shadow: 0px 15px 20px #2ee59c8a;
   color: #fff;
-  transform: translateY(7px);
+  transform: translateY(-7px);
 }
 
 .add-to-cart:active {
