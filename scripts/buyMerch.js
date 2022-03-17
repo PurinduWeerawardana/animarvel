@@ -1,22 +1,12 @@
-function displayAllItems() {
-  activeButton("all");
-  document.querySelectorAll(".item-card").forEach(function (item) {
-    item.style.display = "inline-block";
-  });
-}
+//get all category-buttons into an array
+const categoryButtons = document.querySelectorAll(".category-buttons");
 
-function displayCategory(categoryClass) {
-  displayAllItems();
-  activeButton(categoryClass);
-  document.querySelectorAll(".item-card").forEach(function (item) {
-    if (item.className !== "item-card " + categoryClass.slice(0, -1)) {
-      item.style.display = "none";
-    }
-  });
-}
+//get all items into an array
+const allItems = document.querySelectorAll(".item-card");
 
+//highlight active category-button by changing css class
 function activeButton(id) {
-  document.querySelectorAll(".category-buttons").forEach(function (button) {
+  categoryButtons.forEach(function (button) {
     if (button.id == id) {
       button.className += " category-button-selected";
     } else {
@@ -25,7 +15,28 @@ function activeButton(id) {
   });
 }
 
-document.querySelectorAll(".category-buttons").forEach(function (button) {
+//load and display all items
+function displayAllItems() {
+  activeButton("all");
+  allItems.forEach(function (item) {
+    item.style.display = "inline-block";
+  });
+}
+
+//display items by category
+function displayCategory(categoryClass) {
+  activeButton(categoryClass);
+  allItems.forEach(function (item) {
+    if (item.className !== "item-card " + categoryClass.slice(0, -1)) {
+      item.style.display = "none";
+    } else {
+      item.style.display = "inline-block";
+    }
+  });
+}
+
+//add eventlisteners to all category-buttons
+categoryButtons.forEach(function (button) {
   console.log(button);
   if (button.id !== "all") {
     button.addEventListener("click", function () {
@@ -37,25 +48,3 @@ document.querySelectorAll(".category-buttons").forEach(function (button) {
     });
   }
 });
-
-// document.getElementById("all").addEventListener("click", function () {
-//   displayAllItems();
-// });
-// document.getElementById("mugs").addEventListener("click", function () {
-//   displayCategory("mug");
-// });
-// document.getElementById("t-shirts").addEventListener("click", function () {
-//   displayCategory("t-shirt");
-// });
-// document.getElementById("statues").addEventListener("click", function () {
-//   displayCategory("statue");
-// });
-// document.getElementById("mugs").addEventListener("click", function () {
-//   displayCategory("mug");
-// });
-// document.getElementById("back-covers").addEventListener("click", function () {
-//   displayCategory("back-cover");
-// });
-// document.getElementById("others").addEventListener("click", function () {
-//   displayCategory("other");
-// });
