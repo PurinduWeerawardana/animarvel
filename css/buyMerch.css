@@ -52,6 +52,12 @@ h1 {
   box-shadow: -2px -1px 8px #2ee59d;
 }
 
+.category-button-selected {
+  color: #516d91;
+  background-color: #2ee59d;
+  box-shadow: -2px -1px 8px #2ee59d;
+}
+
 #item-area {
   text-align: center;
   width: 100%;
@@ -130,7 +136,7 @@ h1 {
   color: #fff;
 }
 
-.shop-now {
+/* .shop-now {
   position: relative;
   float: right;
   right: 1%;
@@ -182,4 +188,4 @@ h1 {
 .shop-now:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */

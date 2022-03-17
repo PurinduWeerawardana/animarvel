@@ -16,7 +16,7 @@
       src="https://kit.fontawesome.com/2a1ce906ef.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./scripts/buyMerch.js"></script>
+    <script src="./scripts/buyMerch.js" defer></script>
     <title>Buy Merch</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
     <h1 id="grab">
       <i id="cart-icon" class="fa-solid fa-cart-shopping"></i> Grab Your Merch!
     </h1>
-    <div id="banner-area">
+    <!-- <div id="banner-area">
       <button class="shop-now">
         <span class="hover-underline-animation"> Shop now </span>
         <svg
@@ -42,30 +42,16 @@
           ></path>
         </svg>
       </button>
-    </div>
+    </div> -->
     <div id="categories">
-      <button class="category-buttons" id="all" onclick="displayAllItems()">
+      <button class="category-buttons category-button-selected" id="all">
         ALL-ITEMS
       </button>
-      <button class="category-buttons" id="t-shirts" onclick="displayTShirts()">
-        T-SHIRTS
-      </button>
-      <button class="category-buttons" id="statues" onclick="displayStatues()">
-        STATUES
-      </button>
-      <button class="category-buttons" id="mugs" onclick="displayMugs()">
-        MUGS
-      </button>
-      <button
-        class="category-buttons"
-        id="back-covers"
-        onclick="displayBackCovers()"
-      >
-        BACK-COVERS
-      </button>
-      <button class="category-buttons" id="others" onclick="displayOthers()">
-        OTHERS
-      </button>
+      <button class="category-buttons" id="t-shirts">T-SHIRTS</button>
+      <button class="category-buttons" id="statues">STATUES</button>
+      <button class="category-buttons" id="mugs">MUGS</button>
+      <button class="category-buttons" id="back-covers">BACK-COVERS</button>
+      <button class="category-buttons" id="others">OTHERS</button>
     </div>
     <div id="item-area">
       <div id="items">
