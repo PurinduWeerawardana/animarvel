@@ -33,6 +33,7 @@ h1 {
 }
 
 .category-buttons {
+  cursor: pointer;
   margin: 5px;
   font-size: 13px;
   letter-spacing: 4px;
@@ -64,6 +65,7 @@ h1 {
 }
 
 .item-card {
+  cursor: pointer;
   display: inline-block;
   margin-top: 25px;
   margin-right: 25px;
@@ -82,7 +84,6 @@ h1 {
   margin-left: 0px;
   margin-top: 0px;
   border-radius: 50px;
-  cursor: pointer;
   width: 100%;
 }
 
@@ -116,7 +117,7 @@ h1 {
   border: none;
   border-radius: 45px;
   transition: all 0.3s ease 0s;
-  cursor: pointer;
+  cursor: cell;
   outline: none;
 }
 
