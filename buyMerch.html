@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./scripts/buyMerch.js" defer></script>
+      <script src="./scripts/orderValidation.js" defer></script>
     <title>Buy Merch</title>
   </head>
   <body>
@@ -24,25 +25,6 @@
     <h1 id="grab">
       <i id="cart-icon" class="fa-solid fa-cart-shopping"></i> Grab Your Merch!
     </h1>
-    <!-- <div id="banner-area">
-      <button class="shop-now">
-        <span class="hover-underline-animation"> Shop now </span>
-        <svg
-          id="arrow-horizontal"
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="10"
-          viewBox="0 0 46 16"
-        >
-          <path
-            id="Path_10"
-            data-name="Path 10"
-            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-            transform="translate(30)"
-          ></path>
-        </svg>
-      </button>
-    </div> -->
     <div id="categories">
       <button class="category-buttons category-button-selected" id="all">
         ALL-ITEMS
@@ -131,7 +113,7 @@
           </div>
         </div>
         <div id="item-card6" class="item-card t-shirt">
-          <div id="item-preview7" class="item-preview">
+          <div id="item-preview6" class="item-preview">
             <img
               src="./images/merch/t-shirts/t-shirt-1/thumbs/t-shirt-1.jpg"
               alt="thumbnail"
@@ -146,7 +128,7 @@
           </div>
         </div>
         <div id="item-card7" class="item-card other">
-          <div id="item-preview6" class="item-preview">
+          <div id="item-preview7" class="item-preview">
             <img
               src="./images/merch/others/tiger-teddy/thumbs/tiger-teddy.jpg"
               alt="thumbnail"
@@ -161,6 +143,61 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="product-view" class="hidden">
+      <span id="preview" class="preview">
+        <i class="fa-solid fa-arrow-left" id="left-arrow"></i>
+        <img id="preview-image" src="./images/merch/t-shirts/t-shirt-1/previews/preview-1.jpg" alt="" />
+        <i class="fa-solid fa-arrow-right" id="right-arrow"></i>
+      </span>
+      <div class="order">
+        <div class="info-and-form">
+          <div id="borderLeft"></div>
+          <div class="item-description">
+            <h1>AniMarvel-Black T-Shirt</h1>
+            <h2 class="caption">Price</h2>
+            <p>$<span class="price">69.69</span></p>
+          </div>
+          <div class="order-form">
+            <form action="" method="get">
+              <div id="size-selector" class="size-selector">
+                <h2 class="caption">Size</h2>
+                <span class="radio-box">
+                  <input type="radio" id="small" name="size" value="small">
+                  <label for="small">S</label>
+                </span>
+                <span class="radio-box">
+                  <input type="radio" id="medium" name="size" value="medium" checked>
+                  <label for="medium">M</label>
+                </span>
+                <span class="radio-box">
+                  <input type="radio" id="large" name="size" value="large">
+                  <label for="large">L</label>
+                </span>
+                <span class="radio-box">
+                  <input type="radio" id="xlarge" name="size" value="xlarge">
+                  <label for="xlarge">XL</label>
+                </span>
+              </div>
+              <div id="quantity-selector" class="quantity-selector">
+                <h2 class="caption">Quantity</h2>
+                <input type="button" value="-" class="minus" id="minus">
+                <input title="quantity" type="text" value="1" id="quantity" name="quantity" disabled>
+                <input type="button" value="+" class="plus" id="plus">
+              </div>
+              <div class="order-submit">
+                <button type="submit" id="btnAddToCart" class="add-to-cart">
+                  Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button type="submit" value="Buy Now" class="add-to-cart">
+                  Buy Now <i class="fa-solid fa-money-bill-1"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-xmark" id="close-button"></i>
     </div>
   </body>
 </html>
