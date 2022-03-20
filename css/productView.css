@@ -221,7 +221,7 @@ input[type="radio"]:checked + label {
   margin-right: 1.5vw;
 }
 
-#close-button {
+.close-button {
   padding: 1vw 1vw;
   border-radius: 30%;
   background-color: red;

@@ -1,0 +1,114 @@
+#order-title h1 {
+  border-bottom: 3px dashed #2ee59d;
+  line-height: 100%;
+  margin: 2% 5%;
+  padding-bottom: 1%;
+  font-size: 6vh;
+  text-align: center;
+  color: #fff;
+  height: 15%;
+}
+
+#cart-and-details {
+  color: #fff;
+  height: 80%;
+  position: relative;
+  margin: 0 5%;
+}
+
+#cart {
+  position: relative;
+  border: 2px dashed rgb(251, 255, 0);
+  border-radius: 10px;
+  float: left;
+  width: 48%;
+  height: 96%;
+  padding-bottom: 1%;
+}
+
+.total-price {
+  text-align: center;
+  font-size: 4.5vh;
+}
+
+.price {
+  font-size: 7.5vh;
+  text-align: center;
+}
+
+#total {
+  position: relative;
+  text-align: center;
+  height: 25%;
+  border-bottom: 2px dashed rgb(251, 255, 0);
+}
+
+#cart-items {
+  position: relative;
+  margin-top: 3px;
+  margin-right: 5px;
+  height: 69%;
+  overflow: auto;
+}
+
+#details {
+  position: relative;
+  top: -2%;
+  float: right;
+  width: 48%;
+  height: 100%;
+  text-align: center;
+  overflow: auto;
+}
+
+.form-group input,
+.form-group label,
+#payment {
+  text-align: left;
+  display: block;
+}
+
+.form-group input,
+#payment {
+  font-family: "Open Sans", sans-serif;
+  font-size: medium;
+  width: 98%;
+  color: #fff;
+  border: none;
+  background: transparent;
+  margin-bottom: 2.5vh;
+  border-bottom: 1px solid #fff;
+}
+
+.form-group option {
+  background-color: rgb(27, 27, 27);
+}
+
+.form-group label {
+  margin-bottom: 1.2vh;
+}
+
+.form-group input:focus {
+  outline: none;
+}
+
+#payment {
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+fieldset {
+  margin-bottom: 4%;
+  border-radius: 10px;
+  border: 2px dashed rgb(251, 255, 0);
+}
+
+.double {
+  display: inline-block;
+  width: 44%;
+}
+
+.single {
+  display: inline-block;
+  width: 90%;
+}

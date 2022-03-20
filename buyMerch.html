@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/buyMerch.css" />
     <link rel="stylesheet" href="./css/productView.css">
+    <link rel="stylesheet" href="./css/orderView.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +19,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="./scripts/buyMerch.js" defer></script>
-      <script src="./scripts/orderValidation.js" defer></script>
+    <script src="./scripts/orderValidation.js" defer></script>
+    <script src="./scripts/productView.js" defer></script>
     <title>Buy Merch</title>
   </head>
   <body>
@@ -145,7 +147,7 @@
         </div>
       </div>
     </div>
-    <div id="product-view" class="hidden">
+    <div id="product-view" class="product-view hidden">
       <span id="preview" class="preview">
         <i class="fa-solid fa-arrow-left" id="left-arrow"></i>
         <img id="preview-image" src="./images/merch/t-shirts/t-shirt-1/previews/preview-1.jpg" alt="" />
@@ -187,10 +189,10 @@
                 <input type="button" value="+" class="plus" id="plus">
               </div>
               <div class="order-submit">
-                <button type="submit" id="btnAddToCart" class="add-to-cart">
+                <button type="button" id="btnAddToCart" class="add-to-cart" onclick="addToCart()">
                   Add to Cart <i class="fa-solid fa-cart-shopping"></i>
                 </button>
-                <button type="submit" value="Buy Now" class="add-to-cart">
+                <button type="button" value="Buy Now" class="add-to-cart" onclick="buyNow()">
                   Buy Now <i class="fa-solid fa-money-bill-1"></i>
                 </button>
               </div>
@@ -198,7 +200,120 @@
           </div>
         </div>
       </div>
-      <i class="fa-solid fa-xmark" id="close-button"></i>
+      <i class="fa-solid fa-xmark close-button" id="close-buttton" onclick="hideProduct()"></i>
+    </div>
+    <div id="order-view" class="product-view hidden">
+      <div id="order-title">
+        <h1>Order Details</h1>
+      </div>
+      <div id="cart-and-details">
+        <span id="cart">
+          <div id="total">
+            <h2 class="caption">Total Price</h2>
+            <h2 class="total-price">$<span class="price">69.69</span></h2>
+          </div>
+          <div id="cart-items">
+            <ol>
+              <li>
+                <ul>
+                  <li>
+                    <h3>Item</h3>
+                  </li>
+                  <li>
+                    <h4>Quantity</h4>
+                  </li>
+                  <li>
+                    <h4>Price</h4>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <h3>Item</h3>
+                  </li>
+                  <li>
+                    <h4>Quantity</h4>
+                  </li>
+                  <li>
+                    <h4>Price</h4>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <h3>Item</h3>
+                  </li>
+                  <li>
+                    <h4>Quantity</h4>
+                  </li>
+                  <li>
+                    <h4>Price</h4>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <li>
+                    <h3>Item</h3>
+                  </li>
+                  <li>
+                    <h4>Quantity</h4>
+                  </li>
+                  <li>
+                    <h4>Price</h4>
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+        </span>
+        <span id="details">
+          <div id="order-details-form">
+            <form id="order-details" action="" method="post">
+              <fieldset>
+                <legend>Personal details</legend>
+                <div class="form-group double">
+                  <label for="first-name">First Name</label>
+                  <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required />
+                </div>
+                <div class="form-group double">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required />
+                </div>
+                <div class="form-group single">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Enter your email" required />
+                </div>
+                <div class="form-group single">
+                  <label for="address">Address</label>
+                  <input type="text" name="address" id="address" placeholder="Enter your address" required />
+                </div>
+                <div class="form-group double">
+                  <label for="city">City</label>
+                  <input type="text" name="city" id="city" placeholder="Enter your city" required />
+                </div>
+                <div class="form-group double">
+                  <label for="zip">Zip-Code</label>
+                  <input type="text" name="zip" id="zip" placeholder="Enter your zip-code" required />
+                </div>
+                <div class="form-group single" id="payment-method">
+                  <label for="payment">Payment Method</label>
+                  <select name="payment" id="payment">
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="banktrans">Bank Transfer</option>
+                    <option value="cod" selected>Cash-On Delivery</option>
+                  </select>
+                </div>
+              </fieldset>
+              <input class="add-to-cart" type="submit" name="submit" value="Place Order" />
+            </form>
+          </div>
+        </span>
+      </div>
+      <i class="fa-solid fa-xmark close-button" onclick="hideProduct()"></i>
     </div>
   </body>
 </html>
