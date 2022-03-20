@@ -36,23 +36,41 @@ rightArrow.addEventListener("click", function () {
 const addToCartButtons = document.querySelectorAll(".item-card .add-to-cart");
 console.log(addToCartButtons);
 
-function viewProduct() {
+const productView = document.getElementById("product-view");
+
+function viewProduct(item) {
+  let itemInfo = item.querySelector(".item-info");
+  let itemName = itemInfo.querySelector(".product-title").innerHTML;
+  let itemPrice = itemInfo.querySelector(".product-price").innerHTML;
+  let itemImage = item.querySelector(".product-image");
+  console.log(itemImage.getAttribute("src"));
+  console.log(itemName);
+  console.log(itemPrice);
+  console.log(productView);
+  let productTitle = productView.querySelector(".product-title");
+  let productPrice = productView.querySelector(".product-price");
+  let productImage = productView.querySelector(".product-image");
+  console.log(productImage);
+  productTitle.innerHTML = itemName;
+  productPrice.innerHTML = itemPrice;
+  productImage.src = itemImage.getAttribute("src");
   document.body.className = "body-blur";
-  document.getElementById("product-view").className = "product-view";
+  productView.className = "product-view";
   window.scrollTo(0, 0);
 }
 
 //add eventlisteners to all add-to-cart buttons in item view
 addToCartButtons.forEach(function (button) {
   button.addEventListener("click", function () {
-    viewProduct();
+    let item = this.parentElement.parentElement;
+    viewProduct(item);
   });
 });
 
 function hideProduct() {
   document.body.className = "";
-    document.getElementById("product-view").className = "hidden";
-    document.getElementById("order-view").className = "hidden";
+  document.getElementById("product-view").className = "hidden";
+  document.getElementById("order-view").className = "hidden";
 }
 
 function addToCart() {
@@ -61,6 +79,6 @@ function addToCart() {
 }
 
 function buyNow() {
-    document.getElementById("product-view").className = "hidden";
-    document.getElementById("order-view").className = "product-view";
+  document.getElementById("product-view").className = "hidden";
+  document.getElementById("order-view").className = "product-view";
 }

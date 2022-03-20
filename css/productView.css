@@ -79,7 +79,7 @@
   margin-top: 0px;
   margin-bottom: 15px;
 }
-.info-and-form {
+#info-and-form {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
