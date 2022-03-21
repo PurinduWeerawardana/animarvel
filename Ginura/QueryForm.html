@@ -9,7 +9,11 @@
         <link rel="stylesheet" href="css/css.css" />
     </head>
     <body>
-        <form name="query-form">
+        <form
+            id="query-form"
+            action="mailto:ginuraransika@gmail.com"
+            method="post"
+        >
             <label for="name">Name: </label>
             <input type="text" id="name" name="name" />
             <br /><br />
@@ -40,12 +44,20 @@
             />
         </form>
 
-        <div id="hide" class="hide">
-            <h2>Updated Fields</h2>
-            <p>Name: <span id="filled-name"></span></p>
-            <p>Email: <span id="filled-email"></span></p>
-            <p>Subject: <span id="filled-subject"></span></p>
-            <p>Details: <span id="filled-details"></span></p>
+        <div id="filled-query">
+            <form>
+                <h2>Updated Fields</h2>
+                <p>Name: <span id="filled-name"></span></p>
+                <p>Email: <span id="filled-email"></span></p>
+                <p>Subject: <span id="filled-subject"></span></p>
+                <p>Details: <span id="filled-details"></span></p>
+                <input
+                    type="button"
+                    value="Edit"
+                    onclick="editQueryForm(this.form)"
+                />
+                <input type="button" value="Send" onclick="mailForm()" />
+            </form>
         </div>
     </body>
 </html>
