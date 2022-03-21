@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Query Form</title>
+        <script src="JavaScript/QueryValidation.js"></script>
+        <link rel="stylesheet" href="css/css.css" />
+    </head>
+    <body>
+        <form name="query-form">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" />
+            <br /><br />
+
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" />
+            <br /><br />
+
+            <label for="subject">Subject: </label>
+            <select id="subject" name="subject">
+                <option value=""></option>
+                <option value="Delivery">Delivery</option>
+                <option value="Product">Product</option>
+                <option value="Website">Website</option>
+                <option value="Complains">Complains</option>
+                <option value="Other">Other</option>
+            </select>
+            <br /><br />
+
+            <label for="details">Details: </label>
+            <textarea name="details" id="details"></textarea>
+            <br /><br />
+
+            <input
+                type="button"
+                value="View Query"
+                onclick="viewQueryButton(this.form)"
+            />
+        </form>
+
+        <div id="hide" class="hide">
+            <h2>Updated Fields</h2>
+            <p>Name: <span id="filled-name"></span></p>
+            <p>Email: <span id="filled-email"></span></p>
+            <p>Subject: <span id="filled-subject"></span></p>
+            <p>Details: <span id="filled-details"></span></p>
+        </div>
+    </body>
+</html>
