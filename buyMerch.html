@@ -139,10 +139,10 @@
               <input type="button" value="+" class="plus" id="plus">
             </div>
             <div class="order-submit">
-              <button type="button" id="btnAddToCart" class="add-to-cart to-cart" onclick="addToCart()">
+              <button type="button" id="btn-add-to-cart" class="add-to-cart">
                 Add to Cart <i class="fa-solid fa-cart-shopping"></i>
               </button>
-              <button type="button" value="Buy Now" class="add-to-cart" onclick="buyNow()">
+              <button type="button" value="Buy Now" class="add-to-cart" id="buy-now-button">
                 Buy Now <i class="fa-solid fa-money-bill-1"></i>
               </button>
             </div>
@@ -150,7 +150,7 @@
         </div>
       </div>
     </div>
-    <i class="fa-solid fa-xmark close-button" id="close-buttton" onclick="hideProduct()"></i>
+    <i class="fa-solid fa-xmark close-button"></i>
   </div>
   <div id="order-view" class="product-view hidden">
     <div id="order-title">
@@ -211,7 +211,7 @@
         </div>
       </span>
     </div>
-    <i class="fa-solid fa-xmark close-button" onclick="hideProduct()"></i>
+    <i class="fa-solid fa-xmark close-button"></i>
   </div>
 </body>
 

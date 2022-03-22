@@ -76,6 +76,12 @@ function hideProduct() {
   document.getElementById("order-view").className = "hidden";
 }
 
+document.querySelectorAll(".close-button").forEach(function (button) {
+  button.addEventListener("click", function () {
+    hideProduct();
+  });
+});
+
 function updateCart() {
   let productName = productView.querySelector(
     ".selected-product-title"
@@ -150,7 +156,7 @@ function viewCart() {
 }
 
 document.getElementById("cart-button").addEventListener("click", viewCart);
-
+document.getElementById("btn-add-to-cart").addEventListener("click", addToCart);
 function addToCart() {
   updateCart();
   updateCartInfo();
@@ -163,3 +169,5 @@ function buyNow() {
   updateCartInfo();
   viewCart();
 }
+
+document.getElementById("buy-now-button").addEventListener("click", buyNow);
