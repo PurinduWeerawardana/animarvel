@@ -93,7 +93,7 @@
   margin: 0px 20px;
   border-bottom: 3px dashed #2ee59d;
   position: relative;
-  font-size: 3.5vw;
+  font-size: 3vw;
   text-align: center;
   color: #fff;
 }
@@ -106,7 +106,8 @@
   color: #fff;
 }
 
-.price {
+#price {
+  font-family: 'Kanit', sans-serif;
   font-size: 2.5vw;
 }
 

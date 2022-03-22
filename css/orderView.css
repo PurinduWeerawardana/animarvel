@@ -31,8 +31,8 @@
   font-size: 4.5vh;
 }
 
-.price {
-  font-size: 7.5vh;
+.product-price {
+  font-family: 'Kanit', sans-serif;
   text-align: center;
 }
 
@@ -43,7 +43,7 @@
   border-bottom: 2px dashed rgb(251, 255, 0);
 }
 
-#cart-items {
+#cart-list {
   position: relative;
   margin-top: 3px;
   margin-right: 5px;
@@ -69,7 +69,7 @@
 }
 
 .form-group input,
-#payment {
+#payment-method {
   font-family: "Open Sans", sans-serif;
   font-size: medium;
   width: 98%;
@@ -92,7 +92,7 @@
   outline: none;
 }
 
-#payment {
+#payment-method {
   margin-bottom: auto;
   cursor: pointer;
 }

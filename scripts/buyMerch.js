@@ -47,4 +47,3 @@ categoryButtons.forEach(function (button) {
     });
   }
 });
-

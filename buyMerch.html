@@ -21,9 +21,10 @@
 
 <body>
   <div id="navbar"></div>
-  <h1 id="grab">
-    <i id="cart-icon" class="fa-solid fa-cart-shopping"></i> Grab Your Merch!
+  <h1>
+    <span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!
   </h1>
+    <button class="cart-button" id="cart-button"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View Cart</button>
   <div id="categories">
     <button class="category-buttons category-button-selected" id="all">
       ALL-ITEMS
@@ -35,86 +36,84 @@
     <button class="category-buttons" id="others">OTHERS</button>
   </div>
   <div id="item-area">
-    <div id="items">
-      <div id="item-card1" class="item-card mug">
-        <div id="item-preview1" class="item-preview">
-          <img class="product-image" src="./images/merch/mugs/mug-1/preview-1.jpg" alt="thumbnail" />
-        </div>
-        <div class="item-info">
-          <h2 class="product-title">AM-Black Mug</h2>
-          <p class="product-price">$19.19</p>
-          <button class="add-to-cart">
-            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
+    <div id="item-card1" class="item-card mug">
+      <div id="item-preview1" class="item-preview">
+        <img class="product-image" src="./images/merch/mugs/mug-1/preview-1.jpg" alt="thumbnail" />
       </div>
-      <div id="item-card2" class="item-card t-shirt">
-        <div id="item-preview2" class="item-preview">
-          <img class="product-image" src="./images/merch/t-shirts/t-shirt-1/preview-1.jpg" alt="thumbnail" />
-        </div>
-        <div class="item-info">
-          <h2 class="product-title">AM-Black T-Shirt</h2>
-          <p class="product-price">$60.00</p>
-          <button class="add-to-cart">
-            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Black Mug</h2>
+        <p class="product-price">$19.19</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
       </div>
-      <div id="item-card3" class="item-card statue">
-        <div id="item-preview3" class="item-preview">
-          <img class="product-image" src="./images/merch/statues/statue-1/preview-1.jpg" alt="thumbnail" />
-        </div>
-        <div class="item-info">
-          <h2 class="product-title">AM-Tiger Statue</h2>
-          <p class="product-price">$39.69</p>
-          <button class="add-to-cart">
-            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
+    </div>
+    <div id="item-card2" class="item-card t-shirt">
+      <div id="item-preview2" class="item-preview">
+        <img class="product-image" src="./images/merch/t-shirts/t-shirt-1/preview-1.jpg" alt="thumbnail" />
       </div>
-      <div id="item-card4" class="item-card back-cover">
-        <div id="item-preview4" class="item-preview">
-          <img class="product-image" src="./images/merch/back-covers/back-cover-1/preview-1.png" alt="thumbnail" />
-        </div>
-        <div class="item-info">
-          <h2 class="product-title">AM-Black Cover</h2>
-          <p class="product-price">$9.00</p>
-          <button class="add-to-cart">
-            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Black T-Shirt</h2>
+        <p class="product-price">$60.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
       </div>
-      <div id="item-card5" class="item-card other">
-        <div id="item-preview5" class="item-preview">
-          <img class="product-image" src="./images/merch/others/tiger-teddy/preview-1.jpg" alt="thumbnail" />
-        </div>
-        <div class="item-info">
-          <h2 class="product-title" >AM-Tiger Teddy</h2>
-          <p class="product-price">$20.00</p>
-          <button class="add-to-cart">
-            Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-          </button>
-        </div>
+    </div>
+    <div id="item-card3" class="item-card statue">
+      <div id="item-preview3" class="item-preview">
+        <img class="product-image" src="./images/merch/statues/statue-1/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Tiger Statue</h2>
+        <p class="product-price">$39.69</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card4" class="item-card back-cover">
+      <div id="item-preview4" class="item-preview">
+        <img class="product-image" src="./images/merch/back-covers/back-cover-1/preview-1.png" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Black Cover</h2>
+        <p class="product-price">$9.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card5" class="item-card other">
+      <div id="item-preview5" class="item-preview">
+        <img class="product-image" src="./images/merch/others/tiger-teddy/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Tiger Teddy</h2>
+        <p class="product-price">$20.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
       </div>
     </div>
   </div>
   <div id="product-view" class="product-view hidden">
     <span id="preview" class="preview">
       <i class="fa-solid fa-arrow-left" id="left-arrow"></i>
-      <img id="preview-image" class="product-image" src="./images/merch/t-shirts/t-shirt-1/preview-1.jpg" alt="" />
+      <img id="preview-image" class="selected-product-image" src="./images/merch/Error_Img.png" alt="" />
       <i class="fa-solid fa-arrow-right" id="right-arrow"></i>
     </span>
     <div class="order">
       <div id="info-and-form">
         <div id="borderLeft"></div>
         <div id="product-description" class="item-description">
-          <h1 class="product-title">AniMarvel-Black T-Shirt</h1>
+          <h1 class="selected-product-title">AniMarvel-Black T-Shirt</h1>
           <h2 class="caption">Price</h2>
-          <p class="product-price">$<span class="price">69.69</span></p>
+          <p class="selected-product-price">$<span class="">69.69</span></p>
         </div>
         <div class="order-form">
           <form action="" method="get">
-            <div id="size-selector" class="size-selector">
+            <div id="size-selector" class="size-selector hidden">
               <h2 class="caption">Size</h2>
               <span class="radio-box">
                 <input type="radio" id="small" name="size" value="small">
@@ -140,7 +139,7 @@
               <input type="button" value="+" class="plus" id="plus">
             </div>
             <div class="order-submit">
-              <button type="button" id="btnAddToCart" class="add-to-cart" onclick="addToCart()">
+              <button type="button" id="btnAddToCart" class="add-to-cart to-cart" onclick="addToCart()">
                 Add to Cart <i class="fa-solid fa-cart-shopping"></i>
               </button>
               <button type="button" value="Buy Now" class="add-to-cart" onclick="buyNow()">
@@ -161,97 +160,45 @@
       <span id="cart">
         <div id="total">
           <h2 class="caption">Total Price</h2>
-          <h2 class="total-price">$<span class="price">69.69</span></h2>
+          <h2 class="total-price">$<span id="price">00.00</span></h2>
         </div>
-        <div id="cart-items">
-          <ol>
-            <li>
-              <ul>
-                <li>
-                  <h3>Item</h3>
-                </li>
-                <li>
-                  <h4>Quantity</h4>
-                </li>
-                <li>
-                  <h4>Price</h4>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <h3>Item</h3>
-                </li>
-                <li>
-                  <h4>Quantity</h4>
-                </li>
-                <li>
-                  <h4>Price</h4>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <h3>Item</h3>
-                </li>
-                <li>
-                  <h4>Quantity</h4>
-                </li>
-                <li>
-                  <h4>Price</h4>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul>
-                <li>
-                  <h3>Item</h3>
-                </li>
-                <li>
-                  <h4>Quantity</h4>
-                </li>
-                <li>
-                  <h4>Price</h4>
-                </li>
-              </ul>
-            </li>
+        <div id="cart-list">
+          <ol id="cart-items">
           </ol>
         </div>
       </span>
       <span id="details">
         <div id="order-details-form">
-          <form id="order-details" action="" method="post">
+          <form id="order-details" action="" method="">
             <fieldset>
               <legend>Personal details</legend>
               <div class="form-group double">
                 <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" required />
+                <input type="text" name="first-name" id="first-name" placeholder="Enter your first name"/>
               </div>
               <div class="form-group double">
                 <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" required />
+                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name"/>
               </div>
               <div class="form-group single">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email" required />
+                <input type="email" name="email" id="email" placeholder="Enter your email"/>
               </div>
               <div class="form-group single">
                 <label for="address">Address</label>
-                <input type="text" name="address" id="address" placeholder="Enter your address" required />
+                <input type="text" name="address" id="address" placeholder="Enter your address"/>
               </div>
               <div class="form-group double">
                 <label for="city">City</label>
-                <input type="text" name="city" id="city" placeholder="Enter your city" required />
+                <input type="text" name="city" id="city" placeholder="Enter your city"/>
               </div>
               <div class="form-group double">
                 <label for="zip">Zip-Code</label>
-                <input type="text" name="zip" id="zip" placeholder="Enter your zip-code" required />
+                <input type="text" name="zip" id="zip" placeholder="Enter your zip-code"/>
               </div>
-              <div class="form-group single" id="payment-method">
+              <div class="form-group single" id="">
                 <label for="payment">Payment Method</label>
-                <select name="payment" id="payment">
+                <select title="payment" name="payment" id="payment-method">
                   <option value="card">Credit/Debit Card</option>
                   <option value="paypal">PayPal</option>
                   <option value="banktrans">Bank Transfer</option>
@@ -259,7 +206,7 @@
                 </select>
               </div>
             </fieldset>
-            <input class="add-to-cart" type="submit" name="submit" value="Place Order" />
+            <input id="place-order-button" class="add-to-cart" type="button" name="submit" value="Place Order" />
           </form>
         </div>
       </span>
