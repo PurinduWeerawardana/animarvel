@@ -9,62 +9,52 @@
         <link rel="stylesheet" href="css/css.css" />
     </head>
     <body>
-        <div class="query-form-container">
-            <div class="title">Query Form</div>
+        <div id="query-form-container">
             <form
                 id="query-form"
                 action="mailto:ginuraransika@gmail.com"
                 method="post"
             >
-                <div class="user-details">
-                    <div class="user-name">
-                        <label for="name">Name: </label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter Your Name"
-                        />
+                <div id="scroll-set">
+                    <div class="title">Query Form</div>
+                    <div class="user-details">
+                        <div class="user-name">
+                            <label class="labels" for="name">Name: </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter Your Name"
+                            />
+                        </div>
+                        <div class="user-email">
+                            <label class="labels" for="email">Email: </label>
+                            <input
+                                type="text"
+                                id="email"
+                                name="email"
+                                placeholder="username@example.com"
+                            />
+                        </div>
                     </div>
-
-                    <br /><br />
-
-                    <div class="user-email">
-                        <label for="email">Email: </label>
-                        <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            placeholder="username@example.com"
-                        />
+                    <div class="query-subject">
+                        <label class="labels" for="subject">Subject: </label>
+                        <select id="subject" name="subject">
+                            <option value="" disabled selected hidden>
+                                -- Select your Subject --
+                            </option>
+                            <option value="Delivery">Delivery</option>
+                            <option value="Product">Product</option>
+                            <option value="Website">Website</option>
+                            <option value="Complains">Complains</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="query-details">
+                        <label for="details">Details: </label>
+                        <textarea name="details" id="details"></textarea>
                     </div>
                 </div>
-
-                <br /><br />
-
-                <div class="query-subject">
-                    <label for="subject">Subject: </label>
-                    <select id="subject" name="subject">
-                        <option value="" disabled selected hidden>
-                            -- Select your Subject --
-                        </option>
-                        <option value="Delivery">Delivery</option>
-                        <option value="Product">Product</option>
-                        <option value="Website">Website</option>
-                        <option value="Complains">Complains</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-
-                <br /><br />
-
-                <div class="query-details">
-                    <label for="details">Details: </label>
-                    <textarea name="details" id="details"></textarea>
-                </div>
-
-                <br /><br />
-
                 <div class="form-button">
                     <button
                         type="button"

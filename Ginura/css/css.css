@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap");
+
+#filled-query {
+    display: none;
+}
+
+#query-form-container {
+    display: block;
+}
+
+* {
+    font-family: "Barlow Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #4e0d68);
+}
+
+#query-form-container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 45px 30px 45px 120px;
+    border-radius: 5px;
+}
+
+#query-form-container .title {
+    font-size: 35px;
+    font-weight: 750;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#query-form-container .title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #4e0d68);
+}
+
+/* #query-form-container #query-form .user-details {
+    margin: 30px 0 12px 0;
+} */
+
+#query-form .user-details .user-name {
+    margin: 30px 0 15px 0;
+    width: 60%;
+}
+
+#query-form .user-details .user-email {
+    display: block;
+    margin: 20px 0 15px 0;
+    width: 90%;
+}
+
+#query-form .query-subject {
+    margin: 20px 0 15px 0;
+    width: 300px;
+}
+
+#query-form .query-details {
+    margin: 20px 0 40px 0;
+}
+
+form input[type="text"] {
+    display: block;
+    height: 45px;
+    width: 80%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+form select {
+    display: block;
+    height: 45px;
+    width: 70%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+form textarea {
+    display: block;
+    height: 150px;
+    width: 72%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    margin-top: 5px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #9b59b6;
+}
+
+form select:focus {
+    border-color: #9b59b6;
+}
+
+form textarea:focus {
+    border-color: #9b59b6;
+}
+
+.labels {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+::placeholder {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.buttons {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    width: 175px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.buttons:before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.buttons:active {
+    color: #000;
+    font-size: 25px;
+}
+
+.buttons:active:after {
+    background: transparent;
+}
+
+.buttons:hover:before {
+    opacity: 1;
+}
+
+.buttons:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@media (max-width: 584px) {
+    #query-form-container {
+        max-width: 100%;
+    }
+
+    #query-form .user-details .user-name {
+        width: 100%;
+    }
+    #query-form .user-details .user-email {
+        width: 100%;
+    }
+
+    #query-form .query-subject {
+        width: 100%;
+    }
+
+    #query-form .query-details {
+        width: 100%;
+    }
+
+    #scroll-set {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    #scroll-set::-webkit-scrollbar {
+        width: 0;
+    }
+}
