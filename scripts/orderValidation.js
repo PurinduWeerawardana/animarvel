@@ -18,15 +18,21 @@ function minus() {
     }
 }
 
+
 //order validation
+
+
 function placeOrder() {
+    let email = document.getElementById("email").value;
     if (document.getElementById("first-name").value == "") {
         alert("Please enter your first name.");
     } else if (document.getElementById("last-name").value == "") {
         alert("Please enter your last name.");
     } else if (document.getElementById("email").value == "") {
         alert("Please enter your email address.");
-    } else if (document.getElementById("address").value == "") {
+    } else if(!email.includes("@")||!email.includes(".")) {
+        alert("Please enter a valid email address.");
+    }else if (document.getElementById("address").value == "") {
         alert("Please enter your address.");
     } else if (document.getElementById("city").value == "") {
         alert("Please enter your city.");
@@ -36,3 +42,4 @@ function placeOrder() {
         alert("Thank you for your order!");
     }
 }
+

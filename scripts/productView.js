@@ -142,6 +142,7 @@ function updateCartInfo() {
 function viewCart() {
   document.getElementById("product-view").className = "hidden";
   document.getElementById("order-view").className = "product-view";
+  document.body.className = "body-blur";
   window.scrollTo(0, 0);
   placeOrderButton = document.getElementById("place-order-button");
   if (cart.length == 0) {

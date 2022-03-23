@@ -1,0 +1,55 @@
+*{
+    color: #fff;
+    font-family: "Turret Road", cursive;
+}
+
+img{
+    position: relative;
+    top: 20px;
+    left:50%;
+    transform: translate(-50%,0);
+    width: 50vh;
+}
+
+#title{
+    margin-top: 50px;
+    margin-bottom: 5%;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+i{
+    color: #000000;
+}
+
+#member-list{
+    text-align: center;
+}
+
+.member{
+    margin-top: 50px;
+    font-size: 2rem;;
+    color: black;
+    background-color: #ffffff;
+    margin:auto;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.uow-id{
+    position: relative;
+    top: 8px;
+    border-radius: 20px;
+    padding: 10px;
+    letter-spacing: 5px;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-family: "Turret Road", cursive;
+}
