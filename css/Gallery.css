@@ -1,6 +1,14 @@
-#f01 {
-  background-color:#A9A9A9;
-  }
+footer{
+	background-color: #111;
+	text-align: center;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color:rgba(151, 151, 151,0.6);
+	padding-top:10px;
+	padding-bottom:8px;
+	width:100%;
+	font-size: 14px;
+ }
 .red{
   background-color:#ff0000;
   }
@@ -114,7 +122,7 @@ width: 100%;
 .myImages:hover {
 animation: shake 0.5s;
 
-animation-iteration-count: infinite;
+animation-iteration-count: 1.5;
 }
 
 @keyframes shake {
@@ -135,10 +143,6 @@ position: fixed;
 margin-top: -15%;
 height:100px;
 width:200px;  
-}
-button {
-border-radius: 12px
-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 /* body {
 background-color: black;
@@ -181,4 +185,20 @@ box-shadow: rgb(0, 0, 0) 0px 22px 50px 4px;
 }
 body{
   background-color: #000000;
+}
+
+.btn1{
+	margin: 5pt;
+	border-color: #00ffaa;
+	color: #fff;
+	height: 35px;
+	width: 140px;
+	border-radius: 10px;
+}
+
+.btn1:hover{
+	cursor: pointer;
+}
+.btn1 a{
+	text-decoration:none;
 }

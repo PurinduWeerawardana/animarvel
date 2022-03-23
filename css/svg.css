@@ -1,21 +1,23 @@
 body{
-    background-image: url(/images/animal-images/Leaves.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	max-width: 100%;
+    background-image: url(../images/animal-images/Leaves.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
     height: auto;
-	}
-html,body{
-	padding: 20px;
-	max-width: 100%;
-	overflow-x:hidden;
-	}
-
-#f01 {
-    backdrop-filter: blur(1px);
-    background-color:#9b9999;
 }
-#group1:hover ellipse{
+
+footer{
+	background-color: #111;
+	text-align: center;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color:rgba(151, 151, 151,0.6);
+	padding-top:10px;
+	padding-bottom:8px;
+	width:100%;
+	font-size: 14px;
+ }
+ #goup1:hover ellipse{
 	stroke: rgb(245, 2, 2);
 }
 #group2:hover circle{
@@ -39,8 +41,4 @@ html,body{
 #group8:hover circle{
 	stroke: rgb(245, 2, 2);
 }
-img{
-    margin-top:-2%;
-    margin-left: -2%;
-    position: fixed;
-}
+

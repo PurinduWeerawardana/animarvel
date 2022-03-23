@@ -4,20 +4,34 @@
         <meta charset = "utf-8">
         <title>Gallery</title>
         <link rel="stylesheet" href="./css/Gallery.css" />
+        <link rel="stylesheet" href="./css/NavBar.css"/>
   
     </head>
     <body>
-      <img src="./images/logo.png" alt="" srcset="" />
-      <div id="nav-bar">
-        <ul>
-            <li><a href="">Icon</a></li>
-            <li><a href="">Icon</a></li>
-            <li><a href="">Icon</a></li>
-            <li><a href="">Icon</a></li>
-            <li><a href="">Icon</a></li>
-        </ul>
-    </div>
-        <div style= "margin-top: 6%">
+        <div id="header">
+            <div id=title>
+                <img src="./images/logo.png" width="350pt" alt="Binge logo">
+                
+                <font style="font-size: 20pt; float: right; padding-right: 70pt;">
+                    <br><input id="textbox" type="text" name="sname" placeholder="Search">
+                </font>
+            </div>
+            <br>
+            <div class="dropdown" id=navbar align="center">
+                <li><button><a href="MainPage.html"><span style="fon">Home</span></a></button>|</li>
+                <li><button><a href="ProductForm.html">Buy Merch</a></button>|</li>
+                <li><button><a href="QuizIntro.html">Take Quiz</a></button>|</li>
+                <li><button class="dropbtn"><a href="./gallery.html">Gallery</a>
+                    <div class="dropdown-content">
+                        <a href="./svg.html">SiteMap</a>
+                    </div>
+                </button>|
+            </li>
+                <li><button><a href="CommentForm.html">Query Form</a></button>|</li>
+                <li><button><a href="AuthorPage.html">About Us</a></button></li>
+            </div> 
+        </div>
+        <div style= "margin-top: 13%">
             <select id="selectid">
                 <option value="" selected disabled hidden> --Select Background Color--</option>
                 <option class="red">Red</option>
@@ -26,7 +40,7 @@
                 <option class="blue">PowderBlue</option>
                 <option class="black">Black</option>
             </select>
-            <button onclick="colorbg()">Switch The Background</button>
+            <button class="btn1" onclick="colorbg()">Switch The Background</button>
             
             <select id="select2">
             <option value="" selected disabled hidden> --Select Font Color--</option>
@@ -36,7 +50,7 @@
             <option class="dg">Dark Green</option> 
             <option class="ny">Navy</option>
             </select>
-            <button onclick="selecttx()">Switch The Font Color</button>		
+            <button class="btn1" onclick="selecttx()">Switch The Font Color</button>		
             <h2 class="glow" style="text-align:center">Main Zones</h2>
            
             <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Midnight sun in Lofoten, Norway" width="350" height="200">
@@ -91,8 +105,10 @@
         
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <hr>
-        <fieldset id="f01">
-        <p><i> Page editor:<a href="">Student (4)-Sithum Raveesha</a></i></p>
-        </fieldset>
+        <footer align="center">
+            <p span style="color: rgb(255, 255, 255);">Last Updated 23/03/2022</p>
+            <p><i> <span style="color: rgb(255, 255, 255);">Page editor:</span><a href="sithum.html">Student (4)-Sithum Raveesha</a></i></p>
+            <p span style="color: rgb(255, 255, 255);">Copyright &copy; All rights Reserved </p>
+            </footer>
     </body>
     </html>
