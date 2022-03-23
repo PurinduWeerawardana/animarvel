@@ -12,6 +12,7 @@
         <div id="query-form-container">
             <form
                 id="query-form"
+                name="queryForm"
                 action="mailto:ginuraransika@gmail.com"
                 method="post"
             >
@@ -19,28 +20,45 @@
                     <div class="title">Query Form</div>
                     <div class="user-details">
                         <div class="user-name">
-                            <label class="labels" for="name">Name: </label>
+                            <label class="labels" for="name">Name : </label>
                             <input
                                 type="text"
                                 id="name"
+                                class="input-text"
                                 name="name"
+                                onchange="checkNames(this.input);"
+                                onclick="checkNames(this.input);"
                                 placeholder="Enter Your Name"
                             />
                         </div>
                         <div class="user-email">
-                            <label class="labels" for="email">Email: </label>
+                            <label class="labels" for="email">Email : </label>
                             <input
                                 type="text"
+                                class="input-text"
                                 id="email"
                                 name="email"
+                                onchange="checkEmail(this.input);"
+                                onclick="checkEmail(this.input);"
                                 placeholder="username@example.com"
                             />
                         </div>
                     </div>
                     <div class="query-subject">
-                        <label class="labels" for="subject">Subject: </label>
-                        <select id="subject" name="subject">
-                            <option value="" disabled selected hidden>
+                        <label class="labels" for="subject">Subject : </label>
+                        <select
+                            id="subject"
+                            name="subject"
+                            class="select"
+                            onchange="checkSubject(this);"
+                            onclick="checkSubject(this);"
+                        >
+                            <option
+                                value=""
+                                disabled
+                                class="placeholder"
+                                selected
+                            >
                                 -- Select your Subject --
                             </option>
                             <option value="Delivery">Delivery</option>
@@ -51,8 +69,14 @@
                         </select>
                     </div>
                     <div class="query-details">
-                        <label for="details">Details: </label>
-                        <textarea name="details" id="details"></textarea>
+                        <label for="details">Details : </label>
+                        <textarea
+                            name="details"
+                            id="details"
+                            class="input-textarea"
+                            onchange="checkDetails(this.textarea);"
+                            onclick="checkDetails(this.textarea);"
+                        ></textarea>
                     </div>
                 </div>
                 <div class="form-button">
@@ -71,23 +95,65 @@
             <div class="title">Updated Fields</div>
             <form>
                 <div class="filled-inputs">
-                    <p>Name: <span id="filled-name"></span></p>
-                    <p>Email: <span id="filled-email"></span></p>
-                    <p>Subject: <span id="filled-subject"></span></p>
-                    <p>Details: <span id="filled-details"></span></p>
+                    <div class="list">
+                        <div class="img">
+                            <img src=".\img\name-badge.png" />
+                        </div>
+                        <div class="content">
+                            <h4 class="filled-labels">Name:</h4>
+                            <p class="filled-details" id="filled-name"></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="img">
+                            <img src=".\img\gmail.png" />
+                        </div>
+                        <div class="content">
+                            <h4 class="filled-labels">Email:</h4>
+                            <p class="filled-details" id="filled-email"></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="img">
+                            <img src=".\img\query-subject.jpg" />
+                        </div>
+                        <div class="content">
+                            <h4 class="filled-labels">Subject:</h4>
+                            <p class="filled-details" id="filled-subject"></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="img">
+                            <img
+                                src="\images\animal-images\pexels-pixabay-247431.jpg"
+                            />
+                        </div>
+                        <div class="content">
+                            <h4 class="filled-labels">Details:</h4>
+                            <p class="filled-details" id="filled-details"></p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-button">
-                    <button
-                        type="button"
-                        class="buttons"
-                        onclick="editQueryForm(this.form)"
-                    >
-                        Edit
-                    </button>
-                    <button type="button" class="buttons" onclick="mailForm()">
-                        Send
-                    </button>
+                <div id="filled-query-button">
+                    <div id="edit-button">
+                        <button
+                            type="button"
+                            class="buttons"
+                            onclick="editQueryForm(this.form)"
+                        >
+                            Edit
+                        </button>
+                    </div>
+                    <div id="send-button">
+                        <button
+                            type="button"
+                            class="buttons"
+                            onclick="mailForm()"
+                        >
+                            Send
+                        </button>
+                    </div>
                 </div>
             </form>
         </div>
