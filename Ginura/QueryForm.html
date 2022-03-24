@@ -38,7 +38,7 @@
                                 class="input-text"
                                 id="email"
                                 name="email"
-                                onchange="checkEmail(this.input);"
+                                onchange="checkAndValidateEmail(this.input);"
                                 onclick="checkEmail(this.input);"
                                 placeholder="username@example.com"
                             />
@@ -92,12 +92,15 @@
         </div>
 
         <div id="filled-query">
-            <div class="title">Updated Fields</div>
+            <div class="title">Query Details</div>
             <form>
                 <div class="filled-inputs">
                     <div class="list">
                         <div class="img">
-                            <img src=".\img\name-badge.png" />
+                            <img
+                                src=".\img\name-badge.png"
+                                alt="image of name badge"
+                            />
                         </div>
                         <div class="content">
                             <h4 class="filled-labels">Name:</h4>
@@ -106,7 +109,10 @@
                     </div>
                     <div class="list">
                         <div class="img">
-                            <img src=".\img\gmail.png" />
+                            <img
+                                src=".\img\gmail.png"
+                                alt="image of a gmail logo"
+                            />
                         </div>
                         <div class="content">
                             <h4 class="filled-labels">Email:</h4>
@@ -115,7 +121,11 @@
                     </div>
                     <div class="list">
                         <div class="img">
-                            <img src=".\img\query-subject.jpg" />
+                            <img
+                                src=".\img\query-subject.jpg"
+                                alt="image of
+                            question mark"
+                            />
                         </div>
                         <div class="content">
                             <h4 class="filled-labels">Subject:</h4>
@@ -124,9 +134,7 @@
                     </div>
                     <div class="list">
                         <div class="img">
-                            <img
-                                src="\images\animal-images\pexels-pixabay-247431.jpg"
-                            />
+                            <img src=".\img\details.jpg" alt="" />
                         </div>
                         <div class="content">
                             <h4 class="filled-labels">Details:</h4>

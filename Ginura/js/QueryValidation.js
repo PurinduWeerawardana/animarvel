@@ -10,14 +10,14 @@ function checkNames(inputRef){
     }
 }
 
-function checkEmail(emailRef){
+function checkAndValidateEmail(emailRef){
     let email_object = document.getElementById("email");
 
     if(email_object.value === ""){
         document.getElementById("email").classList.remove("filled-input-text");
         document.getElementById("email").classList.add("empty-input-text");
     }
-    else if (email_object.value.includes("@") ==false){
+    else if (email_object.value.includes("@") == false){
         document.getElementById("email").classList.remove("filled-input-text");
         alert("Please enter a valid email ('@' is missing)");
         document.getElementById("email").classList.add("empty-input-text");
@@ -33,18 +33,37 @@ function checkEmail(emailRef){
     }
 }
 
-function checkSubject(subjectRef){
-    let subject_array = document.getElementById("subject");
-    console.log(subject_array);
+function checkEmail(emailRef){
+    let email_object = document.getElementById("email");
 
-    if (subject_array[subject_array.selectedIndex].value != ""){
+    if(email_object.value === ""){
+        document.getElementById("email").classList.remove("filled-input-text");
+        document.getElementById("email").classList.add("empty-input-text");
+    }
+    else if (email_object.value.includes("@") ==false){
+        document.getElementById("email").classList.remove("filled-input-text");
+        document.getElementById("email").classList.add("empty-input-text");
+     
+    }
+    else if(email_object.value.includes(".") ==false){
+        document.getElementById("email").classList.remove("filled-input-text");
+        document.getElementById("email").classList.add("empty-input-text");
+    }
+    else{
+        document.getElementById("email").classList.remove("empty-input-text");
+        document.getElementById("email").classList.add("filled-input-text");
+    }
+}
+
+function checkSubject(subjectRef){
+    let subject_object = document.getElementById("subject");
+    if (subject_object[subject_object.selectedIndex].value != ""){
         document.getElementById("subject").classList.remove("empty-select");
         document.getElementById("subject").classList.add("filled-select");
     }
     else{
         document.getElementById("subject").classList.remove("filled-select");
         document.getElementById("subject").classList.add("empty-select");
-
     }
 }
 
@@ -145,9 +164,9 @@ function printFilledFields(filled_fields){
 function printUnfilledFields(myQueryFormRef,unfilled_fields){
     if (unfilled_fields.length == 1){
         let unfilled_field_string = unfilled_fields.join(" , ");
-        alert("Unfilled field is [" + unfilled_fields + "] Please fil it!");
-
+        alert("Unfilled field is [" + unfilled_field_string + "] Please fil it!");
     }
+
     else if(unfilled_fields.length !=0 ){
         let unfilled_field_string = unfilled_fields.join(" , ");
         alert("Unfilled fields are [" + unfilled_field_string +"] Please fill them!");

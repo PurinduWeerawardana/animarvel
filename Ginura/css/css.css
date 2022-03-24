@@ -14,6 +14,7 @@ html {
     max-width: 100%;
     height: auto;
 }
+
 * {
     font-family: "Barlow Condensed", sans-serif;
     margin: 0;
@@ -43,7 +44,7 @@ body {
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 #query-form-container:hover {
@@ -267,13 +268,12 @@ select:selected {
     width: 70%;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #ccc;
     padding-left: 15px;
     margin-top: 5px;
     font-size: 16px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
-
+    color: #fff;
     background: rgba(0, 0, 0, 0.445);
     box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
     border-color: #47b883;
@@ -442,7 +442,7 @@ form textarea:hover {
 #filled-query {
     max-width: 700px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(36, 35, 35, 0.1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-right: 1px solid rgba(255, 255, 255, 0.2);
@@ -455,8 +455,18 @@ form textarea:hover {
 }
 
 #filled-query .title {
+    text-align: center;
     color: white;
     margin-bottom: 20px;
+}
+#filled-query .title::before {
+    content: "";
+    position: absolute;
+    left: 100;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #3fdd3f, #0e7c64);
 }
 
 #filled-query .list {
@@ -471,7 +481,7 @@ form textarea:hover {
 }
 
 #filled-query .list:hover {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.63);
     box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
     transform: scale(1.15) translateX(30px) translateY(-15px);
     z-index: 1000;
