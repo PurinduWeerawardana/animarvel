@@ -50,10 +50,23 @@
             <option class="dg">Dark Green</option> 
             <option class="ny">Navy</option>
             </select>
-            <button class="btn1" onclick="selecttx()">Switch The Font Color</button>		
-            <h2 class="glow" style="text-align:center">Main Zones</h2>
+            <button class="btn1" onclick="selecttx()">Switch The Font Color</button>
+            <svg viewBox="0 0 960 300">
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="80%">--Main Zones--</text>
+                </symbol>
+            
+                <g class = "g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+            </svg>		
+            <!--<h2 class="glow" style="text-align:center">Main Zones</h2>-->
            
-            <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Midnight sun in Lofoten, Norway" width="350" height="200">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Midnight sun in Lofoten, Norway." width="350" height="200">
             <img class="myImages" id="myImg" src="./images/Thumbnails/d_20181208224534.png" alt="Fishermen's cabins in Lofoten, Norway" width="350" height="200">
             <img class="myImages" id="myImg" src="./images/Thumbnails/jurong-birdpark_2.png" alt="Gerirangerfjord, Norway" width="350" height="200">
             <img class="myImages" id="myImg" src="./images/Thumbnails/Reptiles.jpg.png" alt="Gerirangerfjord, Norway" width="350" height="200">
@@ -101,9 +114,11 @@
 		   document.body.style.font=txselect;
 		}
         </script>
-                
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br> <br>   <br>   <br>   <br>
+        <a href="./Discounts.html" style="float: right; margin-right: 4%; font-size: 18px;">
+            <button class="next">View Discounts</button>
+          </a>     
+        <br><br><br><br><br>
         <hr>
         <footer align="center">
             <p span style="color: rgb(255, 255, 255);">Last Updated 23/03/2022</p>
