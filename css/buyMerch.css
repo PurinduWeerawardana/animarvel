@@ -1,0 +1,168 @@
+body {
+  color: #fff;
+  background-image: url(../images/merch/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+#navbar {
+  clear: both;
+  border: 1px solid white;
+  height: 60px;
+}
+
+#cart-icon-heading {
+  color: #ffcc00;
+}
+
+h1 {
+  width: 90%;
+  border-radius: 80px;
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+  color: #2ee59d;
+  text-shadow: 2px 2px #ffcc00;
+  font-size: 5rem;
+  font-family: "Turret Road", cursive;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 45px;
+}
+
+
+#categories {
+  clear: both;
+  text-align: center;
+  margin: 20px;
+}
+
+#cart-button{
+  z-index: 10;
+  align-self: left;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  padding: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px 0px 0px 30px;
+}
+
+#cart-button:hover {
+  font-weight: bold;
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px #2ee59c8a;
+  transition: 0.2s;
+  transform: translateX(-7px) scaleX(1.1);
+}
+
+.category-buttons {
+  cursor: pointer;
+  margin: 5px;
+  font-size: 13px;
+  letter-spacing: 4px;
+  color: #000;
+  background-color: #fff;
+  border-width: 5px;
+  border-color: #ffcc00;
+  border-radius: 40px;
+  padding: 20px;
+  transform: translate(0px, 0px);
+  transition: 0.2s;
+}
+
+.category-buttons:hover {
+  font-weight: bold;
+  background-color: #2ee59d;
+  box-shadow: -2px -1px 8px #2ee59d;
+}
+
+.category-button-selected {
+  font-weight: bold;
+  background-color: #2ee59d;
+  box-shadow: -2px -1px 8px #2ee59d;
+}
+
+#item-area {
+  text-align: center;
+  width: 100%;
+}
+
+.item-card {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
+  width: 350px;
+  height: 550px;
+  border-radius: 50px;
+  background-color: #1c1c1c;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffcc00;
+}
+.item-card img {
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 50px;
+  width: 100%;
+}
+
+.item-info {
+  position: relative;
+  bottom: 100px;
+  width: 100%;
+  line-height: 70%;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 14px;
+  border-radius: 50px;
+  background-image: linear-gradient(#1c1c1c69, #1c1c1c);
+}
+
+.item-info h2 {
+  margin-top: 0;
+  padding: 0px 15px;
+  font-size: 2rem;
+  font-family: "Turret Road", cursive;
+}
+
+.item-info p {
+  font-size: 1.5rem;
+}
+
+.add-to-cart {
+  padding: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  transition: all 0.3s ease 0s;
+  cursor: cell;
+  outline: none;
+}
+
+.add-to-cart:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px #2ee59c8a;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.add-to-cart:active {
+  transform: translateY(-7px);
+}
+
+.item-preview :hover {
+  background-color: #2ee59d;
+  color: #fff;
+}
