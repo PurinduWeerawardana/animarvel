@@ -44,11 +44,18 @@
 }
 
 #cart-list {
-  position: relative;
   margin-top: 3px;
   margin-right: 5px;
   height: 69%;
   overflow: auto;
+}
+
+#cart-list li{
+  margin-top: 25px;
+}
+
+#cart-list li h3, #cart-list li h4 {
+  margin-bottom: 15px;
 }
 
 #details {

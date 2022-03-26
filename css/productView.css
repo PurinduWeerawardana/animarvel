@@ -108,7 +108,7 @@
 }
 
 #price {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 2.5vw;
 }
 
@@ -237,4 +237,21 @@ input[type="radio"]:checked + label {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .preview {
+    width: 100%;
+    height: 42%;
+  }
+  .order {
+    margin-top: 1.5vh;
+    position: relative;
+    float: bottom;
+    width: 100%;
+    height: 50%;
+  }
+  #borderLeft{
+    display: none;
+  }
 }

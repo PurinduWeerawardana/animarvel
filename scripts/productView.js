@@ -115,7 +115,7 @@ function updateCartInfo() {
     let orderItem = document.createElement("li");
     let item = document.createElement("h3");
     item.appendChild(document.createTextNode(cart[i][0]));
-    let quantity = document.createElement("h4");
+    let quantity = document.createElement("h3");
     quantity.appendChild(document.createTextNode("Quantity: " + cart[i][2]));
     totalPerItem = parseFloat(cart[i][1].slice(1)) * parseInt(cart[i][2]);
     let price = document.createElement("h4");

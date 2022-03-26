@@ -3,6 +3,10 @@
     font-family: "Turret Road", cursive;
 }
 
+body {
+    background-color: #000;
+}
+
 img{
     position: relative;
     top: 20px;

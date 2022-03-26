@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -20,11 +20,27 @@
 </head>
 
 <body>
-  <div id="navbar"></div>
-  <h1>
+  <nav id="nav-bar">
+    <input type="checkbox" id="checkbox" name="checkbox" />
+    <label for="checkbox" class="check-button">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <img id="logo" src="./images/logo.png" alt="logo" />
+    <ul>
+      <li><a href="" class="nav-bar-titles">Icon</a></li>
+      <li><a href="">Icon</a></li>
+      <li><a href="">Icon</a></li>
+      <li><a href="">Icon</a></li>
+      <li><a href="">Icon</a></li>
+      <li><a href="">Icon</a></li>
+      <li><a href="">Icon</a></li>
+    </ul>
+  </nav>
+  <h1 id="merch-header">
     <span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!
   </h1>
-    <button class="cart-button" id="cart-button"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View Cart</button>
+  <button class="cart-button" id="cart-button"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View
+    Cart</button>
   <div id="categories">
     <button class="category-buttons category-button-selected" id="all">
       ALL-ITEMS
@@ -36,8 +52,32 @@
     <button class="category-buttons" id="others">OTHERS</button>
   </div>
   <div id="item-area">
-    <div id="item-card1" class="item-card mug">
+    <div id="item-card1" class="item-card other">
       <div id="item-preview1" class="item-preview">
+        <img class="product-image" src="./images/merch/others/face-mask/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Face Mask</h2>
+        <p class="product-price">$20.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card2" class="item-card t-shirt">
+      <div id="item-preview2" class="item-preview">
+        <img class="product-image" src="./images/merch/t-shirts/t-shirt-4/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Sweatshirt</h2>
+        <p class="product-price">$60.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card3" class="item-card mug">
+      <div id="item-preview3" class="item-preview">
         <img class="product-image" src="./images/merch/mugs/mug-1/preview-1.jpg" alt="thumbnail" />
       </div>
       <div class="item-info">
@@ -48,8 +88,8 @@
         </button>
       </div>
     </div>
-    <div id="item-card2" class="item-card t-shirt">
-      <div id="item-preview2" class="item-preview">
+    <div id="item-card4" class="item-card t-shirt">
+      <div id="item-preview4" class="item-preview">
         <img class="product-image" src="./images/merch/t-shirts/t-shirt-1/preview-1.jpg" alt="thumbnail" />
       </div>
       <div class="item-info">
@@ -60,8 +100,32 @@
         </button>
       </div>
     </div>
-    <div id="item-card3" class="item-card statue">
-      <div id="item-preview3" class="item-preview">
+    <div id="item-card5" class="item-card other">
+      <div id="item-preview5" class="item-preview">
+        <img class="product-image" src="./images/merch/others/pillow/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Pillow</h2>
+        <p class="product-price">$20.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card6" class="item-card other">
+      <div id="item-preview6" class="item-preview">
+        <img class="product-image" src="./images/merch/others/cap/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Pillow</h2>
+        <p class="product-price">$20.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card7" class="item-card statue">
+      <div id="item-preview7" class="item-preview">
         <img class="product-image" src="./images/merch/statues/statue-1/preview-1.jpg" alt="thumbnail" />
       </div>
       <div class="item-info">
@@ -72,8 +136,20 @@
         </button>
       </div>
     </div>
-    <div id="item-card4" class="item-card back-cover">
-      <div id="item-preview4" class="item-preview">
+    <div id="item-card8" class="item-card other">
+      <div id="item-preview8" class="item-preview">
+        <img class="product-image" src="./images/merch/others/bag/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-GymSack</h2>
+        <p class="product-price">$20.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card9" class="item-card back-cover">
+      <div id="item-preview9" class="item-preview">
         <img class="product-image" src="./images/merch/back-covers/back-cover-1/preview-1.png" alt="thumbnail" />
       </div>
       <div class="item-info">
@@ -84,13 +160,85 @@
         </button>
       </div>
     </div>
-    <div id="item-card5" class="item-card other">
-      <div id="item-preview5" class="item-preview">
+    <div id="item-card10" class="item-card other">
+      <div id="item-preview10" class="item-preview">
         <img class="product-image" src="./images/merch/others/tiger-teddy/preview-1.jpg" alt="thumbnail" />
       </div>
       <div class="item-info">
         <h2 class="product-title">AM-Tiger Teddy</h2>
         <p class="product-price">$20.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card11" class="item-card mug">
+      <div id="item-preview11" class="item-preview">
+        <img class="product-image" src="./images/merch/mugs/mug-2/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-White Mug</h2>
+        <p class="product-price">$19.19</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card12" class="item-card t-shirt">
+      <div id="item-preview12" class="item-preview">
+        <img class="product-image" src="./images/merch/t-shirts/t-shirt-2/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Yoga T-Shirt</h2>
+        <p class="product-price">$60.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card13" class="item-card mug">
+      <div id="item-preview13" class="item-preview">
+        <img class="product-image" src="./images/merch/mugs/mug-3/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Coffee Cup</h2>
+        <p class="product-price">$19.19</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card14" class="item-card t-shirt">
+      <div id="item-preview14" class="item-preview">
+        <img class="product-image" src="./images/merch/t-shirts/t-shirt-3/preview-1.jpg" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Crop Top</h2>
+        <p class="product-price">$60.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card15" class="item-card back-cover">
+      <div id="item-preview15" class="item-preview">
+        <img class="product-image" src="./images/merch/back-covers/back-cover-2/preview-1.png" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Black Cover</h2>
+        <p class="product-price">$9.00</p>
+        <button class="add-to-cart">
+          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+    </div>
+    <div id="item-card16" class="item-card back-cover">
+      <div id="item-preview16" class="item-preview">
+        <img class="product-image" src="./images/merch/back-covers/back-cover-3/preview-1.png" alt="thumbnail" />
+      </div>
+      <div class="item-info">
+        <h2 class="product-title">AM-Black Cover</h2>
+        <p class="product-price">$9.00</p>
         <button class="add-to-cart">
           Add to Cart <i class="fa-solid fa-cart-shopping"></i>
         </button>
@@ -174,27 +322,27 @@
               <legend>Personal details</legend>
               <div class="form-group double">
                 <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" placeholder="Enter your first name"/>
+                <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" />
               </div>
               <div class="form-group double">
                 <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name"/>
+                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" />
               </div>
               <div class="form-group single">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email"/>
+                <input type="email" name="email" id="email" placeholder="Enter your email" />
               </div>
               <div class="form-group single">
                 <label for="address">Address</label>
-                <input type="text" name="address" id="address" placeholder="Enter your address"/>
+                <input type="text" name="address" id="address" placeholder="Enter your address" />
               </div>
               <div class="form-group double">
                 <label for="city">City</label>
-                <input type="text" name="city" id="city" placeholder="Enter your city"/>
+                <input type="text" name="city" id="city" placeholder="Enter your city" />
               </div>
               <div class="form-group double">
                 <label for="zip">Zip-Code</label>
-                <input type="text" name="zip" id="zip" placeholder="Enter your zip-code"/>
+                <input type="text" name="zip" id="zip" placeholder="Enter your zip-code" />
               </div>
               <div class="form-group single" id="">
                 <label for="payment">Payment Method</label>
