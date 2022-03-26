@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 #filled-query {
@@ -22,7 +23,6 @@ html {
 }
 
 #website-container {
-    font-family: "Barlow Condensed", sans-serif;
     width: 100%;
     display: flex;
 
@@ -46,12 +46,11 @@ html {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-
 }
 
 #query-form-container:hover {
-    backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
 }
 
 .title {
@@ -70,10 +69,6 @@ html {
     width: 30px;
     background: linear-gradient(135deg, #3fdd3f, #0e7c64);
 }
-
-/* #query-form-container #query-form .user-details {
-    margin: 30px 0 12px 0;
-} */
 
 #query-form .user-details .user-name {
     margin: 30px 0 15px 0;
@@ -158,18 +153,9 @@ html {
 }
 
 ::placeholder {
-    font-family: "Barlow Condensed", sans-serif;
     color: rgb(36, 36, 36);
     font-weight: 750;
 }
-/* select:hover .placeholder {
-    color: rgb(36, 36, 36);
-    font-weight: 750;
-}
-
-select:selected {
-    color: #fff;
-} */
 
 .input-text:focus {
     background: rgba(0, 0, 0, 0.486);
@@ -329,88 +315,6 @@ form textarea:hover {
 .query-subject #first-value {
     color: rgba(0, 0, 0, 0.479);
 }
-
-.buttons {
-    font-family: "Barlow Condensed", sans-serif;
-    font-size: 20px;
-    width: 175px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.buttons:before {
-    content: "";
-    background: linear-gradient(
-        45deg,
-        #ff0000,
-        #ff7300,
-        #fffb00,
-        #48ff00,
-        #00ffd5,
-        #002bff,
-        #7a00ff,
-        #ff00c8,
-        #ff0000
-    );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
-}
-
-.buttons:active {
-    color: #000;
-    font-size: 25px;
-}
-
-.buttons:active:after {
-    background: transparent;
-}
-
-.buttons:hover:before {
-    opacity: 1;
-}
-
-.buttons:after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-}
-
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-
 @media (max-width: 584px) {
     #query-form-container {
         max-width: 100%;
@@ -452,8 +356,8 @@ form textarea:hover {
     border-radius: 10px;
     z-index: 10;
     padding: 45px 30px;
-    backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
 }
 
 #filled-query .title {
