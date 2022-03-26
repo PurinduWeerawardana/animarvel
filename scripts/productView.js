@@ -96,14 +96,12 @@ function updateCart() {
     productView.querySelector(".size-selector").className === "size-selector"
   ) {
     let size = productView.querySelector("input[name='size']:checked").value;
-    console.log(size);
     cartItem = [productName + " [" + size + "]", productPrice, quantity];
   } else {
     cartItem = [productName, productPrice, quantity];
   }
   document.getElementsByName("quantity")[0].value = "1";
   cart.push(cartItem);
-  console.log(cart);
 }
 
 function updateCartInfo() {
@@ -130,7 +128,6 @@ function updateCartInfo() {
       )
     );
     total += totalPerItem;
-    console.log(total);
     orderItem.appendChild(item);
     orderItem.appendChild(quantity);
     orderItem.appendChild(price);
