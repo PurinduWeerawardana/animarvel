@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/buyMerch.css" />
   <link rel="stylesheet" href="./css/productView.css">
   <link rel="stylesheet" href="./css/orderView.css">
+  <link rel="stylesheet" href="./css/invoice.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap" rel="stylesheet" />
@@ -21,85 +22,48 @@
 </head>
 
 <body>
-  <header id="primary-header-navigation">
-            <div id="logo"></div>
-            <button
-                class="navigation-toggle"
-                aria-controls="navigation-bar-ul"
-                aria-expanded="false"
-            >
-                <span class="sr-only">Menu</span>
-            </button>
-            <nav class="navigation-bar">
-                <ul
-                    id="navigation-bar-ul"
-                    data-visible="false"
-                    class="navigation-bar-ul"
-                >
-                    <li>
-                        <a
-                            href=""
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Home"
-                            >&nbsp;&nbsp;Home</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href=""
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Home"
-                            >&nbsp;&nbsp;Home</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href=""
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Icon"
-                            >&nbsp;&nbsp;Icon</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href=""
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Icon"
-                            >&nbsp;&nbsp;Icon</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href=""
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Icon"
-                            >&nbsp;&nbsp;Icon</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href=""
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Icon"
-                            >&nbsp;&nbsp;Icon</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href=""
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Icon"
-                            >&nbsp;&nbsp;Icon</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-        </header>
-  <h1 id="merch-header">
-    <span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!
-  </h1>
-  <button class="cart-button" id="cart-button"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View
-    Cart</button>
+  <div>
+    <header id="primary-header-navigation">
+      <div id="logo"></div>
+      <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="navigation-bar">
+        <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
+          <li>
+            <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
+          </li>
+          <li>
+            <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
+          </li>
+          <li>
+            <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Icon">&nbsp;&nbsp;Icon</a>
+          </li>
+          <li>
+            <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Icon">&nbsp;&nbsp;Icon</a>
+          </li>
+          <li>
+            <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Icon">&nbsp;&nbsp;Icon</a>
+          </li>
+          <li>
+            <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Icon">&nbsp;&nbsp;Icon</a>
+          </li>
+          <li>
+            <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Icon">&nbsp;&nbsp;Icon</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div>
+    <h1 id="merch-header">
+      <span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!
+    </h1>
+  </div>
+  <div>
+    <button class="cart-button" id="cart-button"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View
+      Cart</button>
+  </div>
   <div id="categories">
     <button class="category-buttons category-button-selected" id="all">
       ALL-ITEMS
@@ -314,12 +278,12 @@
       <div id="info-and-form">
         <div id="borderLeft"></div>
         <div id="product-description" class="item-description">
-          <h1 class="selected-product-title">AniMarvel-Black T-Shirt</h1>
+          <h1 class="selected-product-title"></h1>
           <h2 class="caption">Price</h2>
-          <p class="selected-product-price">$<span class="">69.69</span></p>
+          <p class="selected-product-price">$<span class=""></span></p>
         </div>
         <div class="order-form">
-          <form action="" method="get">
+          <form>
             <div id="size-selector" class="size-selector hidden">
               <h2 class="caption">Size</h2>
               <span class="radio-box">
@@ -406,10 +370,10 @@
               <div class="form-group single" id="">
                 <label for="payment">Payment Method</label>
                 <select title="payment" name="payment" id="payment-method">
-                  <option value="card">Credit/Debit Card</option>
-                  <option value="paypal">PayPal</option>
-                  <option value="banktrans">Bank Transfer</option>
-                  <option value="cod" selected>Cash-On Delivery</option>
+                  <option value="Credit/Debit-Card">Credit/Debit-Card</option>
+                  <option value=">Pay-Pal">Pay-Pal</option>
+                  <option value="Bank-Transfer">Bank-Transfer</option>
+                  <option value="Cash-On-Delivery" selected>Cash-On-Delivery</option>
                 </select>
               </div>
             </fieldset>
@@ -420,5 +384,41 @@
     </div>
     <i class="fa-solid fa-xmark close-button"></i>
   </div>
+  <div id="invoice" class="hidden">
+    <div id="invoice-header">
+      <div id="invoice-logo">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      <div id="invoice-info">
+        <div id="invoice-title">Invoice</div>
+        <p>
+          <span id="invoice-id">Invoice ID: #</span>
+          <span id="invoice-date">Invoice Date:&nbsp;</span>
+        </p>
+      </div>
+    </div>
+    <div id="invoice-body">
+      <div id="delivery-details">
+        <h2>Delivery Details</h2>
+        <p>
+          <span id="full-name">Name:&nbsp;</span><br>
+          <span id="email-order">Email:&nbsp;</span><br>
+          <span id="address-order">Address:&nbsp;</span><br>
+          <span id="city-order">City:&nbsp;</span><br>
+          <span id="zip-order">Zip Code:&nbsp;</span><br>
+          <span id="payment-method-order">Payment Method:&nbsp;</span><br>
+        </p>
+      </div>
+      <div id="product-details">
+
+      </div>
+    </div>
+    <div id="invoice-footer">
+      <p>Thank you for your order!</p>
+      <button onclick="printInvoice()" class="add-to-cart"><i class="fa-solid fa-print"></i>Print</button>
+      <button onclick="closeInvoice()" class="add-to-cart"><i class="fa-solid fa-circle-xmark"></i>Close</button>
+    </div>
+  </div>
 </body>
+
 </html>

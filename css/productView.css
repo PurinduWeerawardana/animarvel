@@ -1,4 +1,4 @@
-.body-blur div:not(.product-view, .product-view div,) {
+.body-blur div:not(.product-view, .product-view div, #invoice, #invoice div) {
   filter: blur(0.5rem);
   z-index: 1;
   pointer-events: none;

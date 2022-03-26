@@ -18,6 +18,7 @@ body {
 h1 {
   width: 90%;
   border-radius: 80px;
+  backdrop-filter: blur(4.2px);
   -webkit-backdrop-filter: blur(4.2px);
   color: #2ee59d;
   text-shadow: 2px 2px #ffcc00;

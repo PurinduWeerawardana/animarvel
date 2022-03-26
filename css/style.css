@@ -90,10 +90,6 @@ body {
             -webkit-animation-timing-function: linear;
         }
 
-        #items-left:hover {
-            -webkit-animation-play-state: paused;
-        }
-
         @-webkit-keyframes move {
             0% {
                 transform: translateY(0);
