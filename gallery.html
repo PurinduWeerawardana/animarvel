@@ -4,40 +4,51 @@
         <meta charset = "utf-8">
         <title>Gallery</title>
         <link rel="stylesheet" href="./css/Gallery.css" />
-        <link rel="stylesheet" href="./css/NavBar.css"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <script>
+            src="https://kit.fontawesome.com/0357fe80c5.js"
+            crossorigin="anonymous"
+        </script>
   
     </head>
     <body>
-        <div id="header">
-            <div id=title>
-                <img src="./images/logo.png" width="350pt" alt="Binge logo">
-                
-                <font style="font-size: 20pt; float: right; padding-right: 70pt;">
-                    <br><input id="textbox" type="text" name="sname" placeholder="Search">
-                </font>
-            </div>
-            <br>
-            <div class="dropdown" id=navbar align="center">
-                <li><button><a href="MainPage.html"><span style="fon">Home</span></a></button>|</li>
-                <li><button><a href="ProductForm.html">Buy Merch</a></button>|</li>
-                <li><button><a href="QuizIntro.html">Take Quiz</a></button>|</li>
-                <li><button class="dropbtn"><a href="./gallery.html">Gallery</a>
-                    <div class="dropdown-content">
-                        <a href="./svg.html">SiteMap</a>
-                    </div>
-                </button>|
-            </li>
-                <li><button><a href="CommentForm.html">Query Form</a></button>|</li>
-                <li><button><a href="AuthorPage.html">About Us</a></button></li>
-            </div> 
-        </div>
-        <div style= "margin-top: 13%">
+        <nav id="nav-bar">
+            <input type="checkbox" id="checkbox" name="checkbox" />
+            <label for="checkbox" class="check-button">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <img id="logo" src="./images/logo.png" alt="logo" />
+            <ul>
+                <li><a href="" class="nav-bar-titles">Home</a></li>
+                <li><a href="">Merch</a></li>
+                <li><a href="">Quize</a></li>
+                <li><a href="">Query</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Site-Map</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+            <hr size="1">
+        </nav>
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">--Main Zones--</text>
+            </symbol>
+        
+            <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+        <div >
             <select id="selectid">
                 <option value="" selected disabled hidden> --Select Background Color--</option>
-                <option class="red">Red</option>
+                <option class="tred">Red</option>
                 <option class="orange">Orange</option>
                 <option class="green">LightSeaGreen</option>
-                <option class="blue">PowderBlue</option>
+                <option class="blue">DeepSkyBlue</option>
                 <option class="black">Black</option>
             </select>
             <button class="btn1" onclick="colorbg()">Switch The Background</button>
@@ -51,28 +62,17 @@
             <option class="ny">Navy</option>
             </select>
             <button class="btn1" onclick="selecttx()">Switch The Font Color</button>
-            <svg viewBox="0 0 960 300">
-                <symbol id="s-text">
-                    <text text-anchor="middle" x="50%" y="80%">--Main Zones--</text>
-                </symbol>
-            
-                <g class = "g-ants">
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-            </svg>		
+        </div>
+        <div style= "margin-top: 5%">		
             <!--<h2 class="glow" style="text-align:center">Main Zones</h2>-->
-           
-            <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Midnight sun in Lofoten, Norway." width="350" height="200">
-            <img class="myImages" id="myImg" src="./images/Thumbnails/d_20181208224534.png" alt="Fishermen's cabins in Lofoten, Norway" width="350" height="200">
-            <img class="myImages" id="myImg" src="./images/Thumbnails/jurong-birdpark_2.png" alt="Gerirangerfjord, Norway" width="350" height="200">
-            <img class="myImages" id="myImg" src="./images/Thumbnails/Reptiles.jpg.png" alt="Gerirangerfjord, Norway" width="350" height="200">
-            <img class="myImages" id="myImg" src="./images/Thumbnails/Tera-park.png" alt="Gerirangerfjord, Norway" width="350" height="200">
-
-
+           <center>
+            <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Midnight sun in Lofoten, Norway." width="400" height="300">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/d_20181208224534.png" alt="Fishermen's cabins in Lofoten, Norway" width="400" height="300">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/jurong-birdpark_2.png" alt="Gerirangerfjord, Norway" width="400" height="300"><br>
+            <img class="myImages" id="myImg" src="./images/Thumbnails/Reptiles.jpg.png" alt="Gerirangerfjord, Norway" width="400" height="300">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/Tera-park.png" alt="Gerirangerfjord, Norway" width="400" height="300">
+        </center>
+        
 
             <div id="myModal" class="modal">
             <span class="close">&times;</span>
@@ -106,6 +106,8 @@
 		   var x=document.getElementById("selectid");
 		   var bgcolor=x.options[x.selectedIndex].value;
 		   document.body.style.backgroundColor=bgcolor;
+           console.log(x);
+           console.log(bgcolor);
 		}
 		function selecttx()
 		{
@@ -116,13 +118,13 @@
         </script>
         <br> <br>   <br>   <br>   <br>
         <a href="./Discounts.html" style="float: right; margin-right: 4%; font-size: 18px;">
-            <button class="next">View Discounts</button>
+            <button class="btn1">View Discounts</button>
           </a>     
-        <br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
         <hr>
         <footer align="center">
             <p span style="color: rgb(255, 255, 255);">Last Updated 23/03/2022</p>
-            <p><i> <span style="color: rgb(255, 255, 255);">Page editor:</span><a href="sithum.html">Student (4)-Sithum Raveesha</a></i></p>
+            <p><i> <span style="color: rgb(255, 255, 255);">Page editor:</span><a href="sithum.html"><span style="color: red"> (4)-Sithum Raveesha</span></a></i></p>
             <p span style="color: rgb(255, 255, 255);">Copyright &copy; All rights Reserved </p>
             </footer>
     </body>

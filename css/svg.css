@@ -5,15 +5,14 @@ body{
     max-width: 100%;
     height: auto;
 }
-
 footer{
 	background-color: #111;
 	text-align: center;
 	border-top-style: solid;
 	border-top-width: 2px;
 	border-top-color:rgba(151, 151, 151,0.6);
-	bottom: -10%;
-	position: absolute;
+	padding-top:10px;
+	padding-bottom:18px;
 	width:100%;
 	font-size: 14px;
  }

@@ -1,25 +1,140 @@
-/* body {
-    background-color: black;
-} */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
 
-#nav-bar li {
-    font-size: 30px;
-    display: inline;
-    padding: 10px;
-    margin-left: 80px;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+#logo {
+    width: 200px;
+    padding: 0 20px;
+    margin-top: 7px;
+    line-height: 80px;
 }
 
 #nav-bar {
-    position: fixed;
-    top: 0px;
-    left: 300px;
-    right: 0px;
-    width: 1200px;
+    background: #17171f00;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     height: 80px;
-    backdrop-filter: blur(1px);
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    box-shadow: rgb(0, 0, 0) 0px 22px 50px 4px;
+    width: 100%;
+}
+
+#nav-bar ul {
+    float: right;
+    margin-right: 20px;
+}
+
+#nav-bar ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 3VW;
+}
+
+#nav-bar ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+#nav-bar a {
+    display: block;
+    height: 17px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 45px;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#nav-bar a:hover {
+    background-color: #2ee59d;
+    box-shadow: 0px 35px 20px #2ee59c8a;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+#nav-bar a:active {
+    transform: translateY(-7px);
+}
+
+.check-button {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#checkbox {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    #logo {
+        padding-left: 50px;
+    }
+
+    #nav-bar ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .check-button {
+        display: block;
+    }
+
+    #nav-bar ul {
+        position: fixed;
+        width: 20%;
+        height: 100vh;
+        top: 80px;
+        right: -50%;
+        text-align: center;
+        transition: all 0.5s;
+        box-shadow: 0 25px 45px rgba(80, 75, 75, 0.472);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    #nav-bar a {
+        display: inline;
+        height: 0px;
+    }
+
+    #nav-bar a:hover {
+        color: #fff;
+        box-shadow: 0px 10px 20px #2ee59c8a;
+    }
+
+    #nav-bar ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #nav-bar ul li a {
+        font-size: 20px;
+    }
+
+    #nav-bar a:hover,
+    .nav-bar-titles {
+        background: none;
+    }
+
+    #checkbox:checked ~ ul {
+        left: 80%;
+    }
 }
 
 body {

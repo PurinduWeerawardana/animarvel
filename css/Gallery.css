@@ -10,7 +10,7 @@ footer{
 	font-size: 14px;
  }
 .red{
-  background-color:#ff0000;
+  background-color:rgb(255, 38, 0);
   }
 .orange{
   background-color:#FFA500;
@@ -138,51 +138,6 @@ animation-iteration-count: 1.5;
 90% { transform: translate(1px, 2px) rotate(0deg); }
 100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-#logo{
-position: fixed;
-margin-top: -15%;
-height:100px;
-width:200px;  
-}
-/* body {
-background-color: black;
-} */
-
-#nav-bar li {
-font-size: 30px;
-display: inline;
-padding: 10px;
-margin-left: 80px;
-text-shadow: 5px 5px 5px rgb(0, 0, 0);
-}
-
-#nav-bar {
-position: fixed;
-top: 0px;
-left: 300px;
-right: 0px;
-width: 1200px;
-height: 80px;
-backdrop-filter: blur(1px);
-/* offset-x | offset-y | blur-radius | spread-radius | color */
-box-shadow: rgb(0, 0, 0) 0px 22px 50px 4px;
-}
-
-/*.glow {
-  font-size: 70px;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #00ffaa, 0 0 40px #00ffaa, 0 0 50px #00ffaa, 0 0 60px #00ffaa, 0 0 70px #00ffaa, 0 0 80px #00ffaa;
-  }
-}*/
 
 body{
   background-color: #000000;
@@ -191,13 +146,13 @@ body{
 .btn1{
 	margin: 5pt;
 	border-color: #00ffaa;
-	color: #fff;
 	height: 35px;
 	width: 140px;
 	border-radius: 10px;
 }
 
 .btn1:hover{
+  background-color: #40E0D0;
 	cursor: pointer;
 }
 .btn1 a{
