@@ -113,9 +113,7 @@ section{
    color:var(--black);
 }
 
-.header .navbar a:hover{
-   color:var(--main-color);
-}
+
 
 #menu-btn{
    font-size: 2.5rem;

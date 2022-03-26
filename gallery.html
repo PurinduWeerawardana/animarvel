@@ -4,30 +4,90 @@
         <meta charset = "utf-8">
         <title>Gallery</title>
         <link rel="stylesheet" href="./css/Gallery.css" />
-        <link rel="stylesheet" href="./css/style.css"/>
-        <script>
+   
+        <link rel="stylesheet" href="./css/navigation-bar.css" />
+        <script src="./nav-bar/navigation.js" defer></script>
+        <script
             src="https://kit.fontawesome.com/0357fe80c5.js"
             crossorigin="anonymous"
-        </script>
+        ></script>
   
     </head>
     <body>
-        <nav id="nav-bar">
-            <input type="checkbox" id="checkbox" name="checkbox" />
-            <label for="checkbox" class="check-button">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <img id="logo" src="./images/logo.png" alt="logo" />
-            <ul>
-                <li><a href="" class="nav-bar-titles">Home</a></li>
-                <li><a href="">Merch</a></li>
-                <li><a href="">Quize</a></li>
-                <li><a href="">Query</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Site-Map</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
-            <hr size="1">
+        <header id="primary-header-navigation">
+            <div id="logo"></div>
+            <button
+                class="navigation-toggle"
+                aria-controls="navigation-bar-ul"
+                aria-expanded="false"
+            >
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav class="navigation-bar">
+                <ul
+                    id="navigation-bar-ul"
+                    data-visible="false"
+                    class="navigation-bar-ul"
+                >
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Home"
+                            >&nbsp;&nbsp;Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Home"
+                            >&nbsp;&nbsp;Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
         </nav>
         <svg viewBox="0 0 960 300">
             <symbol id="s-text">
@@ -45,26 +105,28 @@
         <div >
             <select id="selectid">
                 <option value="" selected disabled hidden> --Select Background Color--</option>
-                <option class="tred">Red</option>
+                <option class="red">Red</option>
                 <option class="orange">Orange</option>
                 <option class="green">LightSeaGreen</option>
                 <option class="blue">DeepSkyBlue</option>
                 <option class="black">Black</option>
             </select>
             <button class="btn1" onclick="colorbg()">Switch The Background</button>
-            
-            <select id="select2">
-            <option value="" selected disabled hidden> --Select Font Color--</option>
-            <option class="bl">Black</option>
-            <option class="ig">Indigo</option>
-            <option class="dr">Dark Red</option>
-            <option class="dg">Dark Green</option> 
-            <option class="ny">Navy</option>
-            </select>
-            <button class="btn1" onclick="selecttx()">Switch The Font Color</button>
+            <br>
+                <select id="select2" onclick="selecttx()">
+                  <option value="" selected disabled hidden> --Select Font Color--</option>
+                  <option style="background-color:#ff0000;">Red</option>
+                  <option style="background-color:#011591;" >Dark Blue</option>
+                  <option style="background-color:#800080;">Purple</option>
+                  <option style="background-color:#0c6101;">Dark Green</option>
+                  <option style="background-color:#ffffff;" >white</option>
+                </select>
+             </div>
         </div>
         <div style= "margin-top: 5%">		
             <!--<h2 class="glow" style="text-align:center">Main Zones</h2>-->
+            <h2><p id="details" style="color:white ;text-align: center;">--Here are the 4 main zones in our AniMarvel wild life park--</h2></p>
+            <hr>
            <center>
             <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Midnight sun in Lofoten, Norway." width="400" height="300">
             <img class="myImages" id="myImg" src="./images/Thumbnails/d_20181208224534.png" alt="Fishermen's cabins in Lofoten, Norway" width="400" height="300">
@@ -79,6 +141,7 @@
             <img class="modal-content" id="img01">
             <div id="caption"></div>
             </div>
+            
 
         <script>
 
@@ -106,15 +169,26 @@
 		   var x=document.getElementById("selectid");
 		   var bgcolor=x.options[x.selectedIndex].value;
 		   document.body.style.backgroundColor=bgcolor;
-           console.log(x);
-           console.log(bgcolor);
 		}
-		function selecttx()
-		{
-		   var x=document.getElementById("select2");
-		   var txselect=x.options[x.selectedIndex].value;
-		   document.body.style.font=txselect;
-		}
+        function selecttx(){
+        var selectedColour=document.getElementById("select2").selectedIndex;
+      if(selectedColour=="1"){
+          document.getElementsById("details").style.color="#ff0000";
+      }
+      else if(selectedColour=="2"){
+          document.getElementById("details").style.color="#011591";
+      }
+      else if(selectedColour=="3"){
+          document.getElementById("details").style.color="#800080";
+      }
+      else if(selectedColour=="4"){
+          document.getElementById("details").style.color="#0c6101";
+      }
+      else if(selectedColour=="5"){
+         document.getElementById("details").style.color="#ffffff";
+
+      }
+}
         </script>
         <br> <br>   <br>   <br>   <br>
         <a href="./Discounts.html" style="float: right; margin-right: 4%; font-size: 18px;">
