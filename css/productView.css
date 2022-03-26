@@ -1,0 +1,257 @@
+.body-blur div:not(.product-view, .product-view div,) {
+  filter: blur(0.5rem);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.product-view {
+  font-family: "Turret Road", cursive;
+  width: 70%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(27, 27, 27);
+  z-index: 10;
+  border-radius: 40px;
+}
+.preview {
+  text-align: center;
+  width: 60%;
+  height: 100%;
+  float: left;
+  position: relative;
+  z-index: -1;
+}
+
+.preview img {
+  position: relative;
+  max-height: 90%;
+  max-width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0px 0px 20px #2ee59c8a;
+}
+
+#left-arrow {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+#right-arrow {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.order {
+  position: relative;
+  float: right;
+  width: 40%;
+  height: 100%;
+}
+
+#borderLeft {
+  border-left: 6px dashed #2ee59d;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90%;
+}
+
+.caption {
+  text-align: center;
+  color: #fff;
+  margin: 20px 0px 5px 0px;
+  font-size: 20px;
+  text-decoration: underline dashed #2ee59d;
+  text-underline-offset: 0.2em;
+}
+
+.size-selector .caption {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+#info-and-form {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item-description {
+  position: relative;
+}
+
+.item-description h1 {
+  margin: 0px 20px;
+  border-bottom: 3px dashed #2ee59d;
+  position: relative;
+  font-size: 3vw;
+  text-align: center;
+  color: #fff;
+}
+
+.item-description p {
+  margin: 10px;
+  position: relative;
+  font-size: 2vw;
+  text-align: center;
+  color: #fff;
+}
+
+#price {
+  font-family: "Kanit", sans-serif;
+  font-size: 2.5vw;
+}
+
+.order-form {
+  overflow: none;
+  position: relative;
+}
+
+.size-selector {
+  padding-bottom: 2vh;
+  position: relative;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #fff;
+}
+
+.radio-box {
+  height: 3vw;
+  width: 3vw;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0px 5px;
+}
+
+.radio-box label {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 80%;
+  padding-top: 20%;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background: #2ee59d;
+}
+
+.radio-box label:hover {
+  background: #aaad14;
+}
+
+.quantity-selector {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+#quantity,
+#plus,
+#minus {
+  font-family: "Turret Road", cursive;
+  background: none;
+  border: none;
+  text-align: center;
+  width: 10%;
+  color: #2ee59d;
+  padding: 0;
+}
+
+#quantity {
+  font-size: 4.5vw;
+  cursor: none;
+}
+
+#plus,
+#minus {
+  cursor: pointer;
+  font-size: 4.5vw;
+}
+
+.product-view .add-to-cart {
+  padding: 1.3em;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease 0s;
+  cursor: cell;
+  outline: none;
+}
+
+.product-view .add-to-cart:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px #2ee59c8a;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.product-view .add-to-cart:active {
+  transform: translateY(-7px);
+}
+
+.order-submit {
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+}
+
+#btnAddToCart {
+  margin-right: 1.5vw;
+}
+
+.close-button {
+  padding: 1vw 1vw;
+  border-radius: 30%;
+  background-color: red;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.5vw;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .preview {
+    width: 100%;
+    height: 42%;
+  }
+  .order {
+    margin-top: 1.5vh;
+    position: relative;
+    float: bottom;
+    width: 100%;
+    height: 50%;
+  }
+  #borderLeft{
+    display: none;
+  }
+}
