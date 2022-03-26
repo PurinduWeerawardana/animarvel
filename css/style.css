@@ -1,121 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("../images/animal-images/pexels-pixabay-247431.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    height: auto;
-    min-height: 100vh;
-    overflow-x: hidden;
+  background-image: url("../images/animal-images/pexels-pixabay-247431.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
-#buy-products {
-            position: relative;
-            width: 100%;
-            height: 450px;
-            border-radius: 30px;
-            overflow: hidden;
-        }
 
-        #heading {
-            height: 450px;
-            width: 100%;
-            float: left;
-        }
+/* Slideshow container */
+.slide-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
 
-        #heading h1 {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin: auto;
-            padding: 25px 0;
-            color: #2ee59d;
-            text-shadow: 5px 5px 5px #033d19;
-            font-size: 6vw;
-            font-family: "Turret Road", cursive;
-            text-align: center;
-            animation: animate 2s linear infinite;
-            background: rgba(0, 0, 0, 0.26);
-            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-            border: 1px solid #2ee59d;
-            -webkit-backdrop-filter: blur(25px);
-            backdrop-filter: blur(25px);
-            border-radius: 20px;
+/* Hide the images by default */
+.slides {
+  display: none;
+}
 
-        }
+.slide-image{
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
 
-        @keyframes animate {
-            0% {
-                opacity: 1;
-            }
+.slide-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-            80% {
-                opacity: 0;
-            }
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-            100% {
-                opacity: 1;
-            }
-        }
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-        #item-slideshow {
-            position: absolute;
-            left: 0;
-            height: 450px;
-            width: 100%;
-            float: right;
-            overflow: hidden;
-        }
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
-        #items img {
-            border-radius: 30px;
-            margin-bottom: 10px;
-            width: 100%;
-            height: 100%;
-        }
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
 
-        #items-left {
-            float: left;
-            width: 48%;
-            -webkit-animation-name: move;
-            -webkit-animation-duration: 25s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: up;
-            -webkit-animation-timing-function: linear;
-        }
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
-        @-webkit-keyframes move {
-            0% {
-                transform: translateY(0);
-            }
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-            100% {
-                transform: translateY(-100%);
-            }
-        }
+.active,
+.dot:hover {
+  background-color: #717171;
+}
 
-        #items-right {
-            float: right;
-            width: 48%;
-            -webkit-animation-name: move-down;
-            -webkit-animation-duration: 25s;
-            -webkit-animation-iteration-count: infinite;
-            -webkit-animation-direction: down;
-            -webkit-animation-timing-function: linear;
-        }
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-        @-webkit-keyframes move-down {
-            0% {
-                transform: translateY(-100%);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
-        }
+@keyframes fade {
+  from {
+    transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+            -webkit-transform: scale(1);
+  }
+}

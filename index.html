@@ -11,6 +11,7 @@
             src="https://kit.fontawesome.com/0357fe80c5.js"
             crossorigin="anonymous"
         ></script>
+        <script src="./scripts/main.js" defer></script>
         <title>Document</title>
     </head>
     <body>
@@ -88,59 +89,48 @@
                 </ul>
             </nav>
         </header>
-        <div id="buy-products">
-            <span id="item-slideshow">
-                <div id="items">
-                    <span id="items-left">
-                        <img
-                            src="./images/merch/t-shirts/t-shirt-1/preview-1.jpg"
-                            alt=""
-                        />
-                        <img
-                            src="./images/merch/t-shirts/t-shirt-3/preview-1.jpg"
-                            alt=""
-                            srcset=""
-                        />
-                        <img
-                            src="./images/merch/mugs/mug-2/preview-1.jpg"
-                            alt=""
-                            srcset=""
-                        />
-                        <img
-                            src="./images/merch/t-shirts/t-shirt-2/preview-1.jpg"
-                            alt=""
-                        />
-                    </span>
-                    <span id="items-right">
-                        <img
-                            src="./images/merch/t-shirts/t-shirt-4/preview-1.jpg"
-                            alt=""
-                        />
-                        <img
-                            src="./images/merch/others/face-mask/preview-1.jpg"
-                            alt=""
-                            srcset=""
-                        />
-                        <img
-                            src="./images/merch/others/cap/preview-1.jpg"
-                            alt=""
-                            srcset=""
-                        />
-                        <img
-                            src="./images/merch/others/bag/preview-1.jpg"
-                            alt=""
-                        />
-                    </span>
+        <!-- Slideshow container -->
+        <div class="slide-container">
+        
+            <!-- Full-width images with number and caption text -->
+            <div class="slides fade">
+                <div class="numbertext">1 / 3</div>
+                <div class="slide-image">
+                    <img src="./images/animal-images/pexels-egor-kamelev-751694.jpg">
                 </div>
-            </span>
-            <span id="heading">
-                <h1>
-                    <span id="cart-icon-heading"
-                        ><i class="fa-solid fa-cart-shopping"> </i
-                    ></span>
-                    Grab Your Merch Now!
-                </h1>
-            </span>
+                
+                <div class="text">Caption Text</div>
+            </div>
+        
+            <div class="slides fade">
+                <div class="numbertext">2 / 3</div>
+                <div class="slide-image">
+                    <img src="./images/animal-images/pexels-frans-van-heerden-1912176.jpg">
+                </div>
+                
+                <div class="text">Caption Two</div>
+            </div>
+        
+            <div class="slides fade">
+                <div class="numbertext">3 / 3</div>
+                <div class="slide-image">
+                    <img src="./images/animal-images/pexels-goran-vrakela-615277.jpg">
+                </div>
+                
+                <div class="text">Caption Three</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </body>
 </html>
