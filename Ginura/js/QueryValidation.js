@@ -227,4 +227,6 @@ function again(){
     document.getElementById("query-subjects-box").classList.add("not-display");
     document.getElementById("ghosting-title").classList.remove("not-display");
     document.getElementById("ghosting-title").classList.add("display");
+
 }
+
