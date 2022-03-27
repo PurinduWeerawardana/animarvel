@@ -418,7 +418,7 @@ form textarea:hover {
     max-width: 80%;
     white-space: nowrap;
     overflow: auto;
-    text-overflow: ellipsis;
+    text-overflow: visible;
 }
 
 #filled-query .list .content .filled-labels {
@@ -434,7 +434,7 @@ form textarea:hover {
     max-width: 100%;
     white-space: nowrap;
     overflow: auto;
-    text-overflow: ellipsis;
+    text-overflow: visible;
 }
 
 #filled-query .list:hover .content .filled-labels,

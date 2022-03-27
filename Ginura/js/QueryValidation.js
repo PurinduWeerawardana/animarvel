@@ -219,6 +219,7 @@ function changeToSubjects(){
     document.getElementById("query-subjects-box").classList.add("display");
 }
 
+
 function backToQuestion(){
     document.getElementById("query-subjects-box").classList.remove("display");
     document.getElementById("query-subjects-box").classList.add("not-display");
