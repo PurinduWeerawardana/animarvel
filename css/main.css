@@ -5,6 +5,7 @@
 }
 
 .heading-title {
+    width: 100%;
   text-align: center;
   margin-bottom: 3rem;
   font-size: 6rem;
@@ -45,6 +46,8 @@ h3 {
 }
 
 .about {
+    position: relative;
+    top: 115vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -52,7 +55,7 @@ h3 {
 }
 
 .about .image {
-  flex: 1 1 41rem;
+  flex: 10 1 41rem;
 }
 
 .about .image img {
