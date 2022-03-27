@@ -210,3 +210,21 @@ function selectSubjectQueryForm(){
     document.getElementById("subject").classList.remove("empty-select");
     document.getElementById("subject").classList.add("filled-select");
 }
+
+function timingToSubjects(){
+    changeToSubjects()
+}
+
+function changeToSubjects(){
+    document.getElementById("ghosting-title").classList.remove("display");
+    document.getElementById("ghosting-title").classList.add("not-display");
+    document.getElementById("query-subjects-box").classList.remove("not-display");
+    document.getElementById("query-subjects-box").classList.add("display");
+}
+
+function again(){
+    document.getElementById("query-subjects-box").classList.remove("display");
+    document.getElementById("query-subjects-box").classList.add("not-display");
+    document.getElementById("ghosting-title").classList.remove("not-display");
+    document.getElementById("ghosting-title").classList.add("display");
+}
