@@ -173,3 +173,40 @@ function printUnfilledFields(myQueryFormRef,unfilled_fields){
     }
 }
 
+let storage = window.localStorage;
+function getSelectedSubjectMainPage(clicked_id){
+    window.open("../Ginura/QueryForm.html","_self");
+
+    if(clicked_id==="Tickets-button"){
+        let subject = "Tickets";
+        storage.setItem("selected-subject",subject);
+   
+    }else if(clicked_id === "Deliver-button"){
+        let subject = "Delivery";
+        storage.setItem("selected-subject",subject);
+
+    }else if(clicked_id === "Product-button"){
+        let subject = "Product";
+        storage.setItem("selected-subject",subject);
+
+    }else if(clicked_id === "Website-button"){
+        let subject = "Website";
+        storage.setItem("selected-subject",subject);
+
+    }else if(clicked_id === "Complains-button"){
+        let subject = "Complains";
+        storage.setItem("selected-subject",subject);
+
+    }else{
+        let subject = "Other";
+        storage.setItem("selected-subject",subject);
+    }
+}
+
+function selectSubjectQueryForm(){
+    let storage = window.localStorage;
+    let subject = storage.getItem("selected-subject")
+    document.getElementById("subject").value=subject;
+    document.getElementById("subject").classList.remove("empty-select");
+    document.getElementById("subject").classList.add("filled-select");
+}
