@@ -211,9 +211,6 @@ function selectSubjectQueryForm(){
     document.getElementById("subject").classList.add("filled-select");
 }
 
-function timingToSubjects(){
-    changeToSubjects()
-}
 
 function changeToSubjects(){
     document.getElementById("ghosting-title").classList.remove("display");
