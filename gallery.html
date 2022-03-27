@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Gallery</title>
+        <link rel="stylesheet" href="./css/Gallery.css" />
+   
+        <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
+        <script src="./nav-bar/navigation.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/0357fe80c5.js"
+            crossorigin="anonymous"
+        ></script>
+  
+    </head>
+    <body>
+        <header id="primary-header-navigation">
+            <div id="logo"></div>
+            <button
+                class="navigation-toggle"
+                aria-controls="navigation-bar-ul"
+                aria-expanded="false"
+            >
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav class="navigation-bar">
+                <ul
+                    id="navigation-bar-ul"
+                    data-visible="false"
+                    class="navigation-bar-ul"
+                >
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Home"
+                            >&nbsp;&nbsp;Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Home"
+                            >&nbsp;&nbsp;Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Icon"
+                            >&nbsp;&nbsp;Icon</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        </nav>
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">--Main Zones--</text>
+            </symbol>
+        
+            <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+        
+        <div style= "margin-top: 5%">		
+            <!--<h2 class="glow" style="text-align:center">Main Zones</h2>-->
+            <h2><p id="details" style="color:white ;text-align: center;">--Here are the 4 main zones in our AniMarvel wild life park--</h2></p>
+            <hr>
+           <center>
+            <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Go on a venture to witness the beauty under the sea. Animarvel aquarium is a perfect home for more than 1000 species of marine organisms. Enjoy the ride under water exploring these magical creatures.Dont forget to say hello to our dolphines!
+            " width="400" height="300">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/d_20181208224534.png" alt="Have you been in a frostbite freeze to see what the penguins are upto? If not Animarvel aquarium allows you to meet the finest arctic prides. Wave at the seals and polar bears and make sure to be at their feeding times to witness the best views." width="400" height="300">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/jurong-birdpark_2.png" alt="Enjoy the wings of the hummingbird to the largest ostrich visit the bird park of any marvel wildlife adventure to explore the kingdom of aves. Visit our hatchery to witness the births
+            and get the wonderful chance of feeding them. Don't miss the valuable opportunity to change your display picture with the birds in hand." width="400" height="300"><br>
+            <img class="myImages" id="myImg" src="./images/Thumbnails/Reptiles.jpg.png" alt="It sounds dangerous but they are the paramounts for the balance of the nature. Get the chance of to witness the extreme wildlife adventure at our reptile cave and see the creepers dancing 
+            to our wild tunes. Will you ever imagine how our chameleons catch preys? come see how their longue tongue dominates. Trust us, that does worth a visit." width="400" height="300">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/Tera-park.png" alt="Welcome to animarvel's signature attraction of the tera park. It is all you need to satisfy and enjoy the views of lions, elephants, and other wildlings. Get along in one of our observatory trucks and get as much as possible. Enjoy the best that animarvel can offer you which is our night safari, where it will be mind-blowing to observe the nocturnal points of pride." width="400" height="300">
+        </center>  
+          
+
+            <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+            </div>
+        
+
+        <script>
+
+  
+            var modal = document.getElementById('myModal');
+            var images = document.getElementsByClassName('myImages');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+  
+            img.onclick = function(evt) {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        function colorbg()
+		{
+		   var x=document.getElementById("selectid");
+		   var bgcolor=x.options[x.selectedIndex].value;
+		   document.body.style.backgroundColor=bgcolor;
+		}
+        function selecttx(){
+        var selectedColour=document.getElementById("select2").selectedIndex;
+      if(selectedColour=="1"){
+          document.getElementsById("caption").style.color="#ff0000";
+      }
+      else if(selectedColour=="2"){
+          document.getElementById("caption").style.color="#011591";
+      }
+      else if(selectedColour=="3"){
+          document.getElementById("caption").style.color="#800080";
+      }
+      else if(selectedColour=="4"){
+          document.getElementById("caption").style.color="#0c6101";
+      }
+      else if(selectedColour=="5"){
+         document.getElementById("caption").style.color="#ffffff";
+
+      }
+}
+        </script>
+        <div style= "margin-bottom:-8%">
+            <select id="selectid">
+                <option value="" selected disabled hidden> --Select Background Color--</option>
+                <option class="red">Red</option>
+                <option class="orange">Orange</option>
+                <option class="green">LightSeaGreen</option>
+                <option class="blue">DeepSkyBlue</option>
+                <option class="black">Black</option>
+            </select>
+            <button class="btn1" onclick="colorbg()">Switch The Background</button>
+            <br>
+                <select id="select2" onclick="selecttx()">
+                  <option value="" selected disabled hidden> --Select Font Color--</option>
+                  <option style="background-color:#ff0000;">Red</option>
+                  <option style="background-color:#011591;" >Dark Blue</option>
+                  <option style="background-color:#800080;">Purple</option>
+                  <option style="background-color:#0c6101;">Dark Green</option>
+                  <option style="background-color:#ffffff;" >white</option>
+                </select>
+             </div>
+        </div>
+
+        <br> <br>   <br>   <br>   <br>
+        <a href="./Discounts.html" style="float: right; margin-right: 4%; font-size: 18px;">
+            <button class="btn1">View Discounts</button>
+          </a>     
+        <br><br><br><br><br><br><br><br><br>
+        <hr>
+        <footer align="center">
+            <p span style="color: rgb(255, 255, 255);">Last Updated 23/03/2022</p>
+            <p><i> <span style="color: rgb(255, 255, 255);">Page editor:</span><a href="sithum.html"><span style="color: red"> (4)-Sithum Raveesha</span></a></i></p>
+            <p span style="color: rgb(255, 255, 255);">Copyright &copy; All rights Reserved </p>
+            </footer>
+    </body>
+    </html>
