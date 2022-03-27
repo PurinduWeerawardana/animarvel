@@ -1,4 +1,6 @@
-function checkNames(inputRef){
+document.getElementById("name").addEventListener("change",checkNames);
+document.getElementById("name").addEventListener("click",checkNames);
+function checkNames(){
     let name_object = document.getElementById("name");
     if (name_object.value !== ""){
         document.getElementById("name").classList.remove("empty-input-text");
@@ -10,7 +12,10 @@ function checkNames(inputRef){
     }
 }
 
-function checkAndValidateEmail(emailRef){
+
+document.getElementById("email").addEventListener("change",checkAndValidateEmail);
+document.getElementById("email").addEventListener("click",checkEmail);
+function checkAndValidateEmail(){
     let email_object = document.getElementById("email");
 
     if(email_object.value === ""){
@@ -33,7 +38,7 @@ function checkAndValidateEmail(emailRef){
     }
 }
 
-function checkEmail(emailRef){
+function checkEmail(){
     let email_object = document.getElementById("email");
 
     if(email_object.value === ""){
@@ -55,7 +60,9 @@ function checkEmail(emailRef){
     }
 }
 
-function checkSubject(subjectRef){
+document.getElementById("subject").addEventListener("change",checkSubject);
+document.getElementById("subject").addEventListener("click",checkSubject);
+function checkSubject(){
     let subject_object = document.getElementById("subject");
     if (subject_object[subject_object.selectedIndex].value != ""){
         document.getElementById("subject").classList.remove("empty-select");
@@ -68,7 +75,9 @@ function checkSubject(subjectRef){
 }
 
 
-function checkDetails(textRef){
+document.getElementById("details").addEventListener("change",checkDetails);
+document.getElementById("details").addEventListener("click",checkDetails);
+function checkDetails(){
     let textarea_object = document.getElementById("details");
     if (textarea_object.value !== ""){
         document.getElementById("details").classList.remove("empty-textarea");
@@ -80,35 +89,38 @@ function checkDetails(textRef){
     }
 }
 
-function viewQueryButton(myQueryFormRef){
+document.getElementById("view-query-button").addEventListener("click",viewQueryButton);
+function viewQueryButton(){
     let unfilled_fields = [];
     let filled_fields = [];
-    validateName(myQueryFormRef, unfilled_fields, filled_fields);
-    validateEmail(myQueryFormRef, unfilled_fields, filled_fields);
-    validateSubject(myQueryFormRef,unfilled_fields,filled_fields);
-    validateDetails(myQueryFormRef,unfilled_fields, filled_fields);
+    validateName(unfilled_fields, filled_fields);
+    validateEmail(unfilled_fields, filled_fields);
+    validateSubject(unfilled_fields,filled_fields);
+    validateDetails(unfilled_fields, filled_fields);
 
     if(unfilled_fields.length == 0){
-        printFilledFields(myQueryFormRef,filled_fields);
+        printFilledFields(filled_fields);
     } else{
-        printUnfilledFields(myQueryFormRef,unfilled_fields);
+        printUnfilledFields(unfilled_fields);
     }
 }
 
-function editQueryForm(editQueryFormRef){
+document.getElementById("edit-query-button").addEventListener("click",editQueryForm);
+function editQueryForm(){
     document.getElementById("filled-query").style.display = "none";
     document.getElementById("query-form-container").style.display = "block";
 }
 
+document.getElementById("send-query-button").addEventListener("click",mailForm);
 function mailForm(){
     document.getElementById("filled-query").style.display = "none";
     document.getElementById("query-form").submit();
 }
 
-function validateName(myQueryFormRef, unfilled_fields, filled_fields){
-    let name= myQueryFormRef.name.value;
+function validateName(unfilled_fields, filled_fields){
+    let name= document.getElementById("name").value;
     if(name != ""){
-        filled_fields[filled_fields.length] = (myQueryFormRef.name.value);
+        filled_fields[filled_fields.length] = (name);
     }
     else{
         unfilled_fields[unfilled_fields.length] = ("Name");
@@ -116,10 +128,10 @@ function validateName(myQueryFormRef, unfilled_fields, filled_fields){
     }
 }
 
-function validateEmail(myQueryFormRef, unfilled_fields, filled_fields){
-    let email = myQueryFormRef.email.value;
+function validateEmail(unfilled_fields, filled_fields){
+    let email = document.getElementById("email").value;
     if(email != ""){
-        filled_fields[filled_fields.length] = (myQueryFormRef.email.value);
+        filled_fields[filled_fields.length] = (email);
     }
     else{
         unfilled_fields[unfilled_fields.length] = ("Email");
@@ -127,9 +139,9 @@ function validateEmail(myQueryFormRef, unfilled_fields, filled_fields){
     }
 }
     
-function validateSubject(myQueryFormRef,unfilled_fields,filled_fields){
+function validateSubject(unfilled_fields,filled_fields){
     let subject_array = []
-    subject_array = myQueryFormRef.subject;
+    subject_array = document.getElementById("subject");
 
     if (subject_array.selectedIndex != ""){
         filled_fields[filled_fields.length] = String(subject_array[subject_array.selectedIndex].value);
@@ -140,10 +152,10 @@ function validateSubject(myQueryFormRef,unfilled_fields,filled_fields){
     }
 }
 
-function validateDetails(myQueryFormRef, unfilled_fields, filled_fields){
-    let details = myQueryFormRef.details.value;
+function validateDetails(unfilled_fields, filled_fields){
+    let details = document.getElementById("details").value;
     if (details != ""){
-        filled_fields[filled_fields.length] = (myQueryFormRef.details.value)
+        filled_fields[filled_fields.length] = (details)
     }
     else{
         unfilled_fields[unfilled_fields.length] = ("Details");
@@ -154,14 +166,14 @@ function validateDetails(myQueryFormRef, unfilled_fields, filled_fields){
 function printFilledFields(filled_fields){
     const element_ids = ["filled-name","filled-email", "filled-subject","filled-details"]
     for (let index=0; index<4; index++){
-        document.getElementById(element_ids[index]).innerHTML = filled_fields[index].value;
+        document.getElementById(element_ids[index]).innerHTML = filled_fields[index];
     }
     document.getElementById("query-form-container").style.display = "none";
     document.getElementById("filled-query").style.display = "block";
 }
 
 
-function printUnfilledFields(myQueryFormRef,unfilled_fields){
+function printUnfilledFields(unfilled_fields){
     if (unfilled_fields.length == 1){
         let unfilled_field_string = unfilled_fields.join(" , ");
         alert("Unfilled field is [" + unfilled_field_string + "] Please fil it!");
