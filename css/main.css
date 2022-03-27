@@ -1,7 +1,9 @@
 .zones {
   position: relative;
   top: 90vh;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .heading-title {
