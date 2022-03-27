@@ -138,7 +138,7 @@ section{
  .circle1 {
    margin: 35px;
    margin-bottom: -70px;
-   background-image: url(../images/main/pic-5.png);
+   background-image: url(../images/Thumbnails/pic-5.png);
    height: 100px;
    width: 100px;
    border-radius: 50%;
@@ -147,7 +147,7 @@ section{
  .circle2 {
    margin: 35px;
    margin-bottom: -70px;
-   background-image: url(../images/main/pic-2.png);
+   background-image: url(../images/Thumbnails/pic-2.png);
    height: 100px;
    width: 100px;
    border-radius: 50%;
@@ -156,7 +156,7 @@ section{
  .circle3 {
    margin: 35px;
    margin-bottom: -70px;
-   background-image: url(../images/main/pic-3.png);
+   background-image: url(../images/Thumbnails/pic-3.png);
    height: 100px;
    width: 100px;
    border-radius: 50%;
@@ -165,7 +165,7 @@ section{
  .circle4 {
    margin: 35px;
    margin-bottom: -70px;
-   background-image: url(../images/main/pic-4.png);
+   background-image: url(../images/Thumbnails/pic-4.png);
    height: 100px;
    width: 100px;
    border-radius: 50%;
