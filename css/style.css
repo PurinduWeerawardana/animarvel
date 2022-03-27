@@ -143,26 +143,3 @@ header {
     -webkit-transform: scale(1);
   }
 }
-
-#products-area{
-  position: relative;
-  margin-top: 90vh;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-}
-
-#cart-icon-heading {
-  color: #ffcc00;
-}
-
-#products-area h1{
-  width: 95%;
-  color: #2ee59d;
-  text-shadow: 2px 2px #ffcc00;
-  font-size: 5vw;
-  font-family: "Turret Road", cursive;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
