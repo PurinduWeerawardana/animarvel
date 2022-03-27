@@ -4,8 +4,8 @@
 	<meta charset = "UTF-8">
 	<title>AniMarvel</title>
 	<link rel="stylesheet" href="./css/svg.css" />
-	<link rel="stylesheet" href="./css/style.css" />
-
+	<link rel="stylesheet" href="./nav-bar/navigation-bar.css"/>
+	<script src="./nav-bar/navigation.js" defer></script>
 	<script
             src="https://kit.fontawesome.com/0357fe80c5.js"
             crossorigin="anonymous"
@@ -13,45 +13,80 @@
 	
 </head>
 <body>
-    <!--<div id="header">
-		<div id=title>
-			<img src="./images/logo.png" width="350pt" alt="Binge logo">
-			
-			<font style="font-size: 20pt; float: right; padding-right: 70pt;">
-				<br><input id="textbox" type="text" name="sname" placeholder="Search">
-			</font>
-		</div>
-		<br>
-		<div class="dropdown" id=navbar align="center">
-			<li><button><a href="MainPage.html"><span style="fon">Home</span></a></button>|</li>
-			<li><button><a href="ProductForm.html">Buy Merch</a></button>|</li>
-			<li><button><a href="QuizIntro.html">Take Quiz</a></button>|</li>
-			<li><button class="dropbtn"><a href="./gallery.html">Gallery</a>
-				<div class="dropdown-content">
-					<a href="./svg.html">SiteMap</a>
-				</div>
-			</button>|
-		</li>
-			<li><button><a href="CommentForm.html">Query Form</a></button>|</li>
-			<li><button><a href="AuthorPage.html">About Us</a></button></li>
-		</div> 
-	</div></-->
-	<nav id="nav-bar">
-		<input type="checkbox" id="checkbox" name="checkbox" />
-		<label for="checkbox" class="check-button">
-			<i class="fa-solid fa-bars"></i>
-		</label>
-		<img id="logo" src="./images/logo.png" alt="logo" />
-		<ul>
-			<li><a href="" class="nav-bar-titles">Home</a></li>
-                <li><a href="">Merch</a></li>
-                <li><a href="">Quize</a></li>
-                <li><a href="">Query</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Site-Map</a></li>
-                <li><a href="">About Us</a></li>
-		</ul>
-		<hr size="1">
+	<header id="primary-header-navigation">
+		<div id="logo"></div>
+		<button
+			class="navigation-toggle"
+			aria-controls="navigation-bar-ul"
+			aria-expanded="false"
+		>
+			<span class="sr-only">Menu</span>
+		</button>
+		<nav class="navigation-bar">
+			<ul
+				id="navigation-bar-ul"
+				data-visible="false"
+				class="navigation-bar-ul"
+			>
+				<li>
+					<a
+						href=""
+						class="nav-bar-titles"
+						data-text="&nbsp;&nbsp;Home"
+						>&nbsp;&nbsp;Home</a
+					>
+				</li>
+				<li>
+					<a
+						href=""
+						class="nav-bar-titles"
+						data-text="&nbsp;&nbsp;Home"
+						>&nbsp;&nbsp;Home</a
+					>
+				</li>
+				<li>
+					<a
+						href=""
+						class="nav-bar-titles"
+						data-text="&nbsp;&nbsp;Icon"
+						>&nbsp;&nbsp;Icon</a
+					>
+				</li>
+				<li>
+					<a
+						href=""
+						class="nav-bar-titles"
+						data-text="&nbsp;&nbsp;Icon"
+						>&nbsp;&nbsp;Icon</a
+					>
+				</li>
+				<li>
+					<a
+						href=""
+						class="nav-bar-titles"
+						data-text="&nbsp;&nbsp;Icon"
+						>&nbsp;&nbsp;Icon</a
+					>
+				</li>
+				<li>
+					<a
+						href=""
+						class="nav-bar-titles"
+						data-text="&nbsp;&nbsp;Icon"
+						>&nbsp;&nbsp;Icon</a
+					>
+				</li>
+				<li>
+					<a
+						href=""
+						class="nav-bar-titles"
+						data-text="&nbsp;&nbsp;Icon"
+						>&nbsp;&nbsp;Icon</a
+					>
+				</li>
+			</ul>
+		</nav>
+	</header>
 	</nav>
 	
 	<div>

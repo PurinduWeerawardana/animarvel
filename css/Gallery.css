@@ -148,7 +148,7 @@ body{
 	margin: 5pt;
 	border-color: #00ffaa;
 	height: 35px;
-	width: 140px;
+	width: 180px;
 	border-radius: 10px;
 }
 
@@ -157,6 +157,21 @@ body{
 	cursor: pointer;
 }
 .btn1 a{
+	text-decoration:none;
+}
+.btn2{
+	margin: 5pt;
+	border-color: #00ffaa;
+	height: 35px;
+	width: 180px;
+	border-radius: 10px;
+}
+
+.btn2:hover{
+  background-color: #40E0D0;
+	cursor: pointer;
+}
+.btn2 a{
 	text-decoration:none;
 }
 .next{

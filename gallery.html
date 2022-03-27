@@ -5,7 +5,7 @@
         <title>Gallery</title>
         <link rel="stylesheet" href="./css/Gallery.css" />
    
-        <link rel="stylesheet" href="./css/navigation-bar.css" />
+        <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
         <script src="./nav-bar/navigation.js" defer></script>
         <script
             src="https://kit.fontawesome.com/0357fe80c5.js"
@@ -102,34 +102,15 @@
                 <use xlink:href="#s-text" class="text-copy"></use>
             </g>
         </svg>
-        <div >
-            <select id="selectid">
-                <option value="" selected disabled hidden> --Select Background Color--</option>
-                <option class="red">Red</option>
-                <option class="orange">Orange</option>
-                <option class="green">LightSeaGreen</option>
-                <option class="blue">DeepSkyBlue</option>
-                <option class="black">Black</option>
-            </select>
-            <button class="btn1" onclick="colorbg()">Switch The Background</button>
-            <br>
-                <select id="select2" onclick="selecttx()">
-                  <option value="" selected disabled hidden> --Select Font Color--</option>
-                  <option style="background-color:#ff0000;">Red</option>
-                  <option style="background-color:#011591;" >Dark Blue</option>
-                  <option style="background-color:#800080;">Purple</option>
-                  <option style="background-color:#0c6101;">Dark Green</option>
-                  <option style="background-color:#ffffff;" >white</option>
-                </select>
-             </div>
-        </div>
+        
         <div style= "margin-top: 5%">		
             <!--<h2 class="glow" style="text-align:center">Main Zones</h2>-->
             <h2><p id="details" style="color:white ;text-align: center;">--Here are the 4 main zones in our AniMarvel wild life park--</h2></p>
             <hr>
            <center>
-            <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Midnight sun in Lofoten, Norway." width="400" height="300">
-            <img class="myImages" id="myImg" src="./images/Thumbnails/d_20181208224534.png" alt="Fishermen's cabins in Lofoten, Norway" width="400" height="300">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/Aquarium.png" alt="Go on a venture to witness the beauty under the sea. Animarvel aquarium is a perfect home for more than 1000 species of marine organisms. Enjoy the ride under water exploring these magical creatures.Dont forget to say hello to our dolphines!
+            " width="400" height="300">
+            <img class="myImages" id="myImg" src="./images/Thumbnails/d_20181208224534.png" alt="Have you been in a frostbite freeze to see what the penguins are upto? If not Animarvel aquarium allows you to meet the finest arctic prides. Wave at the seals and polar bears and make sure to be at their feeding times to witness the best views." width="400" height="300">
             <img class="myImages" id="myImg" src="./images/Thumbnails/jurong-birdpark_2.png" alt="Gerirangerfjord, Norway" width="400" height="300"><br>
             <img class="myImages" id="myImg" src="./images/Thumbnails/Reptiles.jpg.png" alt="Gerirangerfjord, Norway" width="400" height="300">
             <img class="myImages" id="myImg" src="./images/Thumbnails/Tera-park.png" alt="Gerirangerfjord, Norway" width="400" height="300">
@@ -190,6 +171,28 @@
       }
 }
         </script>
+        <div style= "margin-bottom:-8%">
+            <select id="selectid">
+                <option value="" selected disabled hidden> --Select Background Color--</option>
+                <option class="red">Red</option>
+                <option class="orange">Orange</option>
+                <option class="green">LightSeaGreen</option>
+                <option class="blue">DeepSkyBlue</option>
+                <option class="black">Black</option>
+            </select>
+            <button class="btn1" onclick="colorbg()">Switch The Background</button>
+            <br>
+                <select id="select2" onclick="selecttx()">
+                  <option value="" selected disabled hidden> --Select Font Color--</option>
+                  <option style="background-color:#ff0000;">Red</option>
+                  <option style="background-color:#011591;" >Dark Blue</option>
+                  <option style="background-color:#800080;">Purple</option>
+                  <option style="background-color:#0c6101;">Dark Green</option>
+                  <option style="background-color:#ffffff;" >white</option>
+                </select>
+             </div>
+        </div>
+
         <br> <br>   <br>   <br>   <br>
         <a href="./Discounts.html" style="float: right; margin-right: 4%; font-size: 18px;">
             <button class="btn1">View Discounts</button>
