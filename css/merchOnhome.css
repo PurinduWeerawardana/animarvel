@@ -8,13 +8,12 @@
 }
 
 #cart-icon-heading {
-    color: #ffcc00;
+    color: #2ee59d;
 }
 
 #merch-area h1 {
     width: 95%;
-    color: #2ee59d;
-    text-shadow: 2px 2px #ffffff;
+    color: #fff;
     font-size: 12vh;
     text-align: center;
     margin-right: auto;
@@ -67,7 +66,7 @@
     display: block;
     font-family: "Roboto", sans-serif;
     font-size: 2rem;
-    text-shadow: 2px 2px #ffffff;
+    text-shadow: 4px 4px 10px #2e2828;
     transition: 0.4s;
     background: rgba(49, 40, 40, 0.692);
     -webkit-backdrop-filter: blur(0.5rem);
