@@ -87,7 +87,7 @@ header {
   text-align: center;
 }
 
-#img-slide-1{
+#img-slide-1 {
   top: 20vh;
   left: 10vw;
 }
@@ -100,6 +100,11 @@ header {
 #img-slide-3 {
   top: 45vh;
   left: 5vw;
+}
+
+.zoom-in {
+  animation-name: zoom-in;
+  animation-duration: 1.5s;
 }
 
 .zoom-out {
@@ -125,6 +130,17 @@ header {
   from {
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
   }
   to {
     transform: scale(1);
