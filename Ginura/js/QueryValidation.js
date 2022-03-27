@@ -211,9 +211,6 @@ function selectSubjectQueryForm(){
     document.getElementById("subject").classList.add("filled-select");
 }
 
-function timingToSubjects(){
-    changeToSubjects()
-}
 
 function changeToSubjects(){
     document.getElementById("ghosting-title").classList.remove("display");
@@ -222,9 +219,11 @@ function changeToSubjects(){
     document.getElementById("query-subjects-box").classList.add("display");
 }
 
-function again(){
+function backToQuestion(){
     document.getElementById("query-subjects-box").classList.remove("display");
     document.getElementById("query-subjects-box").classList.add("not-display");
     document.getElementById("ghosting-title").classList.remove("not-display");
     document.getElementById("ghosting-title").classList.add("display");
+
 }
+
