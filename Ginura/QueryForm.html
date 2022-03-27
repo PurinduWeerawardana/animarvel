@@ -111,8 +111,6 @@
                                     id="name"
                                     class="input-text"
                                     name="name"
-                                    onchange="checkNames(this.input);"
-                                    onclick="checkNames(this.input);"
                                     placeholder="Enter Your Name"
                                 />
                             </div>
@@ -125,8 +123,6 @@
                                     class="input-text"
                                     id="email"
                                     name="email"
-                                    onchange="checkAndValidateEmail(this.input);"
-                                    onclick="checkEmail(this.input);"
                                     placeholder="username@example.com"
                                 />
                             </div>
@@ -135,13 +131,7 @@
                             <label class="labels" for="subject"
                                 >Subject :
                             </label>
-                            <select
-                                id="subject"
-                                name="subject"
-                                class="select"
-                                onchange="checkSubject(this);"
-                                onclick="checkSubject(this);"
-                            >
+                            <select id="subject" name="subject" class="select">
                                 <option
                                     value=""
                                     disabled
@@ -164,16 +154,14 @@
                                 name="details"
                                 id="details"
                                 class="input-textarea"
-                                onchange="checkDetails(this.textarea);"
-                                onclick="checkDetails(this.textarea);"
                             ></textarea>
                         </div>
                     </div>
                     <div class="form-button">
                         <button
+                            id="view-query-button"
                             type="button"
                             class="buttons"
-                            onclick="viewQueryButton(this.form)"
                         >
                             View Query
                         </button>
@@ -240,18 +228,18 @@
                     <div id="filled-query-button">
                         <div id="edit-button">
                             <button
+                                id="edit-query-button"
                                 type="button"
                                 class="buttons"
-                                onclick="editQueryForm(this.form)"
                             >
                                 Edit
                             </button>
                         </div>
                         <div id="send-button">
                             <button
+                                id="send-query-button"
                                 type="button"
                                 class="buttons"
-                                onclick="mailForm()"
                             >
                                 Send
                             </button>
