@@ -219,7 +219,7 @@ function changeToSubjects(){
     document.getElementById("query-subjects-box").classList.add("display");
 }
 
-function again(){
+function backToQuestion(){
     document.getElementById("query-subjects-box").classList.remove("display");
     document.getElementById("query-subjects-box").classList.add("not-display");
     document.getElementById("ghosting-title").classList.remove("not-display");
