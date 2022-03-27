@@ -1,8 +1,7 @@
-.zones{
-    position: relative;
-    top:90vh;
-    width:100%;
-    border:1px solid #fff;
+.zones {
+  position: relative;
+  top: 90vh;
+  width: 100%;
 }
 
 .heading-title {
@@ -121,9 +120,9 @@ h3 {
   opacity: 1;
 }
 
-section{
-    min-height: 50vh;
-  }
+section {
+  min-height: 50vh;
+}
 .container1 {
   display: inline-block;
   margin: 0 10px 0 0;
