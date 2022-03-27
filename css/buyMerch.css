@@ -36,7 +36,7 @@ h1 {
   margin: 20px;
 }
 
-#cart-button{
+#cart-button {
   z-index: 10;
   align-self: left;
   position: fixed;
@@ -52,6 +52,7 @@ h1 {
 }
 
 #cart-button:hover {
+  transition: 0.5s;
   font-weight: bold;
   background-color: #2ee59d;
   box-shadow: 0px 15px 20px #2ee59c8a;
@@ -101,6 +102,7 @@ h1 {
   height: 550px;
   border-radius: 50px;
   background-color: #1c1c1c;
+  transition: 0.5s;
 }
 
 .item-card:hover {
