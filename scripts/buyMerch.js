@@ -47,3 +47,15 @@ categoryButtons.forEach(function (button) {
     });
   }
 });
+
+let queryString = window.location.search;
+urlParams = new URLSearchParams(queryString);
+console.log(urlParams);
+
+if (urlParams.has("tShirt") === true) {
+  document.getElementById("t-shirts").click();
+} else if (urlParams.has("mug") === true) {
+  document.getElementById("mugs").click();
+} else if (urlParams.has("statue") === true) {
+  document.getElementById("statues").click();
+}
