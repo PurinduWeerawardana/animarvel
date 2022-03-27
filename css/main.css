@@ -1,3 +1,10 @@
+.zones{
+    position: relative;
+    top:90vh;
+    width:100%;
+    border:1px solid #fff;
+}
+
 .heading-title {
   text-align: center;
   margin-bottom: 3rem;
@@ -33,6 +40,7 @@
   font-size: 1.7rem;
   padding-top: 1rem;
 }
+
 h3 {
   color: white;
 }
