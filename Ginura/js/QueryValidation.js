@@ -1,5 +1,4 @@
-document.getElementById("name").addEventListener("change",checkNames);
-document.getElementById("name").addEventListener("click",checkNames);
+
 function checkNames(){
     let name_object = document.getElementById("name");
     if (name_object.value !== ""){
@@ -13,8 +12,7 @@ function checkNames(){
 }
 
 
-document.getElementById("email").addEventListener("change",checkAndValidateEmail);
-document.getElementById("email").addEventListener("click",checkEmail);
+
 function checkAndValidateEmail(){
     let email_object = document.getElementById("email");
 
@@ -60,8 +58,7 @@ function checkEmail(){
     }
 }
 
-document.getElementById("subject").addEventListener("change",checkSubject);
-document.getElementById("subject").addEventListener("click",checkSubject);
+
 function checkSubject(){
     let subject_object = document.getElementById("subject");
     if (subject_object[subject_object.selectedIndex].value != ""){
@@ -75,8 +72,7 @@ function checkSubject(){
 }
 
 
-document.getElementById("details").addEventListener("change",checkDetails);
-document.getElementById("details").addEventListener("click",checkDetails);
+
 function checkDetails(){
     let textarea_object = document.getElementById("details");
     if (textarea_object.value !== ""){
@@ -89,7 +85,7 @@ function checkDetails(){
     }
 }
 
-document.getElementById("view-query-button").addEventListener("click",viewQueryButton);
+
 function viewQueryButton(){
     let unfilled_fields = [];
     let filled_fields = [];
@@ -105,13 +101,13 @@ function viewQueryButton(){
     }
 }
 
-document.getElementById("edit-query-button").addEventListener("click",editQueryForm);
+
 function editQueryForm(){
     document.getElementById("filled-query").style.display = "none";
     document.getElementById("query-form-container").style.display = "block";
 }
 
-document.getElementById("send-query-button").addEventListener("click",mailForm);
+
 function mailForm(){
     document.getElementById("filled-query").style.display = "none";
     document.getElementById("query-form").submit();
@@ -185,40 +181,46 @@ function printUnfilledFields(unfilled_fields){
     }
 }
 
+
+// document.getElementById("send-query-button").addEventListener("click",mailForm);
 let storage = window.localStorage;
 function getSelectedSubjectMainPage(clicked_id){
-    window.open("../Ginura/QueryForm.html","_self");
+    console.log(clicked_id);
+    window.open("../Ginura/QueryForm.html");
+    console.log(clicked_id);
 
     if(clicked_id==="Tickets-button"){
-        let subject = "Tickets";
-        storage.setItem("selected-subject",subject);
+        let subject_name = "Tickets";
+        storage.setItem("selected-subject",subject_name);
    
     }else if(clicked_id === "Deliver-button"){
-        let subject = "Delivery";
-        storage.setItem("selected-subject",subject);
+        let subject_name = "Delivery";
+        storage.setItem("selected-subject",subject_name);
 
     }else if(clicked_id === "Product-button"){
-        let subject = "Product";
-        storage.setItem("selected-subject",subject);
+        let subject_name = "Product";
+        storage.setItem("selected-subject",subject_name);
 
     }else if(clicked_id === "Website-button"){
-        let subject = "Website";
-        storage.setItem("selected-subject",subject);
+        let subject_name = "Website";
+        storage.setItem("selected-subject",subject_name);
 
     }else if(clicked_id === "Complains-button"){
-        let subject = "Complains";
-        storage.setItem("selected-subject",subject);
+        let subject_name = "Complains";
+        storage.setItem("selected-subject",subject_name);
 
     }else{
-        let subject = "Other";
-        storage.setItem("selected-subject",subject);
+        let subject_name = "Other";
+        storage.setItem("selected-subject",subject_name);
     }
 }
 
+
 function selectSubjectQueryForm(){
     let storage = window.localStorage;
-    let subject = storage.getItem("selected-subject")
-    document.getElementById("subject").value=subject;
+    let subject_name = storage.getItem("selected-subject")
+    console.log(subject_name);
+    document.getElementById("subject").value=subject_name;
     document.getElementById("subject").classList.remove("empty-select");
     document.getElementById("subject").classList.add("filled-select");
 }
@@ -240,3 +242,20 @@ function backToQuestion(){
 
 }
 
+
+
+document.getElementById("name").addEventListener("change",checkNames);
+document.getElementById("name").addEventListener("click",checkNames);
+
+document.getElementById("email").addEventListener("change",checkAndValidateEmail);
+document.getElementById("email").addEventListener("click",checkEmail);
+
+document.getElementById("subject").addEventListener("change",checkSubject);
+document.getElementById("subject").addEventListener("click",checkSubject);
+
+document.getElementById("details").addEventListener("change",checkDetails);
+document.getElementById("details").addEventListener("click",checkDetails);
+
+document.getElementById("view-query-button").addEventListener("click",viewQueryButton);
+document.getElementById("edit-query-button").addEventListener("click",editQueryForm);
+document.getElementById("send-query-button").addEventListener("click",mailForm);
