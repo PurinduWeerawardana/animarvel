@@ -9,6 +9,7 @@
     align-items: center;
     overflow: hidden;
     font-family: "Poppins", sans-serif;
+    border: 1px solid white;
 }
 
 .ghosting-title h1 {
@@ -243,7 +244,7 @@ p {
 
 .back .subject-information {
     margin: 1em 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
