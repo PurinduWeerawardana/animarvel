@@ -82,8 +82,11 @@ p {
     /* text-align: left; */
     margin-top: 0.75em;
     padding: 0px;
+    font-size: 1.2em;
 }
-
+.front .subject-details {
+    font-size: 0.9em;
+}
 .front .other-subject-images img {
     border: 2px solid rgb(14, 14, 14);
 }
@@ -151,7 +154,7 @@ p {
 
 .back .subject-information {
     margin: 1em 0;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
 }
 
@@ -190,6 +193,7 @@ p {
 
 .subject:hover .front .subject-name {
     animation: subjectName 250ms forwards;
+    font-size: 1.8em;
 }
 
 @keyframes subjectName {
