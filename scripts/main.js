@@ -24,7 +24,7 @@ function showSlidesAuto(n) {
   slides[slideIndex - 1].style.display = "block";
   setTimeout(() => {
     plusSlidesAuto(1);
-  }, 4000);
+  }, 5000);
 }
 
 function showSlides(n) {

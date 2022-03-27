@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
+    <link rel="stylesheet" href="./css/querySubject.css" />
+    <link rel="stylesheet" href="./Ginura/css/button.css" />
     <script src="./nav-bar/navigation.js" defer></script>
     <script src="https://kit.fontawesome.com/0357fe80c5.js" crossorigin="anonymous"></script>
+    <script src="Ginura/js/QueryValidation.js"></script>
     <script src="./scripts/main.js" defer></script>
     <title>Document</title>
 </head>
@@ -50,27 +53,228 @@
             <div class="slide-image">
                 <img src="./images/animal-images/slideshow/slide1.jpg">
             </div>
-            <div id="img-slide-1" class="image-title zoom-out">Animarvel S1<div class="image-caption">some text</div></div>
+            <div id="img-slide-1" class="image-title zoom-out">Animarvel S1<div class="image-caption">some text about title<br>a description</div></div>
         </div>
 
         <div class="slides fade">
             <div class="slide-image">
                 <img src="./images/animal-images/slideshow/slide2.jpg">
             </div>
-            <div id="img-slide-2" class="image-title zoom-out">Animarvel S2<div class="image-caption">some text</div></div>
+            <div id="img-slide-2" class="image-title zoom-out">Animarvel S2<div class="image-caption">some text about title<br>a description</div></div>
         </div>
 
         <div class="slides fade">
             <div class="slide-image">
                 <img src="./images/animal-images/slideshow/slide3.jpg">
             </div>
-            <div id="img-slide-3" class="image-title zoom-out">Animarvel S3<div class="image-caption">some text</div></div>
+            <div id="img-slide-3" class="image-title zoom-out">Animarvel S3<div class="image-caption">some text about title<br>a description</div></div>
         </div>
-
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
+    <div id="products-area">
+        <h1><span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!</h1>
+        
+    </div>
+    <div id="query-part">
+        <h1 id="query-title">Any Queries?</h1>
+        <div id="subjects-body">
+            <div class="subject-box">
+                <div class="subject">
+                    <div class="subject-number">1</div>
+                    <div class="front">
+                        <img class="subject-image" src="./images/querySubject/tickets.jpg" alt="image of a ticket" />
+                        <h3 class="subject-name">Tickets</h3>
+                        <div class="stats">
+                            <p class="subject-details">
+                                Queries about tickets
+                            </p>
+                            <div class="other-subject-images">
+                                <img src="./images/querySubject/hippopotamus.jpg" alt="picture of a hippopotamus" />
+                                <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
+                                <img src="./images/querySubject/rhinoceros.jpg" alt="picture of a rhinoceros" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="subject-information">
+                            <p class="information">
+                                <span>small intro about some text so we can
+                                    test the columens</span>
+                            </p>
+                        </div>
+                        <div class="subject-button">
+                            <button id="Tickets-button" class="buttons" onclick="getSelectedSubjectMainPage(this.id)">
+                                Tickets
+                            </button>
+                        </div>
+                    </div>
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="subject-box">
+                <div class="subject">
+                    <div class="subject-number">2</div>
+                    <div class="front">
+                        <img class="subject-image" src="./images/querySubject/delivery.jpg" alt="delivery image" />
+                        <h3 class="subject-name">Delivery</h3>
+                        <div class="stats">
+                            <p class="subject-details">
+                                Any troubles in delivery
+                            </p>
+                            <div class="other-subject-images">
+                                <img src="./images/querySubject/rhinoceros.jpg" alt="picture of a rhinoceros" />
+                                <img src="./images/querySubject/panda.jpg" alt="picture of a panda" />
+                                <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="subject-information">
+                            <p class="information">
+                                <span>small intro about some text so we can
+                                    test the columens</span>
+                            </p>
+                        </div>
+                        <div class="subject-button">
+                            <button id="Deliver-button" class="buttons" onclick="getSelectedSubjectMainPage(this.id)">
+                                Delivery
+                            </button>
+                        </div>
+                    </div>
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="subject-box">
+                <div class="subject">
+                    <div class="subject-number">3</div>
+                    <div class="front">
+                        <img class="subject-image" src="./images/querySubject/products.jpg" alt="products image" />
+                        <h3 class="subject-name">Product</h3>
+                        <div class="stats">
+                            <p class="subject-details">
+                                Any Damages in Products
+                            </p>
+                            <div class="other-subject-images">
+                                <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
+                                <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
+                                <img src="./images/querySubject/zebra.jpg" alt="picture of a zebra" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="subject-information">
+                            <p class="information">
+                                <span>small intro about some text so we can
+                                    test the columens</span>
+                            </p>
+                        </div>
+                        <div class="subject-button">
+                            <button id="Product-button" class="buttons" onclick="getSelectedSubjectMainPage(this.id)">
+                                Product
+                            </button>
+                        </div>
+                    </div>
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="subject-box">
+                <div class="subject">
+                    <div class="subject-number">4</div>
+                    <div class="front">
+                        <img class="subject-image" src="./images/querySubject/website.jpg" alt="image of a website" />
+                        <h3 class="subject-name">Website</h3>
+                        <div class="stats">
+                            <p class="subject-details">
+                                Issues with the Website
+                            </p>
+                            <div class="other-subject-images">
+                                <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
+                                <img src="./images/querySubject/zebra.jpg" alt="picture of a zebra" />
+                                <img src="./images/querySubject/rhinoceros.jpg" alt="picture of a rhinoceros" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="subject-information">
+                            <p class="information">
+                                <span>small intro about some text so we can
+                                    test the columens</span>
+                            </p>
+                        </div>
+                        <div class="subject-button">
+                            <button id="Website-button" class="buttons" onclick="getSelectedSubjectMainPage(this.id)">
+                                Website
+                            </button>
+                        </div>
+                    </div>
+                    <div class="background"></div>
+                </div>
+            </div>
+            <div class="subject-box">
+                <div class="subject">
+                    <div class="subject-number">5</div>
+                    <div class="front">
+                        <img class="subject-image" src="./images/querySubject/complains.jpg" alt="image of complaining" />
+                        <h3 class="subject-name">Complains</h3>
+                        <div class="stats">
+                            <p class="subject-details">Any Complains</p>
+                            <div class="other-subject-images">
+                                <img src="./images/querySubject/zebra.jpg" alt="picture of a zebra" />
+                                <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
+                                <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="subject-information">
+                            <p class="information">
+                                <span>small intro about some text so we can
+                                    test the columens</span>
+                            </p>
+                        </div>
+                        <div class="subject-button">
+                            <button id="Complains-button" class="buttons" onclick="getSelectedSubjectMainPage(this.id)"">Complains</button>
+                                </div>
+                            </div>
+                            <div class=" background">
+                        </div>
+                    </div>
+                </div>
+                <div class="subject-box">
+                    <div class="subject">
+                        <div class="subject-number">6</div>
+                        <div class="front">
+                            <img class="subject-image" src="./images/querySubject/other.jpg"
+                                alt="image of other complains" />
+                            <h3 class="subject-name">Other</h3>
+                            <div class="stats">
+                                <p class="subject-details">Other Problems</p>
+                                <div class="other-subject-images">
+                                    <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
+                                    <img src="./images/querySubject/hippopotamus.jpg" alt="picture of a hippopotamus" />
+                                    <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="subject-information">
+                                <p class="information">
+                                    <span>small intro about some text so we can
+                                        test the columens</span>
+                                </p>
+                            </div>
+                            <div class="subject-button">
+                                <button id="Other-button" class="buttons"
+                                    onclick="getSelectedSubjectMainPage(this.id)">Other</button>
+                            </div>
+                        </div>
+                        <div class="background"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
