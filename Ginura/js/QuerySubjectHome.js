@@ -22,4 +22,5 @@ function backToQuestion(){
 }
 
 document.getElementById("query-part").addEventListener("mouseleave",backToQuestion);
-document.getElementById("query-title").addEventListener("click",changeToSubjects);
+document.getElementById("query-title-top").addEventListener("click",changeToSubjects);
+document.getElementById("query-title-bottom").addEventListener("click",changeToSubjects);

@@ -1,18 +1,15 @@
 .ghosting-title {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 60px;
     position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 0;
+    width: max-content;
     overflow: hidden;
     font-family: "Poppins", sans-serif;
 }
 
 .ghosting-title h1 {
-    font-size: 6em;
+    font-size: 7.5em;
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
@@ -22,14 +19,19 @@
     transition: 1.5s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1450px) {
     .ghosting-title h1 {
         font-size: 4.6em;
     }
 }
+@media (max-width: 1200px) {
+    .ghosting-title h1 {
+        font-size: 4em;
+    }
+}
 @media (max-width: 1000px) {
     .ghosting-title h1 {
-        font-size: 4.5em;
+        font-size: 3.7em;
     }
 }
 @media (max-width: 850px) {
@@ -39,66 +41,51 @@
 }
 @media (max-width: 750px) {
     .ghosting-title h1 {
-        font-size: 2em;
+        font-size: 3.2em;
     }
 }
 
-.ghosting-title h1:hover span {
+.ghosting-title:hover span {
     filter: blur(20px);
     opacity: 0;
     transform: scale(2);
 }
 
-.ghosting-title h1 span:nth-child(16n + 1) {
+.ghosting-title h1 span:nth-child(12n + 1) {
     transition-delay: 0s;
 }
-.ghosting-title h1 span:nth-child(16n + 2) {
+.ghosting-title h1 span:nth-child(12n + 2) {
     transition-delay: 0.1s;
 }
-.ghosting-title h1 span:nth-child(16n + 3) {
+.ghosting-title h1 span:nth-child(12n + 3) {
     transition-delay: 0.2s;
 }
-.ghosting-title h1 span:nth-child(16n + 4) {
+.ghosting-title h1 span:nth-child(12n + 4) {
     transition-delay: 0.3s;
 }
-.ghosting-title h1 span:nth-child(16n + 4) {
-    transition-delay: 0.3s;
-}
-.ghosting-title h1 span:nth-child(16n + 5) {
+.ghosting-title h1 span:nth-child(12n + 5) {
     transition-delay: 0.4s;
 }
-.ghosting-title h1 span:nth-child(16n + 6) {
+.ghosting-title h1 span:nth-child(12n + 6) {
     transition-delay: 0.5s;
 }
-.ghosting-title h1 span:nth-child(16n + 7) {
+.ghosting-title h1 span:nth-child(12n + 7) {
     transition-delay: 0.6s;
 }
-.ghosting-title h1 span:nth-child(16n + 8) {
+.ghosting-title h1 span:nth-child(12n + 8) {
     transition-delay: 0.7s;
 }
-.ghosting-title h1 span:nth-child(16n + 9) {
+.ghosting-title h1 span:nth-child(12n + 9) {
     transition-delay: 0.8s;
 }
-.ghosting-title h1 span:nth-child(16n + 10) {
+.ghosting-title h1 span:nth-child(12n + 10) {
     transition-delay: 0.9s;
 }
-.ghosting-title h1 span:nth-child(16n + 11) {
+.ghosting-title h1 span:nth-child(12n + 11) {
     transition-delay: 1s;
 }
-.ghosting-title h1 span:nth-child(16n + 12) {
+.ghosting-title h1 span:nth-child(12n + 12) {
     transition-delay: 1.1s;
-}
-.ghosting-title h1 span:nth-child(16n + 13) {
-    transition-delay: 1.2s;
-}
-.ghosting-title h1 span:nth-child(16n + 14) {
-    transition-delay: 1.3s;
-}
-.ghosting-title h1 span:nth-child(16n + 15) {
-    transition-delay: 1.4s;
-}
-.ghosting-title h1 span:nth-child(16n + 16) {
-    transition-delay: 1.5s;
 }
 
 .not-display {
