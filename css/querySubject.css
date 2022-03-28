@@ -106,6 +106,7 @@
     display: grid;
     align-items: center;
 }
+
 #subjects-body {
     top: 50%;
     margin: 2.5em auto;
