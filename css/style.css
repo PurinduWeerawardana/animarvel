@@ -114,6 +114,10 @@ header {
     animation-duration: 1.5s;
 }
 
+.title-icons {
+    color: #2ee59d;
+}
+
 @keyframes fade {
     from {
         opacity: 0.4;
