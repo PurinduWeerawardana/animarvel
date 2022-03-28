@@ -127,7 +127,7 @@
         background-repeat: no-repeat;
         width: 2rem;
         border: 0;
-        aspect-ratio: 1;
+        aspect-ratio: 1 / 1;
         top: 2rem;
         right: 2rem;
     }
@@ -164,7 +164,7 @@
         background-repeat: no-repeat;
         width: 2rem;
         border: 0;
-        aspect-ratio: 1;
+        aspect-ratio: 1 / 1;
         top: 2rem;
         right: 2rem;
     }
@@ -200,7 +200,7 @@
         background-repeat: no-repeat;
         width: 2rem;
         border: 0;
-        aspect-ratio: 1;
+        aspect-ratio: 1 / 1;
         top: 2rem;
         right: 2rem;
     }
@@ -236,7 +236,7 @@
         background-repeat: no-repeat;
         width: 2rem;
         border: 0;
-        aspect-ratio: 1;
+        aspect-ratio: 1 / 1;
         top: 2rem;
         right: 2rem;
     }
