@@ -1,3 +1,7 @@
+let querySubjectString = window.location.search;
+urlParams = new URLSearchParams(querySubjectString);
+
+
 
 function checkNames(){
     let name_object = document.getElementById("name");
@@ -182,64 +186,42 @@ function printUnfilledFields(unfilled_fields){
 }
 
 
-// document.getElementById("send-query-button").addEventListener("click",mailForm);
-let storage = window.localStorage;
-function getSelectedSubjectMainPage(clicked_id){
-    console.log(clicked_id);
-    window.open("../Ginura/QueryForm.html");
-    console.log(clicked_id);
-
-    if(clicked_id==="Tickets-button"){
-        let subject_name = "Tickets";
-        storage.setItem("selected-subject",subject_name);
-   
-    }else if(clicked_id === "Deliver-button"){
-        let subject_name = "Delivery";
-        storage.setItem("selected-subject",subject_name);
-
-    }else if(clicked_id === "Product-button"){
-        let subject_name = "Product";
-        storage.setItem("selected-subject",subject_name);
-
-    }else if(clicked_id === "Website-button"){
-        let subject_name = "Website";
-        storage.setItem("selected-subject",subject_name);
-
-    }else if(clicked_id === "Complains-button"){
-        let subject_name = "Complains";
-        storage.setItem("selected-subject",subject_name);
-
-    }else{
-        let subject_name = "Other";
-        storage.setItem("selected-subject",subject_name);
-    }
-}
 
 
-function selectSubjectQueryForm(){
-    let storage = window.localStorage;
-    let subject_name = storage.getItem("selected-subject")
-    console.log(subject_name);
+if (urlParams.get("button")==="Tickets-button"){
+    let subject_name="Tickets"
     document.getElementById("subject").value=subject_name;
     document.getElementById("subject").classList.remove("empty-select");
     document.getElementById("subject").classList.add("filled-select");
-}
 
+}else if (urlParams.get("button")==="Deliver-button"){
+    let subject_name="Delivery"
+    document.getElementById("subject").value=subject_name;
+    document.getElementById("subject").classList.remove("empty-select");
+    document.getElementById("subject").classList.add("filled-select");
 
-function changeToSubjects(){
-    document.getElementById("ghosting-title").classList.remove("display");
-    document.getElementById("ghosting-title").classList.add("not-display");
-    document.getElementById("query-subjects-box").classList.remove("not-display");
-    document.getElementById("query-subjects-box").classList.add("display");
-}
+}else if (urlParams.get("button")==="Product-button"){
+    let subject_name="Product"
+    document.getElementById("subject").value=subject_name;
+    document.getElementById("subject").classList.remove("empty-select");
+    document.getElementById("subject").classList.add("filled-select");
 
+}else if (urlParams.get("button")==="Website-button"){
+    let subject_name="Website"
+    document.getElementById("subject").value=subject_name;
+    document.getElementById("subject").classList.remove("empty-select");
+    document.getElementById("subject").classList.add("filled-select");
 
-function backToQuestion(){
-    document.getElementById("query-subjects-box").classList.remove("display");
-    document.getElementById("query-subjects-box").classList.add("not-display");
-    document.getElementById("ghosting-title").classList.remove("not-display");
-    document.getElementById("ghosting-title").classList.add("display");
-
+}else if (urlParams.get("button")==="Complains-button"){
+    let subject_name="Complains"
+    document.getElementById("subject").value=subject_name;
+    document.getElementById("subject").classList.remove("empty-select");
+    document.getElementById("subject").classList.add("filled-select");
+}else{
+    let subject_name="Other"
+    document.getElementById("subject").value=subject_name;
+    document.getElementById("subject").classList.remove("empty-select");
+    document.getElementById("subject").classList.add("filled-select");
 }
 
 
