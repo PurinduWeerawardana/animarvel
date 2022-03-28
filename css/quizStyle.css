@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(315deg, black 0%, rgb(17, 71, 71) 100%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    align-items: center;
+  height: 100vh;
+}
+
+#static-weak {
+  background-image: linear-gradient(
+    300deg,
+    rgb(163, 50, 50) 0%,
+    rgb(199, 82, 82) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#static-poor {
+  background-image: linear-gradient(
+    300deg,
+    rgb(241, 118, 3) 0%,
+    rgb(202, 137, 62) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#static-average {
+  background-image: linear-gradient(
+    300deg,
+    rgb(241, 225, 3) 0%,
+    rgb(209, 189, 77) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#static-good {
+  background-image: linear-gradient(
+    300deg,
+    rgb(5, 73, 201) 0%,
+    rgb(84, 140, 212) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#static-best {
+  background-image: linear-gradient(
+    300deg,
+    rgb(8, 110, 47) 0%,
+    rgb(71, 212, 125) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.quiz-container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 20x rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+}
+
+.quiz-header {
+  padding: 4rem;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul li {
+  padding: 0;
+  font-size: 1.2rem;
+  margin: 2 rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  background-color: limegreen;
+  color: white;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+button:focus {
+  outline: none;
+  background-color: yellow;
+}
