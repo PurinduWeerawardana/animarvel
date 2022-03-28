@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Barlow Condensed", sans-serif;
 }
 
 #filled-query {
@@ -31,6 +30,7 @@ html {
     align-items: center;
     padding: 10px;
     color: #fff;
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 #query-form-container {
@@ -418,7 +418,7 @@ form textarea:hover {
     max-width: 80%;
     white-space: nowrap;
     overflow: auto;
-    text-overflow: visible;
+    text-overflow: clip;
 }
 
 #filled-query .list .content .filled-labels {
@@ -434,7 +434,7 @@ form textarea:hover {
     max-width: 100%;
     white-space: nowrap;
     overflow: auto;
-    text-overflow: visible;
+    text-overflow: clip;
 }
 
 #filled-query .list:hover .content .filled-labels,

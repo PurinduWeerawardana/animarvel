@@ -1,189 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
+        <link rel="stylesheet" href="./css/querySubject.css" />
+        <link rel="stylesheet" href="./Ginura/css/button.css" />
+        <link rel="stylesheet" href="./css/merchOnhome.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
-    <link rel="stylesheet" href="./css/querySubject.css" />
-    <link rel="stylesheet" href="./Ginura/css/button.css" />
-    <link rel="stylesheet" href="./css/merchOnhome.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <script src="./JS/main.js"></script>
-    <script src="./scripts/merchOnHome.js" defer></script>
-    <script src="./nav-bar/navigation.js" defer></script>
-    <script src="https://kit.fontawesome.com/0357fe80c5.js" crossorigin="anonymous"></script>
-    <script src="Ginura/js/QueryValidation.js"></script>
-    <script src="./scripts/main.js" defer></script>
-    <title>Document</title>
-</head>
+        <script src="./JS/main.js"></script>
+        <script src="./scripts/merchOnHome.js" defer></script>
+        <script src="./nav-bar/navigation.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/0357fe80c5.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="Ginura/js/QuerySubjectHome.js" defer></script>
+        <script src="./scripts/main.js" defer></script>
+        <title>Document</title>
+    </head>
 
-<body>
-    <header id="primary-header-navigation">
-        <div id="logo"></div>
-        <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-        </button>
-        <nav class="navigation-bar">
-            <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
-                <li>
-                    <a href="./gallery.html" class="nav-bar-titles"
-                        data-text="&nbsp;&nbsp;Gallerye">&nbsp;&nbsp;Zones</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Site-Map">&nbsp;&nbsp;Site-Map</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
-                </li>
-                <li>
-                    <a href="discounts.html" class="nav-bar-titles"
-                        data-text="&nbsp;&nbsp;Discounts">&nbsp;&nbsp;Discounts</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Buy-Merch">&nbsp;&nbsp;Buy-Merch</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Icon">&nbsp;&nbsp;Icon</a>
-                </li>
-                <li>
-                    <a href="" class="nav-bar-titles" data-text="&nbsp;&nbsp;Icon">&nbsp;&nbsp;Icon</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="slide-container zoom-in">
-        <div class="slides fade">
-            <div class="slide-image">
-                ./images/animal-images/slideshow/slide1.jpg
-                <img src="./images/animal-images/slideshow/slide1.jpg">
-            </div>
-            <div id="img-slide-1" class="image-title zoom-out">Animarvel Wildlife Park<div class="image-caption">Explore
-                    the world of wild animals.</div>
-            </div>
-        </div>
-        <div class="slides fade">
-            <div class="slide-image">
-                <img src="./images/animal-images/slideshow/slide2.jpg">
-            </div>
-            <div id="img-slide-2" class="image-title zoom-out">Animal Zones<div class="image-caption">A wide variety of
-                    animals.
+    <body>
+        <header id="primary-header-navigation">
+            <div id="logo"></div>
+            <button
+                class="navigation-toggle"
+                aria-controls="navigation-bar-ul"
+                aria-expanded="false"
+            >
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav class="navigation-bar">
+                <ul
+                    id="navigation-bar-ul"
+                    data-visible="false"
+                    class="navigation-bar-ul"
+                >
+                    <li>
+                        <a
+                            href="./gallery.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Home"
+                            >&nbsp;&nbsp;Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./gallery.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Zones"
+                            >&nbsp;&nbsp;Zones</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Site&minus;Map"
+                            >&nbsp;&nbsp;Site&minus;Map</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Quiz"
+                            >&nbsp;&nbsp;Quiz</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="discounts.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Discounts"
+                            >&nbsp;&nbsp;Discounts</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Buy&minus;Merch"
+                            >&nbsp;&nbsp;Buy&minus;Merch</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href=""
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Queries"
+                            >&nbsp;&nbsp;Queries</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slide-container zoom-in">
+            <div class="slides fade">
+                <div class="slide-image">
+                    ./images/animal-images/slideshow/slide1.jpg
+                    <img src="./images/animal-images/slideshow/slide1.jpg" />
                 </div>
-            </div>
-        </div>
-        <div class="slides fade">
-            <div class="slide-image">
-                <img src="./images/animal-images/slideshow/slide3.jpg">
-            </div>
-            <div id="img-slide-3" class="image-title zoom-out">Make you visit worthwhile<div class="image-caption">enjoy
-                    with our modern and luxury facilities.
-                </div>
-            </div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <section class="zones">
-        <div class="container reveal">
-
-            <h1 class="heading-title"><i class="fa-solid fa-map-location-dot title-icons"></i> our Zones </h1>
-
-            <div class="box-container">
-
-                <div class="box">
-                    <img src="./images/Thumbnails/robin.png" alt="">
-                    <h3>Bird Park</h3>
-                </div>
-
-                <div class="box">
-                    <img src="./images/Thumbnails/tuna.png" alt="">
-                    <h3>Aquarium</h3>
-                </div>
-
-                <div class="box">
-                    <img src="./images/Thumbnails/snake.png" alt="">
-                    <h3>Reptitles</h3>
-                </div>
-
-                <div class="box">
-                    <img src="./images/Thumbnails/park.png" alt="">
-                    <h3>Tera Park</h3>
-                </div>
-
-                <div class="box">
-                    <img src="./images/Thumbnails/snowman.png" alt="">
-                    <h3>Mini Arctic</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div style="margin-top: 50%;">
-        <div class="container reveal">
-            <h1 class="heading-title"><i class="fa-solid fa-people-group title-icons"></i> about us</h1>
-            <section class="about">
-                <div class="image">
-                    <img src="./images/Thumbnails/img-3.jpg" alt="">
-                </div>
-
-                <div class="content">
-                    <h3>why choose us?</h3>
-                    <p>The zoo is open every day of the year and features three major biomes: the Tropic Zone, Temperate
-                        Territory, and the Polar Circle. From tropical birds, to snow leopards, grizzly bears, and one
-                        of
-                        the nation’s largest colonies of Antarctic penguins, there are animals to enjoy in every season.
-                    </p>
-                    <p>The Wildlife Conservation Society’s network of five urban wildlife parks headquartered at colombo
-                        have inspired and educated more than 400 million guests since first opening. Join our mission
-                        with a
-                        visit to the park during your next trip to AniMarvel.</p>
-                    <div class="icons-container">
-                        <div class="icons">
-                            <i class="fa-solid fa-map-location-dot"></i>
-                            <span>VIew Points</span>
-                        </div>
-                        <div class="icons">
-                            <i class="fas fa-hand-holding-usd"></i>
-                            <span>affordable price</span>
-                        </div>
-                        <div class="icons">
-                            <i class="fas fa-headset"></i>
-                            <span>24/7 guide service</span>
-                        </div>
+                <div id="img-slide-1" class="image-title zoom-out">
+                    Animarvel Wildlife Park
+                    <div class="image-caption">
+                        Explore the world of wild animals.
                     </div>
                 </div>
-        </div>
-    </div>
-    <div class="container reveal">
-        <div id="merch-area">
-            <h1><span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!</h1>
-            <div id="category-area" class="categories">
-                <div id="to-tshirt" class="category">
-                    <img src="./images/merch/t-shirts/t-shirt-3/preview-1.jpg" alt="tshirt-preview">
-                    <h2><i class="fa-solid fa-shirt"></i><br><br>Animarvel T-Shirt Store</h2>
-                    <button class="shop-now"><i class="fa-solid fa-shirt"></i> T-Shirts collection</button>
+            </div>
+            <div class="slides fade">
+                <div class="slide-image">
+                    <img src="./images/animal-images/slideshow/slide2.jpg" />
                 </div>
-                <div id="to-mug" class="category">
-                    <img src="./images/merch/mugs/mug-2/preview-1.jpg" alt="mug-preview">
-                    <h2><i class="fa-solid fa-mug-saucer"></i><br><br>Animarvel Mug Store</h2>
-                    <button class="shop-now"><i class="fa-solid fa-mug-saucer"></i> Mugs collection</button>
-                </div>
-                <div id="to-statue" class="category">
-                    <img src="./images/merch/statues/statue-1/preview-1.jpg" alt="statue-preview">
-                    <h2><i class="fa-solid fa-gem"></i><br><br>Animarvel Statue Store</h2>
-                    <button class="shop-now"><i class="fa-solid fa-gem"></i> Statues collection</button>
+                <div id="img-slide-2" class="image-title zoom-out">
+                    Animal Zones
+                    <div class="image-caption">A wide variety of animals.</div>
                 </div>
             </div>
-            <a href="./buyMerch.html"><button id="visit-store" class="shop-now">Visit Store <i class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
+            <div class="slides fade">
+                <div class="slide-image">
+                    <img src="./images/animal-images/slideshow/slide3.jpg" />
+                </div>
+                <div id="img-slide-3" class="image-title zoom-out">
+                    Make you visit worthwhile
+                    <div class="image-caption">
+                        enjoy with our modern and luxury facilities.
+                    </div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </div>
+        <section class="zones">
+            <div class="container reveal">
+                <h1 class="heading-title">
+                    <i class="fa-solid fa-map-location-dot title-icons"></i> our
+                    Zones
+                </h1>
+
+                <div class="box-container">
+                    <div class="box">
+                        <img src="./images/Thumbnails/robin.png" alt="" />
+                        <h3>Bird Park</h3>
+                    </div>
+
+                    <div class="box">
+                        <img src="./images/Thumbnails/tuna.png" alt="" />
+                        <h3>Aquarium</h3>
+                    </div>
+
+                    <div class="box">
+                        <img src="./images/Thumbnails/snake.png" alt="" />
+                        <h3>Reptitles</h3>
+                    </div>
+
+                    <div class="box">
+                        <img src="./images/Thumbnails/park.png" alt="" />
+                        <h3>Tera Park</h3>
+                    </div>
+
+                    <div class="box">
+                        <img src="./images/Thumbnails/snowman.png" alt="" />
+                        <h3>Mini Arctic</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style="margin-top: 50%">
+            <div class="container reveal">
+                <h1 class="heading-title">
+                    <i class="fa-solid fa-people-group title-icons"></i> about
+                    us
+                </h1>
+                <section class="about">
+                    <div class="image">
+                        <img src="./images/Thumbnails/img-3.jpg" alt="" />
+                    </div>
+
+                    <div class="content">
+                        <h3>why choose us?</h3>
+                        <p>
+                            The zoo is open every day of the year and features
+                            three major biomes: the Tropic Zone, Temperate
+                            Territory, and the Polar Circle. From tropical
+                            birds, to snow leopards, grizzly bears, and one of
+                            the nation’s largest colonies of Antarctic penguins,
+                            there are animals to enjoy in every season.
+                        </p>
+                        <p>
+                            The Wildlife Conservation Society’s network of five
+                            urban wildlife parks headquartered at colombo have
+                            inspired and educated more than 400 million guests
+                            since first opening. Join our mission with a visit
+                            to the park during your next trip to AniMarvel.
+                        </p>
+                        <div class="icons-container">
+                            <div class="icons">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span>VIew Points</span>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-hand-holding-usd"></i>
+                                <span>affordable price</span>
+                            </div>
+                            <div class="icons">
+                                <i class="fas fa-headset"></i>
+                                <span>24/7 guide service</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
         <div class="container reveal">
-            <div id="query-part" onmouseleave="backToQuestion()">
+            <div id="merch-area">
+                <h1>
+                    <span id="cart-icon-heading"
+                        ><i class="fa-solid fa-cart-shopping"> </i
+                    ></span>
+                    Grab Your Merch!
+                </h1>
+                <div id="category-area" class="categories">
+                    <div id="to-tshirt" class="category">
+                        <img
+                            src="./images/merch/t-shirts/t-shirt-3/preview-1.jpg"
+                            alt="tshirt-preview"
+                        />
+                        <h2>
+                            <i class="fa-solid fa-shirt"></i
+                            ><br /><br />Animarvel T-Shirt Store
+                        </h2>
+                        <button class="shop-now">
+                            <i class="fa-solid fa-shirt"></i> T-Shirts
+                            collection
+                        </button>
+                    </div>
+                    <div id="to-mug" class="category">
+                        <img
+                            src="./images/merch/mugs/mug-2/preview-1.jpg"
+                            alt="mug-preview"
+                        />
+                        <h2>
+                            <i class="fa-solid fa-mug-saucer"></i
+                            ><br /><br />Animarvel Mug Store
+                        </h2>
+                        <button class="shop-now">
+                            <i class="fa-solid fa-mug-saucer"></i> Mugs
+                            collection
+                        </button>
+                    </div>
+                    <div id="to-statue" class="category">
+                        <img
+                            src="./images/merch/statues/statue-1/preview-1.jpg"
+                            alt="statue-preview"
+                        />
+                        <h2>
+                            <i class="fa-solid fa-gem"></i><br /><br />Animarvel
+                            Statue Store
+                        </h2>
+                        <button class="shop-now">
+                            <i class="fa-solid fa-gem"></i> Statues collection
+                        </button>
+                    </div>
+                </div>
+                <a href="./buyMerch.html"
+                    ><button id="visit-store" class="shop-now">
+                        Visit Store
+                        <i
+                            class="fa-solid fa-arrow-right-to-bracket"
+                        ></i></button
+                ></a>
+            </div>
+        </div>
+        <div class="container reveal">
+            <div id="query-part">
                 <div id="ghosting-title" class="display">
                     <div class="ghosting-title">
-                        <h1 id="query-title" onmousemove="changeToSubjects()">
+                        <h1 id="query-title">
                             <span>A</span>
                             <span>N</span>
                             <span>Y&nbsp;&nbsp;</span>
@@ -204,33 +301,47 @@
                             <div class="subject">
                                 <div class="subject-number">1</div>
                                 <div class="front">
-                                    <img class="subject-image" src="./images/querySubject/tickets.jpg"
-                                        alt="image of a ticket" />
+                                    <img
+                                        class="subject-image"
+                                        src="./images/querySubject/tickets.jpg"
+                                        alt="image of a ticket"
+                                    />
                                     <h3 class="subject-name">Tickets</h3>
                                     <div class="stats">
                                         <p class="subject-details">
                                             Queries about tickets
                                         </p>
                                         <div class="other-subject-images">
-                                            <img src="./images/querySubject/hippopotamus.jpg"
-                                                alt="picture of a hippopotamus" />
-                                            <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
-                                            <img src="./images/querySubject/rhinoceros.jpg"
-                                                alt="picture of a rhinoceros" />
+                                            <img
+                                                src="./images/querySubject/hippopotamus.jpg"
+                                                alt="picture of a hippopotamus"
+                                            />
+                                            <img
+                                                src="./images/querySubject/penguin.jpg"
+                                                alt="picture of a penguin"
+                                            />
+                                            <img
+                                                src="./images/querySubject/rhinoceros.jpg"
+                                                alt="picture of a rhinoceros"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="back">
                                     <div class="subject-information">
                                         <p class="information">
-                                            <span>Unclear about our packages, tickets and discounts? Click here to ask
-                                                from
-                                                us.</span>
+                                            <span
+                                                >Unclear about our packages,
+                                                tickets and discounts? Click
+                                                here to ask from us.</span
+                                            >
                                         </p>
                                     </div>
                                     <div class="subject-button">
-                                        <button id="Tickets-button" class="buttons"
-                                            onclick="getSelectedSubjectMainPage(this.id)">
+                                        <button
+                                            id="Tickets-button"
+                                            class="buttons"
+                                        >
                                             Tickets
                                         </button>
                                     </div>
@@ -242,31 +353,48 @@
                             <div class="subject">
                                 <div class="subject-number">2</div>
                                 <div class="front">
-                                    <img class="subject-image" src="./images/querySubject/delivery.jpg"
-                                        alt="delivery image" />
+                                    <img
+                                        class="subject-image"
+                                        src="./images/querySubject/delivery.jpg"
+                                        alt="delivery image"
+                                    />
                                     <h3 class="subject-name">Delivery</h3>
                                     <div class="stats">
                                         <p class="subject-details">
                                             Any troubles in delivery
                                         </p>
                                         <div class="other-subject-images">
-                                            <img src="./images/querySubject/rhinoceros.jpg"
-                                                alt="picture of a rhinoceros" />
-                                            <img src="./images/querySubject/panda.jpg" alt="picture of a panda" />
-                                            <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
+                                            <img
+                                                src="./images/querySubject/rhinoceros.jpg"
+                                                alt="picture of a rhinoceros"
+                                            />
+                                            <img
+                                                src="./images/querySubject/panda.jpg"
+                                                alt="picture of a panda"
+                                            />
+                                            <img
+                                                src="./images/querySubject/penguin.jpg"
+                                                alt="picture of a penguin"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="back">
                                     <div class="subject-information">
                                         <p class="information">
-                                            <span>Make sure that it will be delivered to your doorstep. Click here for
-                                                clarifications on delivery.</span>
+                                            <span
+                                                >Make sure that it will be
+                                                delivered to your doorstep.
+                                                Click here for clarifications on
+                                                delivery.</span
+                                            >
                                         </p>
                                     </div>
                                     <div class="subject-button">
-                                        <button id="Deliver-button" class="buttons"
-                                            onclick="getSelectedSubjectMainPage(this.id)">
+                                        <button
+                                            id="Deliver-button"
+                                            class="buttons"
+                                        >
                                             Delivery
                                         </button>
                                     </div>
@@ -278,31 +406,48 @@
                             <div class="subject">
                                 <div class="subject-number">3</div>
                                 <div class="front">
-                                    <img class="subject-image" src="./images/querySubject/products.jpg"
-                                        alt="products image" />
+                                    <img
+                                        class="subject-image"
+                                        src="./images/querySubject/products.jpg"
+                                        alt="products image"
+                                    />
                                     <h3 class="subject-name">Product</h3>
                                     <div class="stats">
                                         <p class="subject-details">
                                             Any Damages in Products
                                         </p>
                                         <div class="other-subject-images">
-                                            <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
-                                            <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
-                                            <img src="./images/querySubject/zebra.jpg" alt="picture of a zebra" />
+                                            <img
+                                                src="./images/querySubject/penguin.jpg"
+                                                alt="picture of a penguin"
+                                            />
+                                            <img
+                                                src="./images/querySubject/lion.jpg"
+                                                alt="picture of a lion"
+                                            />
+                                            <img
+                                                src="./images/querySubject/zebra.jpg"
+                                                alt="picture of a zebra"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="back">
                                     <div class="subject-information">
                                         <p class="information">
-                                            <span>It is all about your concerns over the Animarvel gears. Click here for
-                                                your
-                                                queries about our products.</span>
+                                            <span
+                                                >It is all about your concerns
+                                                over the Animarvel gears. Click
+                                                here for your queries about our
+                                                products.</span
+                                            >
                                         </p>
                                     </div>
                                     <div class="subject-button">
-                                        <button id="Product-button" class="buttons"
-                                            onclick="getSelectedSubjectMainPage(this.id)">
+                                        <button
+                                            id="Product-button"
+                                            class="buttons"
+                                        >
                                             Product
                                         </button>
                                     </div>
@@ -314,31 +459,47 @@
                             <div class="subject">
                                 <div class="subject-number">4</div>
                                 <div class="front">
-                                    <img class="subject-image" src="./images/querySubject/website.jpg"
-                                        alt="image of a website" />
+                                    <img
+                                        class="subject-image"
+                                        src="./images/querySubject/website.jpg"
+                                        alt="image of a website"
+                                    />
                                     <h3 class="subject-name">Website</h3>
                                     <div class="stats">
                                         <p class="subject-details">
                                             Issues with the Website
                                         </p>
                                         <div class="other-subject-images">
-                                            <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
-                                            <img src="./images/querySubject/zebra.jpg" alt="picture of a zebra" />
-                                            <img src="./images/querySubject/rhinoceros.jpg"
-                                                alt="picture of a rhinoceros" />
+                                            <img
+                                                src="./images/querySubject/lion.jpg"
+                                                alt="picture of a lion"
+                                            />
+                                            <img
+                                                src="./images/querySubject/zebra.jpg"
+                                                alt="picture of a zebra"
+                                            />
+                                            <img
+                                                src="./images/querySubject/rhinoceros.jpg"
+                                                alt="picture of a rhinoceros"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="back">
                                     <div class="subject-information">
                                         <p class="information">
-                                            <span>Have you spotted any doubts or issues about our website? Inquire from
-                                                here.</span>
+                                            <span
+                                                >Have you spotted any doubts or
+                                                issues about our website?
+                                                Inquire from here.</span
+                                            >
                                         </p>
                                     </div>
                                     <div class="subject-button">
-                                        <button id="Website-button" class="buttons"
-                                            onclick="getSelectedSubjectMainPage(this.id)">
+                                        <button
+                                            id="Website-button"
+                                            class="buttons"
+                                        >
                                             Website
                                         </button>
                                     </div>
@@ -350,27 +511,49 @@
                             <div class="subject">
                                 <div class="subject-number">5</div>
                                 <div class="front">
-                                    <img class="subject-image" src="./images/querySubject/complains.jpg"
-                                        alt="image of complaining" />
+                                    <img
+                                        class="subject-image"
+                                        src="./images/querySubject/complains.jpg"
+                                        alt="image of complaining"
+                                    />
                                     <h3 class="subject-name">Complains</h3>
                                     <div class="stats">
-                                        <p class="subject-details">Any Complains</p>
+                                        <p class="subject-details">
+                                            Any Complains
+                                        </p>
                                         <div class="other-subject-images">
-                                            <img src="./images/querySubject/zebra.jpg" alt="picture of a zebra" />
-                                            <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
-                                            <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
+                                            <img
+                                                src="./images/querySubject/zebra.jpg"
+                                                alt="picture of a zebra"
+                                            />
+                                            <img
+                                                src="./images/querySubject/penguin.jpg"
+                                                alt="picture of a penguin"
+                                            />
+                                            <img
+                                                src="./images/querySubject/lion.jpg"
+                                                alt="picture of a lion"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="back">
                                     <div class="subject-information">
                                         <p class="information">
-                                            <span>Not happy with our services? Click here to give your feedback.</span>
+                                            <span
+                                                >Not happy with our services?
+                                                Click here to give your
+                                                feedback.</span
+                                            >
                                         </p>
                                     </div>
                                     <div class="subject-button">
-                                        <button id="Complains-button" class="buttons"
-                                            onclick="getSelectedSubjectMainPage(this.id)">Complains</button>
+                                        <button
+                                            id="Complains-button"
+                                            class="buttons"
+                                        >
+                                            Complains
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="background"></div>
@@ -380,29 +563,49 @@
                             <div class="subject">
                                 <div class="subject-number">6</div>
                                 <div class="front">
-                                    <img class="subject-image" src="./images/querySubject/other.jpg"
-                                        alt="image of other complains" />
+                                    <img
+                                        class="subject-image"
+                                        src="./images/querySubject/other.jpg"
+                                        alt="image of other complains"
+                                    />
                                     <h3 class="subject-name">Other</h3>
                                     <div class="stats">
-                                        <p class="subject-details">Other Problems</p>
+                                        <p class="subject-details">
+                                            Other Problems
+                                        </p>
                                         <div class="other-subject-images">
-                                            <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
-                                            <img src="./images/querySubject/hippopotamus.jpg"
-                                                alt="picture of a hippopotamus" />
-                                            <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
+                                            <img
+                                                src="./images/querySubject/lion.jpg"
+                                                alt="picture of a lion"
+                                            />
+                                            <img
+                                                src="./images/querySubject/hippopotamus.jpg"
+                                                alt="picture of a hippopotamus"
+                                            />
+                                            <img
+                                                src="./images/querySubject/penguin.jpg"
+                                                alt="picture of a penguin"
+                                            />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="back">
                                     <div class="subject-information">
                                         <p class="information">
-                                            <span>Couldn't find your subjects here? Click here to quench your thirst for
-                                                uncertainty.</span>
+                                            <span
+                                                >Couldn't find your subjects
+                                                here? Click here to quench your
+                                                thirst for uncertainty.</span
+                                            >
                                         </p>
                                     </div>
                                     <div class="subject-button">
-                                        <button id="Other-button" class="buttons"
-                                            onclick="getSelectedSubjectMainPage(this.id)">Other</button>
+                                        <button
+                                            id="Other-button"
+                                            class="buttons"
+                                        >
+                                            Other
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="background"></div>
@@ -413,104 +616,182 @@
             </div>
         </div>
 
-    <br><br><br><br><br><br><br><br><br>
-    <section class="review">
-        <div class="container reveal">
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-            <h1 class="heading-title"><i class="fa-solid fa-comment-dots title-icons"></i> User Reviews </h1>
-            <br> <br>
-            <center>
-                <div class="container1">
-                    <div class="circle1">
-                        <h1 class="quote"></h1>
+        <section class="review">
+            <div class="container reveal">
+                <h1 class="heading-title">
+                    <i class="fa-solid fa-comment-dots title-icons"></i> User
+                    Reviews
+                </h1>
+                <br />
+                <br />
+                <center>
+                    <div class="container1">
+                        <div class="circle1">
+                            <h1 class="quote"></h1>
+                        </div>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <p class="contents1">
+                            Amazing keeper for a day experience! we feed or did
+                            enrichment activities with 10 animals. This
+                            experience is definitely value for money and I would
+                            highly recommend it to anyone!
+                        </p>
                     </div>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <p class="contents1">Amazing keeper for a day experience! we feed or did enrichment activities with
-                        10 animals. This experience is definitely value for money and I would highly recommend it to
-                        anyone!</p>
-                </div>
-                <div class="container1">
-                    <div class="circle2">
-                        <h1 class="quote"></h1>
+                    <div class="container1">
+                        <div class="circle2">
+                            <h1 class="quote"></h1>
+                        </div>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="contents1">
+                            Amazing keeper for a day experience! we feed or did
+                            enrichment activities with 10 animals. This
+                            experience is definitely value for money and I would
+                            highly recommend it to anyone!
+                        </p>
                     </div>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <p class="contents1">Amazing keeper for a day experience! we feed or did enrichment activities with
-                        10 animals. This experience is definitely value for money and I would highly recommend it to
-                        anyone!</p>
-                </div>
-                <div class="container1">
-                    <div class="circle3">
-                        <h1 class="quote"></h1>
+                    <div class="container1">
+                        <div class="circle3">
+                            <h1 class="quote"></h1>
+                        </div>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="contents1">
+                            Amazing keeper for a day experience! we feed or did
+                            enrichment activities with 10 animals. This
+                            experience is definitely value for money and I would
+                            highly recommend it to anyone!
+                        </p>
                     </div>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <p class="contents1">Amazing keeper for a day experience! we feed or did enrichment activities with
-                        10 animals. This experience is definitely value for money and I would highly recommend it to
-                        anyone!
-                    </p>
-                </div>
-                <div class="container1">
-                    <div class="circle4">
-                        <h1 class="quote"></h1>
+                    <div class="container1">
+                        <div class="circle4">
+                            <h1 class="quote"></h1>
+                        </div>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <i
+                            style="color: rgb(235, 235, 54)"
+                            class="fa-solid fa-star"
+                        ></i>
+                        <p class="contents1">
+                            Amazing keeper for a day experience! we feed or did
+                            enrichment activities with 10 animals. This
+                            experience is definitely value for money and I would
+                            highly recommend it to anyone!
+                        </p>
                     </div>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <i style="color: rgb(235, 235, 54);" class="fa-solid fa-star"></i>
-                    <p class="contents1">Amazing keeper for a day experience! we feed or did enrichment activities with
-                        10 animals. This experience is definitely value for money and I would highly recommend it to
-                        anyone!</p>
-                </div>
-            </center>
+                </center>
+            </div>
+        </section>
 
-    </section>
-
-    <br><br><br><br><br><br><br>
-    <footer>
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social_icon">
-            <li><a href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a></li>
-            <li><a href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a></li>
-            <li><a href="#">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a></li>
-            <li><a href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </a></li>
-        </ul>
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <p> &copy; AniMarvel | All rights Reserved</p>
-    </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+        <br /><br /><br /><br /><br /><br /><br />
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li>
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>&copy; AniMarvel | All rights Reserved</p>
+        </footer>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
 </html>
