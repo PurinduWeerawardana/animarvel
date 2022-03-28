@@ -141,6 +141,8 @@ section {
     margin: 35px;
     margin-bottom: -70px;
     background-image: url(../images/Thumbnails/pic-5.png);
+    background-position: center;
+    background-size: cover;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -150,6 +152,8 @@ section {
     margin: 35px;
     margin-bottom: -70px;
     background-image: url(../images/Thumbnails/pic-2.png);
+    background-position: center;
+    background-size: cover;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -159,6 +163,8 @@ section {
     margin: 35px;
     margin-bottom: -70px;
     background-image: url(../images/Thumbnails/pic-3.png);
+    background-position: center;
+    background-size: cover;
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -168,6 +174,8 @@ section {
     margin: 35px;
     margin-bottom: -70px;
     background-image: url(../images/Thumbnails/pic-4.png);
+    background-position: center;
+    background-size: cover;
     height: 100px;
     width: 100px;
     border-radius: 50%;
