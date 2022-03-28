@@ -34,7 +34,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1rem;
-    border: 1px solid white;
 }
 
 .zones .box-container .box {

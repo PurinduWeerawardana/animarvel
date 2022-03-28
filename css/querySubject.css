@@ -102,7 +102,7 @@
 #query-part {
     color: #fff;
     font-family: sans-serif;
-    height: 120vh;
+    height: 140vh;
     display: grid;
     align-items: center;
 }
@@ -130,9 +130,27 @@
     align-items: center;
     justify-content: center;
 }
+@media only screen and (max-width: 1800px) {
+    #query-part {
+        height: 150vh;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     #query-part {
-        height: 220vh;
+        height: 130vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #query-part {
+        height: 200vh;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    #query-part {
+        height: 200vh;
     }
     #subjects-body {
         width: 98%;
@@ -145,9 +163,10 @@
         height: 600px;
     }
 }
+
 @media only screen and (max-width: 660px) {
     #query-part {
-        height: 500vh;
+        height: 400vh;
     }
     #subjects-body {
         grid-template-columns: repeat(1, 1fr);
