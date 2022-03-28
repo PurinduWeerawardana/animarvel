@@ -6,24 +6,18 @@
     width: 160px;
     height: 80px;
     margin: 1rem;
-    /* position: fixed;
-    left: 0;
-    top: 20px; */
 }
 
 #primary-header-navigation,
 .navigation-bar-ul {
     display: flex;
-    gap: 2em, 1rem;
+    gap: var(--gap, 1rem);
 }
 
 #primary-header-navigation {
     align-items: center;
     justify-content: space-between;
-    font-family: "Palette Mosaic", cursive;
-    /* position: fixed;
-    right: 0;
-    top: 15px; */
+    font-family: "Poppins", sans-serif;
 }
 
 .navigation-bar-ul {
@@ -31,7 +25,7 @@
     padding: 0;
     margin: 0;
     background: hsl(0 0% 0% / 0.5);
-    color: rgb(83, 255, 163);
+    --clr: rgb(83, 255, 163);
 }
 
 @supports (backdrop-filter: blur(0.7rem)) {
@@ -55,17 +49,17 @@
 .navigation-bar-ul a.nav-bar-titles::before {
     content: attr(data-text);
     position: absolute;
-    color: rgb(83, 255, 163);
+    color: var(--clr);
     width: 0;
     overflow: hidden;
     transition: 1s;
-    border-right: 8px solid rgb(83, 255, 163);
-    -webkit-text-stroke: 1px rgb(83, 255, 163);
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
 }
 
 .navigation-bar-ul a.nav-bar-titles:hover::before {
     width: 100%;
-    filter: drop-shadow(0 0 25px rgb(83, 255, 163));
+    filter: drop-shadow(0 0 25px var(--clr));
 }
 
 .navigation-bar-ul a:active {
@@ -126,7 +120,7 @@
 
     .navigation-toggle {
         display: block;
-        position: fixed;
+        position: absolute;
         z-index: 9999;
         background-color: transparent;
         background: url("../nav-bar/icon-bars.svg");
