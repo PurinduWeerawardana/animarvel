@@ -9,7 +9,6 @@
     align-items: center;
     overflow: hidden;
     font-family: "Poppins", sans-serif;
-    border: 1px solid white;
 }
 
 .ghosting-title h1 {
@@ -104,7 +103,6 @@
     height: 120vh;
     display: grid;
     align-items: center;
-    border: 1px solid rgb(216, 18, 18);
 }
 #subjects-body {
     top: 50%;
@@ -115,16 +113,20 @@
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
-    border: 1px solid white;
     grid-row-gap: 1px;
+    background: rgb(0, 255, 111);
+    background: radial-gradient(
+        circle,
+        rgba(0, 255, 111, 0.28335084033613445) 0%,
+        rgba(0, 0, 0, 0) 48%,
+        rgba(0, 0, 0, 0) 100%
+    );
 }
-
 #subjects-body .subject-box {
     height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
 }
 @media only screen and (max-width: 1200px) {
     #query-part {
