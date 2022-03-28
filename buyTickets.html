@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/buyTickets.css">
+    <script src="https://kit.fontawesome.com/0357fe80c5.js" crossorigin="anonymous"></script>
+    <script src="./scripts/buyTickets.js" defer></script>
+    <title>Buy Tickets</title>
+</head>
+
+<body>
+    <div id="ticket-form-area">
+        <h1><i class="fa-solid fa-ticket title-icons"></i> Buy Tickets Online</h1>
+        <div id="ticket-form">
+            <form>
+                <div class="name-area">
+                    <div>
+                        <label for="fName">First Name</label>
+                        <input type="text" id="fName" placeholder="Enter First Name">
+                    </div>
+                    <div>
+                        <label for="lName">Last Name</label>
+                        <input type="text" id="lName" placeholder="Enter Last Name">
+                    </div>
+                </div>
+
+                <br>
+
+                <label for="email">Email</label>
+                <input id="email" placeholder="Enter Your Email">
+                <br>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter Your Phone Number">
+                <br>
+
+                <label for="visiting-date">Visiting Date</label>
+                <input type="date" id="visiting-date">
+                <br>
+
+                <label for="ticket-type">Ticket Type</label>
+                <select id="ticket-type" required>
+                    <option value="1">~Please select~</option>
+                    <option value="2">Adult (age &gt;= 16 years)</option>
+                    <option value="3">Kids (age &lt; 16 years)</option>
+                </select>
+                <br>
+                <div id="buttons">
+                    <button id="clear-btn" type="button" class="btns"><i class="fa-solid fa-eraser"></i> Clear Form</button>
+                    <button id="submit-btn" type="button" class="btns"><i class="fa-solid fa-dollar-sign"></i> Buy Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Page editor: <a href="./Purindu.html"><span>(1)-Purindu Weerawardana</span></a></p>
+        <p>Copyright &copy; All rights Reserved. </p>
+        <p>Last Updated 28/03/2022</p>
+    </footer>
+</body>
+
+</html>

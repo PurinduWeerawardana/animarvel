@@ -1,0 +1,94 @@
+#ticket-form-area {
+  width: 60%;
+  height: auto;
+  margin: 40px auto;
+  background-color: rgb(27, 27, 27);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px #2ee59d8a;
+}
+
+#ticket-form-area h1 {
+  width: 100%;
+  color: #fff;
+  font-size: 10vh;
+  text-align: center;
+  margin: auto;
+}
+
+#ticket-form {
+  position: relative;
+  margin-top: 20px 0 20px 0;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#ticket-form label {
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 20px 0 10px 0;
+  text-underline-offset: 4px;
+  text-decoration: underline dashed #2ee59d;
+}
+
+#ticket-form input,
+#ticket-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #2ee59d;
+  font-weight: bold;
+  box-shadow: 3px 3px 4px #2ee59d;
+}
+
+#ticket-form input:focus,
+#ticket-form select:focus {
+  transition: all 0.5s ease 0s;
+  outline: none;
+  box-shadow: -3px -3px 4px #2ee59d;
+}
+
+.btns {
+  position: relative;
+  margin-top: 14px;
+  margin-right: 20px;
+  padding: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btns:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px #2ee59c8a;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+#buttons {
+  text-align: center;
+}
+
+.name-area {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
