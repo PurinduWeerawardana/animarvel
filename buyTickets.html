@@ -8,12 +8,49 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/buyTickets.css">
+    <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
+    <script src="./nav-bar/navigation.js" defer></script>
     <script src="https://kit.fontawesome.com/0357fe80c5.js" crossorigin="anonymous"></script>
     <script src="./scripts/buyTickets.js" defer></script>
     <title>Buy Tickets</title>
 </head>
 
 <body>
+    <header id="primary-header-navigation">
+        <div id="logo"></div>
+        <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav class="navigation-bar">
+            <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
+                <li>
+                    <a href="./index.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
+                </li>
+                <li>
+                    <a href="./gallery.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Zones">&nbsp;&nbsp;Zones</a>
+                </li>
+                <li>
+                    <a href="./svg.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Site&minus;Map">&nbsp;&nbsp;Site&minus;Map</a>
+                </li>
+                <li>
+                    <a href="./quiz.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
+                </li>
+                <li>
+                    <a href="./discounts.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Discounts">&nbsp;&nbsp;Discounts</a>
+                </li>
+                <li>
+                    <a href="./buyMerch.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Buy&minus;Merch">&nbsp;&nbsp;Buy&minus;Merch</a>
+                </li>
+                <li>
+                    <a href="./Ginura/QueryForm.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div id="ticket-form-area">
         <h1><i class="fa-solid fa-ticket title-icons"></i> Buy Tickets Online</h1>
         <div id="ticket-form">
@@ -46,9 +83,13 @@
                 <label for="ticket-type">Ticket Type</label>
                 <select id="ticket-type" required>
                     <option value="1">~Please select~</option>
-                    <option value="2">Adult (age &gt;= 16 years)</option>
-                    <option value="3">Kids (age &lt; 16 years)</option>
+                    <option value="adult">Adult (age &gt;= 16 years)</option>
+                    <option value="kid">Kids (age &lt; 16 years)</option>
                 </select>
+                <div class="count-area">
+                <label for="visiting-date">Ticket count</label>
+                <input type="number" name="ticket-count" id="ticket-count" placeholder="0" min="1" max="30">
+                </div>
                 <br>
                 <div id="buttons">
                     <button id="clear-btn" type="button" class="btns"><i class="fa-solid fa-eraser"></i> Clear Form</button>

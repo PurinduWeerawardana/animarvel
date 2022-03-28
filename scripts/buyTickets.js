@@ -14,8 +14,9 @@ document.getElementById("clear-btn").addEventListener("click", function() {
             var phone = document.getElementById("phone").value;
             var visitingDate = document.getElementById("visiting-date").value;
             var ticketType = document.getElementById("ticket-type").value;
+            var ticketCount = document.getElementById("ticket-count").value;
 
-            if (fName == "" || lName == "" || email == "" || phone == "" || visitingDate == "" || ticketType == "1") {
+            if (fName == "" || lName == "" || email == "" || phone == "" || visitingDate == "" || ticketType == "1" || ticketCount == "") {
                 alert("Please fill out all fields.");
             }else if (!email.includes("@") || !email.includes(".")){
                 alert("Please enter a valid email.");

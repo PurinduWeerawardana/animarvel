@@ -12,7 +12,7 @@
 #ticket-form-area h1 {
   width: 100%;
   color: #fff;
-  font-size: 10vh;
+  font-size: 4.5rem;
   text-align: center;
   margin: auto;
 }
@@ -26,6 +26,7 @@
 }
 
 #ticket-form label {
+    font-size: 1.2rem;
   color: #fff;
   text-align: center;
   display: block;
@@ -54,6 +55,11 @@
   transition: all 0.5s ease 0s;
   outline: none;
   box-shadow: -3px -3px 4px #2ee59d;
+}
+
+.count-area{
+    width: 50%;
+    margin: auto;
 }
 
 .btns {
@@ -91,4 +97,9 @@
 
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
+}
+
+#ticket-form option {
+  background-color: rgb(27, 27, 27);
+  font-size: larger;
 }
