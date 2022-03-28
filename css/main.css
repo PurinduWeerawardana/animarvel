@@ -21,16 +21,21 @@
 }
 
 .zones .box-container .box {
+    color: #fff;
     padding: 1rem 1rem;
     text-align: center;
     background: #686565;
     border-radius: 25px;
     cursor: pointer;
+    margin: 0 10px;
     outline: #ffffff solid 5px;
 }
 .zones .box-container .box:hover {
+    color:#2ee59d;
     transition: 0.5s;
     transform: translateY(-10px);
+    outline:#2ee59d solid 5px;
+    box-shadow: 0px 10px 30px #2ee59d;
 }
 
 .zones .box-container .box img {
@@ -40,10 +45,6 @@
 .zones .box-container .box h3 {
     font-size: 1.7rem;
     padding-top: 1rem;
-}
-
-h3 {
-    color: white;
 }
 
 .about {
@@ -90,8 +91,18 @@ h3 {
 }
 
 .about .content .icons-container .icons {
+    border: 5px solid #fff;
+    border-radius: 50px;
     padding: 1rem;
     flex: 1 1 16rem;
+}
+
+.about .content .icons-container .icons:hover{
+    color:#2ee59d;
+    transition: 0.5s;
+    transform: translateY(-10px);
+    border:#2ee59d solid 5px;
+    box-shadow: 0px 10px 30px #2ee59d;
 }
 
 .about .content .icons-container .icons i {
@@ -100,13 +111,13 @@ h3 {
 }
 
 .about .content .icons-container .icons span {
+    color: white;
     font-size: 1.5rem;
     display: block;
 }
 .about .content .icons-container .icons .i span {
     padding: 1rem 1rem;
     text-align: center;
-    background-color: #2a7c4c;
     cursor: pointer;
 }
 
