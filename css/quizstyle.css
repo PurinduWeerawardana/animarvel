@@ -5,7 +5,7 @@
   font-family: "poppins", sans-serif;
 }
 
-body {
+#static {
   background-image: linear-gradient(315deg, black 0%, rgb(17, 71, 71) 100%);
   display: flex;
   align-items: center;
@@ -13,6 +13,30 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.start {
+  display: block;
+  align-content: center;
+}
+
+.start-label {
+  color: white;
+  font-size: 45px;
+}
+
+#start-button {
+  padding: 2px 30px 2px 30px;
+  border-radius: 5px;
+  font-size: 40px;
+  color: back;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 1px 1px;
+}
+
+#start-button:hover {
+  background-color: lightgrey;
 }
 
 #static-weak {
@@ -86,6 +110,7 @@ body {
 }
 
 .quiz-container {
+  display: none;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px 20x rgba(100, 100, 100, 0.1);
@@ -118,7 +143,7 @@ ul li label {
   cursor: pointer;
 }
 
-button {
+#submit {
   background-color: limegreen;
   color: white;
   display: block;
@@ -129,11 +154,11 @@ button {
   padding: 1.3rem;
 }
 
-button:hover {
+#submit:hover {
   background-color: blue;
 }
 
-button:focus {
+#submit:focus {
   outline: none;
   background-color: yellow;
 }

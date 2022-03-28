@@ -1,5 +1,5 @@
 const time = document.getElementById("Timer");
-let timeshow = 60;
+let timeshow = 1000;
 
 displayTime(timeshow);
 
