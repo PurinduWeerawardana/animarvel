@@ -50,7 +50,6 @@ categoryButtons.forEach(function (button) {
 
 let queryString = window.location.search;
 urlParams = new URLSearchParams(queryString);
-console.log(urlParams);
 
 if (urlParams.has("tShirt") === true) {
   document.getElementById("t-shirts").click();
