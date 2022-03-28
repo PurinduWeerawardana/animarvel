@@ -9,6 +9,7 @@
     align-items: center;
     overflow: hidden;
     font-family: "Poppins", sans-serif;
+    border: 1px solid white;
 }
 
 .ghosting-title h1 {
@@ -100,9 +101,10 @@
 #query-part {
     color: #fff;
     font-family: sans-serif;
-    height: 100vh;
+    height: 120vh;
     display: grid;
     align-items: center;
+    border: 1px solid rgb(216, 18, 18);
 }
 #subjects-body {
     top: 50%;
@@ -113,16 +115,21 @@
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
+    border: 1px solid white;
     grid-row-gap: 1px;
 }
 
 #subjects-body .subject-box {
-    height: 500px;
+    height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid white;
 }
 @media only screen and (max-width: 1200px) {
+    #query-part {
+        height: 220vh;
+    }
     #subjects-body {
         width: 98%;
         margin: 0.5rem auto;
@@ -135,6 +142,9 @@
     }
 }
 @media only screen and (max-width: 660px) {
+    #query-part {
+        height: 500vh;
+    }
     #subjects-body {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -150,13 +160,11 @@ p {
     margin: 0;
 }
 
-/* game */
 .subject {
     position: relative;
     width: 15.5em;
 }
 
-/* streamers */
 .other-subject-images {
     display: flex;
     text-align: left;
@@ -215,7 +223,7 @@ p {
 }
 
 .subject:hover .subject-number {
-    transform: translate(90%, 6%);
+    transform: translate(90%, -28%);
     background-color: rgba(255, 255, 255, 0.582);
     color: #000000;
 }
@@ -271,11 +279,11 @@ p {
     opacity: 1;
     transition: transform 250ms cubic-bezier(0.21, 1, 0.81, 1),
         opacity 100ms linear;
-    transform: scale(1.25, 1.2) translateY(9%);
+    transform: scale(1.25, 1.4) translateY(11%);
 }
 
 .subject:hover .front {
-    transform: translateY(-30%) scale(0.7);
+    transform: translateY(-30%) scale(0.8);
 }
 
 .subject:hover .front .stats {
