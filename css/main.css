@@ -155,14 +155,14 @@ section {
 }
 .container1 {
   display: inline-block;
+  text-align: center;
   margin: 0 10px 0 0;
   border: 2px solid #dfe0e2;
   box-shadow: 5px 5px #a2aebb;
   border-radius: 30px;
   width: 400px;
-  min-height: auto;
   background-color: white;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .circle1 {
@@ -233,14 +233,14 @@ section {
   padding: 30px 30px;
   font-family: "Robto", Arial;
   font-size: 1.5em;
-  text-align: justify;
+  text-align: center;
   letter-spacing: 1.5px;
 }
 
 .rev {
-  display: inline-block;
+  width: 96%;
   position: relative;
-  margin: auto;
+  text-align: center;
   left: 50%;
   transform: translateX(-50%);
 }
