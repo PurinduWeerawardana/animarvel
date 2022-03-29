@@ -228,3 +228,8 @@ section {
   text-align: justify;
   letter-spacing: 1.5px;
 }
+
+.rev{
+  transform: translateX(8vw);
+  display: inline-block;
+}
