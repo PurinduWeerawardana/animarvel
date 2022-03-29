@@ -83,3 +83,55 @@
   }
 }
 
+/*animated text*/
+svg {
+  display: block;
+  font: 10.5em "Montserrat";
+  width: 60vw;
+  
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #3fdd3f
+
+  ;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #3fdd3f
+
+  ;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #9abd00;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #00bd84;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #ffffff;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
