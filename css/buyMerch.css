@@ -144,3 +144,10 @@ h1 {
   background-color: #2ee59d;
   color: #fff;
 }
+
+.btn-merch{
+  width: max-content;
+  padding: 0 30px;
+  margin: 0 5px;
+  font-size: 20px;
+}
