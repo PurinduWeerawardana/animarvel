@@ -229,7 +229,10 @@ section {
   letter-spacing: 1.5px;
 }
 
-.rev{
-  transform: translateX(8vw);
+.rev {
   display: inline-block;
+  position: relative;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
 }
