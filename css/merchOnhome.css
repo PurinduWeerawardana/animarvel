@@ -1,10 +1,9 @@
 #merch-area {
   position: relative;
-  margin-top: 5vh;
+  margin-top: 10vh;
   color: #fff;
   width: 100%;
   height: auto;
-  overflow: hidden;
 }
 
 #cart-icon-heading {
@@ -49,7 +48,7 @@
 
 .category:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #ffcc00;
+  box-shadow: 0 0px 10px #ffcc00;
 }
 
 .category h2 {
@@ -66,7 +65,7 @@
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  text-shadow: 4px 4px 10px #2e2828;
+  text-shadow: 4px px 10px #2e2828;
   transition: 0.4s;
   background: rgba(49, 40, 40, 0.692);
   -webkit-backdrop-filter: blur(0.5rem);
@@ -86,24 +85,15 @@
 .shop-now {
   position: relative;
   top: -600px;
-  padding: 20px;
-  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  width: 80%;
 }
 
-.shop-now:hover {
-  background-color: #2ee59d;
-  box-shadow: 0px 15px 20px #2ee59c8a;
-  color: #fff;
-  transform: translateY(-7px);
-}
+
 
 .category h2 .fa-solid {
   font-size: 4rem;
