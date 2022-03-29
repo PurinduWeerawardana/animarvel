@@ -1,4 +1,4 @@
-document.getElementById("Tickets-button").onclick = function () {location.href = "/QueryForm.html?button=Tickets-button";};
+document.getElementById("Tickets-button").onclick = function () {location.href = "./QueryForm.html?button=Tickets-button";};
 document.getElementById("Deliver-button").onclick = function () {location.href = "/QueryForm.html?button=Deliver-button";};
 document.getElementById("Product-button").onclick = function () {location.href = "/QueryForm.html?button=Product-button";};
 document.getElementById("Website-button").onclick = function () {location.href = "/QueryForm.html?button=Website-button";};
