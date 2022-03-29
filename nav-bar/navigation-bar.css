@@ -11,7 +11,7 @@
 #primary-header-navigation,
 .navigation-bar-ul {
     display: flex;
-    gap: var(--gap, 1rem);
+    gap: 2em, 1rem;
 }
 
 #primary-header-navigation {
@@ -25,7 +25,7 @@
     padding: 0;
     margin: 0;
     background: hsl(0 0% 0% / 0.5);
-    --clr: rgb(83, 255, 163);
+    color: rgb(83, 255, 163);
 }
 
 @supports (backdrop-filter: blur(0.7rem)) {
@@ -47,19 +47,19 @@
 }
 
 .navigation-bar-ul a.nav-bar-titles::before {
-    content: attr(data-text);
     position: absolute;
-    color: var(--clr);
     width: 0;
+    content: attr(data-text);
     overflow: hidden;
-    transition: 1s;
-    border-right: 8px solid var(--clr);
-    -webkit-text-stroke: 1px var(--clr);
+    transition: 1.1s;
+    color: rgb(83, 255, 163);
+    border-right: 8px solid rgb(83, 255, 163);
+    -webkit-text-stroke: 1px rgb(83, 255, 163);
 }
 
 .navigation-bar-ul a.nav-bar-titles:hover::before {
     width: 100%;
-    filter: drop-shadow(0 0 25px var(--clr));
+    filter: drop-shadow(0 0 25px rgb(83, 255, 163));
 }
 
 .navigation-bar-ul a:active {
