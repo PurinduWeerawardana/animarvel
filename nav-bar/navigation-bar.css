@@ -11,7 +11,7 @@
 #primary-header-navigation,
 .navigation-bar-ul {
     display: flex;
-    gap: 2em, 1rem;
+    gap: 2em 1rem;
 }
 
 #primary-header-navigation {
