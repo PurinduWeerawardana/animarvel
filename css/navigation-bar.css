@@ -11,7 +11,7 @@
 #primary-header-navigation,
 .navigation-bar-ul {
     display: flex;
-    gap: var(--gap, 1rem);
+    gap: 2em 1rem;
 }
 
 #primary-header-navigation {
@@ -25,7 +25,7 @@
     padding: 0;
     margin: 0;
     background: hsl(0 0% 0% / 0.5);
-    --clr: rgb(83, 255, 163);
+    color: rgb(83, 255, 163);
 }
 
 @supports (backdrop-filter: blur(0.7rem)) {
@@ -49,17 +49,17 @@
 .navigation-bar-ul a.nav-bar-titles::before {
     content: attr(data-text);
     position: absolute;
-    color: var(--clr);
+    color: rgb(83, 255, 163);
     width: 0;
     overflow: hidden;
     transition: 1s;
-    border-right: 8px solid var(--clr);
-    -webkit-text-stroke: 1px var(--clr);
+    border-right: 8px solid rgb(83, 255, 163);
+    -webkit-text-stroke: 1px rgb(83, 255, 163);
 }
 
 .navigation-bar-ul a.nav-bar-titles:hover::before {
     width: 100%;
-    filter: drop-shadow(0 0 25px var(--clr));
+    filter: drop-shadow(0 0 25px rgb(83, 255, 163));
 }
 
 .navigation-bar-ul a:active {
@@ -95,7 +95,7 @@
 
 @media (min-width: 72em) {
     .navigation-bar-ul {
-        --gap: clamp(1rem, 5vw, 3rem);
+        gap: clamp(1rem, 5vw, 3rem);
         padding-block: 2rem;
         padding-inline: clamp(3rem, 8vw, 10rem);
     }
@@ -105,7 +105,7 @@
     .navigation-bar-ul {
         position: fixed;
         z-index: 1000;
-        --gap: 2em;
+        gap: 2em;
         /* shorthand for margin to bottom left right */
         inset: 0 0 0 30%;
         flex-direction: column;
