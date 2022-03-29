@@ -167,7 +167,7 @@
 
 @media only screen and (max-width: 660px) {
     #query-part {
-        height: 400vh;
+        height: 500vh;
     }
     #subjects-body {
         grid-template-columns: repeat(1, 1fr);

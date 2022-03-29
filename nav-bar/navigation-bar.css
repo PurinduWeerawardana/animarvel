@@ -120,7 +120,7 @@
 
     .navigation-toggle {
         display: block;
-        position: absolute;
+        position: fixed;
         z-index: 9999;
         background-color: transparent;
         background: url("../nav-bar/icon-bars.svg");
