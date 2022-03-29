@@ -16,7 +16,6 @@
 #invoice-header {
   display: flex;
   position: relative;
-  width: max-width;
   margin: auto;
   border-radius: 30px;
   background-color: rgb(27, 27, 27);

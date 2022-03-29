@@ -13,11 +13,9 @@
         }
 
         .contents {
-            margin-left: 620px;
-            margin-right: 520px;
+            width: max-content;
+            margin: auto;
             border-style: solid;
-            margin-top: 70px;
-            margin-bottom: 10px;
             padding-left: 30px;
             padding-right: 30px;
             background: rgb(40, 173, 218);
@@ -27,34 +25,35 @@
             align-content: center;
         }
 
-        .font {
-            font-size: 35px;
+        .bold {
+            font-weight: bold;
         }
 
         img {
-            margin-top: 20px;
             position: relative;
-            margin-left: 800px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            margin: auto;
         }
     </style>
     <link rel="stylesheet" href="pageeditor.css">
 </head>
 
 <body>
-    <img src="./images/Thumbnails/logo.png" width="350pt" alt="Animarvel logo">
+    <img src="./images/Thumbnails/logo.png" alt="Animarvel logo">
 
     <div class="contents">
         <div class="text">
 
-            <dl><b>Student name: </b>Purindu Weerawardana</dl>
-            <dl><b>Student role:</b>1<br>
-                <dl><b>Tasks completed:</b></dl>
+            <p><span class="bold">Student name:</span> Purindu Weerawardana</p>
+            <p><span class="bold">Student role:</span> 1</p>
+            <p><span class="bold">Tasks completed:</span></p>
+            <ul>
                 <li>Created Main Page</li>
                 <li>Created Presentation Page</li>
                 <li>Created Buy Products</li>
                 <li>Created page editor</li>
-
-            </dl><br><br>
+            </ul>
             <p> To go to home page: <a href="./index.html">HOME PAGE</a></p>
         </div>
     </div>
