@@ -1,27 +1,81 @@
-footer {
+.buttons {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  width: 175px;
+  height: 60px;
+  border: none;
+  outline: none;
   color: #fff;
-  background-image: radial-gradient(circle, #131414, #2ee59c6b, #131414);
-  text-align: center;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: rgba(151, 151, 151, 0.6);
-  padding-top: 10px;
-  padding-bottom: 8px;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  /* margin-top: 20px; */
+}
+
+.buttons:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.buttons:active {
+  color: #000;
+  font-size: 25px;
+}
+
+.buttons:active:after {
+  background: transparent;
+}
+
+.buttons:hover:before {
+  opacity: 1;
+}
+
+.buttons:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
   width: 100%;
-  font-size: 14px;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
-footer a {
-  text-decoration: none;
-  color: #e5e22e;
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
-footer a:hover {
-  color: red;
-  transition: all 0.5s ease 0s;
-}
-
-footer p {
-  font-size: 16px;
-  margin: 10px 0;
-}

@@ -1,0 +1,27 @@
+footer {
+  color: #fff;
+  background-image: radial-gradient(circle, #131414, #2ee59c6b, #131414);
+  text-align: center;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: rgba(151, 151, 151, 0.6);
+  padding-top: 10px;
+  padding-bottom: 8px;
+  width: 100%;
+  font-size: 14px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e5e22e;
+}
+
+footer a:hover {
+  color: red;
+  transition: all 0.5s ease 0s;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 10px 0;
+}

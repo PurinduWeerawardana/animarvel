@@ -5,6 +5,7 @@ body {
   background-size: cover;
   background-attachment: scroll;
 }
+
 #navbar {
   clear: both;
   border: 1px solid white;
@@ -104,6 +105,11 @@ h1 {
   transition: 0.5s;
 }
 
+.item-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffcc00;
+}
+
 .item-card img {
   margin-left: 0px;
   margin-top: 0px;
@@ -120,7 +126,7 @@ h1 {
   padding-top: 35px;
   padding-bottom: 14px;
   border-radius: 50px;
-  background-image: linear-gradient(#1c1c1c69, #1c1c1c);
+  background-image: linear-gradient(#fff8f869, #1c1c1c);
 }
 
 .item-info h2 {
@@ -132,35 +138,6 @@ h1 {
 
 .item-info p {
   font-size: 1.5rem;
-}
-
-.add-to-cart {
-  padding: 20px;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  transition: all 0.3s ease 0s;
-  cursor: cell;
-  outline: none;
-}
-
-.add-to-cart:hover {
-  background-color: #2ee59d;
-  box-shadow: 0px 15px 20px #2ee59c8a;
-  color: #fff;
-  transform: translateY(-7px);
-}
-
-.add-to-cart:active {
-  transform: translateY(-7px);
-}
-
-.item-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #ffcc00;
 }
 
 .item-preview :hover {

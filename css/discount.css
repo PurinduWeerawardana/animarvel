@@ -99,3 +99,12 @@ svg {
     stroke-dashoffset: -35%;
   }
 }
+
+.row2{
+  transform: translateX(10vw);
+  display: inline-block;
+}
+.row3{
+  transform: translateX(19vw);
+  display: inline-block;
+}

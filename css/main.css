@@ -166,48 +166,56 @@ section {
 }
 
 .circle1 {
-  margin: 35px;
-  margin-bottom: -70px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  border: 6px solid #2ee59d;
   background-image: url(../images/Thumbnails/pic-5.png);
   background-position: center;
   background-size: cover;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  transform: translateY(-100px);
 }
 .circle2 {
-  margin: 35px;
-  margin-bottom: -70px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  border: 6px solid #2ee59d;
   background-image: url(../images/Thumbnails/pic-2.png);
   background-position: center;
   background-size: cover;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  transform: translateY(-100px);
 }
 .circle3 {
-  margin: 35px;
-  margin-bottom: -70px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  border: 6px solid #2ee59d;
   background-image: url(../images/Thumbnails/pic-3.png);
   background-position: center;
   background-size: cover;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  transform: translateY(-100px);
 }
 .circle4 {
-  margin: 35px;
-  margin-bottom: -70px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  border: 6px solid #2ee59d;
   background-image: url(../images/Thumbnails/pic-4.png);
   background-position: center;
   background-size: cover;
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  transform: translateY(-100px);
 }
 
 .rev-name {
@@ -227,4 +235,22 @@ section {
   font-size: 1.5em;
   text-align: justify;
   letter-spacing: 1.5px;
+}
+
+.rev {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.stars{
+  width: max-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #35323180;
+  padding: 10px;
+  border-radius: 50px;
 }
