@@ -26,7 +26,7 @@
 }
 
 #ticket-form label {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
   color: #fff;
   text-align: center;
   display: block;
@@ -57,9 +57,9 @@
   box-shadow: -3px -3px 4px #2ee59d;
 }
 
-.count-area{
-    width: 50%;
-    margin: auto;
+.count-area {
+  width: 50%;
+  margin: auto;
 }
 
 .btns {

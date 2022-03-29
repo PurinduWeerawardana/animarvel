@@ -82,18 +82,20 @@
 
                 <label for="ticket-type">Ticket Type</label>
                 <select id="ticket-type">
-                    <option value="1">~Please select~</option>
+                    <option disabled selected value="1">~Please select~</option>
                     <option value="adult">Adult (age &gt;= 16 years)</option>
                     <option value="kid">Kids (age &lt; 16 years)</option>
                 </select>
                 <div class="count-area">
-                <label for="visiting-date">Ticket count</label>
-                <input type="number" name="ticket-count" id="ticket-count" placeholder="0" min="1" max="30">
+                    <label for="visiting-date">Ticket count</label>
+                    <input type="number" name="ticket-count" id="ticket-count" placeholder="0" min="1" max="30">
                 </div>
                 <br>
                 <div id="buttons">
-                    <button id="clear-btn" type="button" class="btns"><i class="fa-solid fa-eraser"></i> Clear Form</button>
-                    <button id="submit-btn" type="button" class="btns"><i class="fa-solid fa-dollar-sign"></i> Buy Now</button>
+                    <button id="clear-btn" type="button" class="btns"><i class="fa-solid fa-eraser"></i> Clear
+                        Form</button>
+                    <button id="submit-btn" type="button" class="btns"><i class="fa-solid fa-dollar-sign"></i> Buy
+                        Now</button>
                 </div>
             </form>
         </div>

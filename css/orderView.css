@@ -32,7 +32,7 @@
 }
 
 .product-price {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   text-align: center;
 }
 
@@ -50,11 +50,12 @@
   overflow: auto;
 }
 
-#cart-list li{
+#cart-list li {
   margin-top: 25px;
 }
 
-#cart-list li h3, #cart-list li h4 {
+#cart-list li h3,
+#cart-list li h4 {
   margin-bottom: 15px;
 }
 
