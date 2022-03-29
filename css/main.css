@@ -40,7 +40,8 @@
     color: #fff;
     padding: 1rem 1rem;
     text-align: center;
-    background: #686565;
+    background: rgba(128, 251, 117, 0.123);
+    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
     border-radius: 25px;
     cursor: pointer;
     margin: 0 10px;
