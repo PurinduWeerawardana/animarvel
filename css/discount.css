@@ -43,20 +43,28 @@ img {
 
 html,
 body {
+  background: #000000;
   height: 100%;
   font-weight: 800;
 }
 
 body {
-  background: #030321;
+  background: rgb(0, 255, 111);
+  background: radial-gradient(
+      circle,
+      rgba(0, 255, 111, 0.28335084033613445) 0%,
+      rgba(0, 0, 0, 0) 48%,
+      rgba(0, 0, 0, 0) 100%
+  );
+
   font-family: Arial;
 }
 
 svg {
   display: block;
   font: 10.5em "Montserrat";
-  width: 960px;
-  height: 300px;
+  width: 60vw;
+  
   margin: 0 auto;
 }
 
@@ -70,27 +78,31 @@ svg {
 }
 
 .text-copy:nth-child(1) {
-  stroke: #4d163d;
+  stroke: #3fdd3f
+
+  ;
   animation-delay: -1;
 }
 
 .text-copy:nth-child(2) {
-  stroke: #840037;
+  stroke: #3fdd3f
+
+  ;
   animation-delay: -2s;
 }
 
 .text-copy:nth-child(3) {
-  stroke: #bd0034;
+  stroke: #9abd00;
   animation-delay: -3s;
 }
 
 .text-copy:nth-child(4) {
-  stroke: #bd0034;
+  stroke: #00bd84;
   animation-delay: -4s;
 }
 
 .text-copy:nth-child(5) {
-  stroke: #fdb731;
+  stroke: #ffffff;
   animation-delay: -5s;
 }
 
