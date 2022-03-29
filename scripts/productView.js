@@ -145,12 +145,12 @@ function viewCart() {
   if (cart.length == 0) {
     alert("Your cart is still empty!");
     placeOrderButton.disabled = true;
-      placeOrderButton.style.cursor = "not-allowed";
+    placeOrderButton.style.cursor = "not-allowed";
   } else {
     placeOrderButton.disabled = false;
-      placeOrderButton.style.cursor = "pointer";
-      placeOrderButton.addEventListener("click", placeOrder);
-    }
+    placeOrderButton.style.cursor = "pointer";
+    placeOrderButton.addEventListener("click", placeOrder);
+  }
 }
 
 document.getElementById("cart-button").addEventListener("click", viewCart);

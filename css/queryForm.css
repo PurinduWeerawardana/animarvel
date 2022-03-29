@@ -1,472 +1,470 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #filled-query {
-    display: none;
+  display: none;
 }
 
 #query-form-container {
-    display: block;
+  display: block;
 }
 
 html {
-    background-image: url("../images/queryForm-img/background1.jpg");
-    background-size: cover;
-    max-width: 100%;
+  background-image: url("../images/queryForm-img/background1.jpg");
+  background-size: cover;
+  max-width: 100%;
 }
 
 #website-container {
-    width: 100%;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    color: #fff;
-    font-family: "Barlow Condensed", sans-serif;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
 #query-form-container {
-    max-width: 700px;
-    width: 100%;
-    padding: 45px 30px 45px 120px;
-    border-radius: 5px;
+  max-width: 700px;
+  width: 100%;
+  padding: 45px 30px 45px 120px;
+  border-radius: 5px;
 
-    background: rgba(0, 0, 0, 0.26);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.26);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 #query-form-container:hover {
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
 }
 
 .title {
-    position: relative;
-    font-size: 35px;
-    font-weight: 750;
-    padding-bottom: 5px;
+  position: relative;
+  font-size: 35px;
+  font-weight: 750;
+  padding-bottom: 5px;
 }
 
 #query-form-container .title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background: linear-gradient(135deg, #3fdd3f, #0e7c64);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #3fdd3f, #0e7c64);
 }
 
 #query-form .user-details .user-name {
-    margin: 30px 0 15px 0;
-    width: 60%;
+  margin: 30px 0 15px 0;
+  width: 60%;
 }
 
 #query-form .user-details .user-email {
-    display: block;
-    margin: 20px 0 15px 0;
-    width: 90%;
+  display: block;
+  margin: 20px 0 15px 0;
+  width: 90%;
 }
 
 #query-form .query-subject {
-    margin: 20px 0 15px 0;
-    width: 300px;
+  margin: 20px 0 15px 0;
+  width: 300px;
 }
 
 #query-form .query-details {
-    margin: 20px 0 40px 0;
+  margin: 20px 0 40px 0;
 }
 
 .input-text {
-    display: block;
-    height: 45px;
-    width: 80%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-    color: #000;
-    font-weight: 750;
+  display: block;
+  height: 45px;
+  width: 80%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  color: #000;
+  font-weight: 750;
 
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .select {
-    display: block;
-    height: 45px;
-    width: 70%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  height: 45px;
+  width: 70%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .input-textarea {
-    display: block;
-    height: 150px;
-    width: 72%;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #ccc;
-    padding: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-bottom-width: 3px;
-    transition: all 0.3s ease;
+  display: block;
+  height: 150px;
+  width: 72%;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-bottom-width: 3px;
+  transition: all 0.3s ease;
 
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 ::placeholder {
-    color: rgb(36, 36, 36);
-    font-weight: 750;
+  color: rgb(36, 36, 36);
+  font-weight: 750;
 }
 
 .input-text:focus {
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
-    color: #fff;
+  background: rgba(0, 0, 0, 0.486);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
+  color: #fff;
 }
 
 .empty-input-text {
-    display: block;
-    height: 45px;
-    width: 80%;
-    outline: none;
-    border-radius: 5px;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-    font-weight: 750;
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 0, 0, 0.87);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  display: block;
+  height: 45px;
+  width: 80%;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-weight: 750;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 0, 0, 0.87);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
 }
 
 .filled-input-text {
-    display: block;
-    height: 45px;
-    width: 80%;
-    outline: none;
-    border-radius: 5px;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    /* border-bottom-width: 2px; */
-    transition: all 0.3s ease;
-    font-weight: 750;
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
-    color: #fff;
+  display: block;
+  height: 45px;
+  width: 80%;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-weight: 750;
+  background: rgba(0, 0, 0, 0.486);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
+  color: #fff;
 }
 
 .empty-textarea {
-    display: block;
-    height: 150px;
-    width: 72%;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #ccc;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-bottom-width: 3px;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 0, 0, 0.87);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  display: block;
+  height: 150px;
+  width: 72%;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-bottom-width: 3px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 0, 0, 0.87);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
 }
 .filled-textarea {
-    display: block;
-    height: 150px;
-    width: 72%;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #ccc;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-bottom-width: 3px;
-    transition: all 0.3s ease;
-    background: rgba(0, 0, 0, 0.445);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
-    color: #fff;
+  display: block;
+  height: 150px;
+  width: 72%;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-bottom-width: 3px;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.445);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
+  color: #fff;
 }
 .empty-select {
-    display: block;
-    height: 45px;
-    width: 70%;
-    outline: none;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
+  display: block;
+  height: 45px;
+  width: 70%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
 
-    background: rgba(255, 255, 255, 0.25);
-    border: 1px solid rgba(255, 0, 0, 0.87);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 0, 0, 0.87);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
 }
 
 .filled-select {
-    display: block;
-    height: 45px;
-    width: 70%;
-    outline: none;
-    border-radius: 5px;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.445);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
+  display: block;
+  height: 45px;
+  width: 70%;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.445);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
 }
 
 .input-text:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .input-text:focus::placeholder {
-    color: #ccc;
+  color: #ccc;
 }
 
 form select:focus {
-    background: rgba(0, 0, 0, 0.445);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
-    color: #ccc;
+  background: rgba(0, 0, 0, 0.445);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
+  color: #ccc;
 }
 
 select {
-    color: rgb(46, 46, 46);
-    font-weight: 750;
+  color: rgb(46, 46, 46);
+  font-weight: 750;
 }
 
 .selected-option {
-    color: #fff;
+  color: #fff;
 }
 .selected-option::selection {
-    color: rgb(253, 253, 253);
+  color: rgb(253, 253, 253);
 }
 form select:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 form textarea:focus {
-    background: rgba(0, 0, 0, 0.445);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
-    color: #fff;
+  background: rgba(0, 0, 0, 0.445);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
+  color: #fff;
 }
 
 form textarea:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .labels {
-    font-weight: 500;
-    margin-bottom: 5px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .query-subject #first-value {
-    color: rgba(0, 0, 0, 0.479);
+  color: rgba(0, 0, 0, 0.479);
 }
 @media (max-width: 584px) {
-    #query-form-container {
-        max-width: 100%;
-    }
+  #query-form-container {
+    max-width: 100%;
+  }
 
-    #query-form .user-details .user-name {
-        width: 100%;
-    }
-    #query-form .user-details .user-email {
-        width: 100%;
-    }
+  #query-form .user-details .user-name {
+    width: 100%;
+  }
+  #query-form .user-details .user-email {
+    width: 100%;
+  }
 
-    #query-form .query-subject {
-        width: 100%;
-    }
+  #query-form .query-subject {
+    width: 100%;
+  }
 
-    #query-form .query-details {
-        width: 100%;
-    }
+  #query-form .query-details {
+    width: 100%;
+  }
 
-    #scroll-set {
-        max-height: 300px;
-        overflow-y: scroll;
-    }
+  #scroll-set {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
 
-    #scroll-set::-webkit-scrollbar {
-        width: 0;
-    }
+  #scroll-set::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 #filled-query {
-    max-width: 700px;
-    width: 100%;
-    background: rgba(36, 35, 35, 0.1);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    z-index: 10;
-    padding: 45px 30px;
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
+  max-width: 700px;
+  width: 100%;
+  background: rgba(36, 35, 35, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  z-index: 10;
+  padding: 45px 30px;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
 }
 
 #filled-query .title {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 #filled-query .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background: linear-gradient(135deg, #3fdd3f, #0e7c64);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #3fdd3f, #0e7c64);
 }
 
 #filled-query .list {
-    position: relative;
-    display: flex;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 #filled-query .list:hover {
-    background: rgba(255, 255, 255, 0.63);
-    box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
-    transform: scale(1.15) translateX(30px) translateY(-15px);
-    z-index: 1000;
+  background: rgba(255, 255, 255, 0.63);
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.15) translateX(30px) translateY(-15px);
+  z-index: 1000;
 }
 
 #filled-query .list .img {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 10px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
 }
 #filled-query .list .img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #filled-query .list .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    max-width: 80%;
-    white-space: nowrap;
-    overflow: auto;
-    text-overflow: clip;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: clip;
 }
 
 #filled-query .list .content .filled-labels {
-    font-size: 1.2em;
-    line-height: 1.2em;
-    font-weight: 600;
-    transition: 0.5s;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
 }
 
 #filled-query .list .content .filled-details {
-    font-size: 1.2em;
-    transition: 0.5s;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: auto;
-    text-overflow: clip;
+  font-size: 1.2em;
+  transition: 0.5s;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: clip;
 }
 
 #filled-query .list:hover .content .filled-labels,
 #filled-query .list:hover .content .filled-details {
-    color: #333;
+  color: #333;
 }
 
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 6px;
+  width: 3px;
+  height: 6px;
 }
 
 /* Track */
 .filled-details::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* Handle */
 .filled-details::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .filled-details::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 .filled-details::-webkit-scrollbar-thumb:active {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #filled-query #edit-button {
-    float: left;
+  float: left;
 }
 #filled-query #send-button {
-    float: right;
+  float: right;
 }

@@ -9,12 +9,12 @@ body {
   background-image: linear-gradient(315deg, black 0%, rgb(17, 71, 71) 100%);
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0;
-    align-items: center;
+.container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  align-items: center;
   height: 100vh;
 }
 

@@ -1,5 +1,5 @@
 #invoice {
-    color: #fff;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   position: absolute;
   top: 2%;
@@ -66,12 +66,12 @@
 }
 
 #invoice-footer {
-    border-top: 2px dashed rgb(251, 255, 0);
+  border-top: 2px dashed rgb(251, 255, 0);
   position: relative;
   text-align: center;
   margin-top: 10px;
 }
 
-#invoice-footer button{
-    margin: auto 0.5vw;
+#invoice-footer button {
+  margin: auto 0.5vw;
 }
