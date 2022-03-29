@@ -104,10 +104,6 @@ h1 {
   transition: 0.5s;
 }
 
-.item-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px #ffcc00;
-}
 .item-card img {
   margin-left: 0px;
   margin-top: 0px;
@@ -160,6 +156,11 @@ h1 {
 
 .add-to-cart:active {
   transform: translateY(-7px);
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffcc00;
 }
 
 .item-preview :hover {
