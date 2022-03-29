@@ -1,9 +1,8 @@
 body {
   background-image: url(../images/animal-images/Leaves.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
-  height: auto;
+  max-width: 1000vh;
+  height: 100vh;
 }
 footer {
   background-color: #111;
@@ -39,4 +38,9 @@ footer {
 }
 #group8:hover circle {
   stroke: rgb(245, 2, 2);
+}
+
+.Svg{
+  display: flex;
+  justify-content: center;
 }
