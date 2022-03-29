@@ -9,3 +9,7 @@ document.getElementById("to-mug").onclick = function () {
 document.getElementById("to-statue").onclick = function () {
   location.href = "buyMerch.html?statue=true";
 };
+
+document.getElementById("visit-store").onclick = function () {
+  location.href = "buyMerch.html";
+};

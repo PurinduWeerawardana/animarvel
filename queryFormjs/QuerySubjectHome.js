@@ -1,9 +1,9 @@
-document.getElementById("Tickets-button").onclick = function () {location.href = "/Ginura/QueryForm.html?button=Tickets-button";};
-document.getElementById("Deliver-button").onclick = function () {location.href = "/Ginura/QueryForm.html?button=Deliver-button";};
-document.getElementById("Product-button").onclick = function () {location.href = "/Ginura/QueryForm.html?button=Product-button";};
-document.getElementById("Website-button").onclick = function () {location.href = "/Ginura/QueryForm.html?button=Website-button";};
-document.getElementById("Complains-button").onclick = function () {location.href = "/Ginura/QueryForm.html?button=Complains-button";};
-document.getElementById("Other-button").onclick = function () {location.href = "/Ginura/QueryForm.html?button=Other-button";};
+document.getElementById("Tickets-button").onclick = function () {location.href = "/QueryForm.html?button=Tickets-button";};
+document.getElementById("Deliver-button").onclick = function () {location.href = "/QueryForm.html?button=Deliver-button";};
+document.getElementById("Product-button").onclick = function () {location.href = "/QueryForm.html?button=Product-button";};
+document.getElementById("Website-button").onclick = function () {location.href = "/QueryForm.html?button=Website-button";};
+document.getElementById("Complains-button").onclick = function () {location.href = "/QueryForm.html?button=Complains-button";};
+document.getElementById("Other-button").onclick = function () {location.href = "/QueryForm.html?button=Other-button";};
 
  
 function changeToSubjects(){

@@ -73,6 +73,16 @@
     backdrop-filter: blur(0.5rem);
 }
 
+.shop-now a{
+    text-decoration: none;
+    color: #000;
+}
+
+.shop-now a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
 .shop-now {
     position: relative;
     top: -600px;

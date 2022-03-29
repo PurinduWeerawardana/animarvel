@@ -112,10 +112,6 @@
   font-size: 2.5vw;
 }
 
-.order-form {
-  overflow: none;
-  position: relative;
-}
 
 .size-selector {
   padding-bottom: 2vh;
@@ -247,7 +243,6 @@ input[type="radio"]:checked + label {
   .order {
     margin-top: 1.5vh;
     position: relative;
-    float: bottom;
     width: 100%;
     height: 50%;
   }

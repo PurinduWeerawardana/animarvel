@@ -1,5 +1,5 @@
-let querySubjectString = window.location.search;
-urlParams = new URLSearchParams(querySubjectString);
+let querySubjects = window.location.search;
+urlParams = new URLSearchParams(querySubjects);
 
 
 
@@ -179,7 +179,7 @@ function printUnfilledFields(unfilled_fields){
         alert("Unfilled field is [" + unfilled_field_string + "] Please fil it!");
     }
 
-    else if(unfilled_fields.length !=0 ){
+    else if(unfilled_fields.length != 0 ){
         let unfilled_field_string = unfilled_fields.join(" , ");
         alert("Unfilled fields are [" + unfilled_field_string +"] Please fill them!");
     }
@@ -217,12 +217,12 @@ if (urlParams.get("button")==="Tickets-button"){
     document.getElementById("subject").value=subject_name;
     document.getElementById("subject").classList.remove("empty-select");
     document.getElementById("subject").classList.add("filled-select");
-}else{
+}else if (urlParams.get("button")==="Other-button"){
     let subject_name="Other"
     document.getElementById("subject").value=subject_name;
     document.getElementById("subject").classList.remove("empty-select");
     document.getElementById("subject").classList.add("filled-select");
-}
+}else{}
 
 
 

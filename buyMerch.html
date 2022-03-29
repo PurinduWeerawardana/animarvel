@@ -45,14 +45,16 @@
             <a href="./quiz.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
           </li>
           <li>
-            <a href="./discounts.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Discounts">&nbsp;&nbsp;Discounts</a>
+            <a href="./discounts.html" class="nav-bar-titles"
+              data-text="&nbsp;&nbsp;Discounts">&nbsp;&nbsp;Discounts</a>
           </li>
           <li>
             <a href="./buyTickets.html" class="nav-bar-titles"
               data-text="&nbsp;&nbsp;Buy&minus;Tickets">&nbsp;&nbsp;Buy&minus;Tickets</a>
           </li>
           <li>
-            <a href="./Ginura/QueryForm.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
+            <a href="./Ginura/QueryForm.html" class="nav-bar-titles"
+              data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
           </li>
         </ul>
       </nav>
@@ -274,14 +276,14 @@
   <div id="product-view" class="product-view hidden">
     <span id="preview" class="preview">
       <i class="fa-solid fa-arrow-left" id="left-arrow"></i>
-      <img id="preview-image" class="selected-product-image" src="./images/merch/Error_Img.png" alt="" />
+      <img id="preview-image" class="selected-product-image" src="./images/merch/Error_Img.png" alt="preview" />
       <i class="fa-solid fa-arrow-right" id="right-arrow"></i>
     </span>
     <div class="order">
       <div id="info-and-form">
         <div id="borderLeft"></div>
         <div id="product-description" class="item-description">
-          <h1 class="selected-product-title"></h1>
+          <h1 class="selected-product-title">Title</h1>
           <h2 class="caption">Price</h2>
           <p class="selected-product-price">$<span class=""></span></p>
         </div>
@@ -331,7 +333,7 @@
       <h1>Order Details</h1>
     </div>
     <div id="cart-and-details">
-      <span id="cart">
+      <div id="cart">
         <div id="total">
           <h2 class="caption">Total Price</h2>
           <h2 class="total-price">$<span id="price">00.00</span></h2>
@@ -340,10 +342,10 @@
           <ol id="cart-items">
           </ol>
         </div>
-      </span>
-      <span id="details">
+      </div>
+      <div id="details">
         <div id="order-details-form">
-          <form id="order-details" action="" method="">
+          <form id="order-details">
             <fieldset>
               <legend>Personal details</legend>
               <div class="form-group double">
@@ -370,8 +372,8 @@
                 <label for="zip">Zip-Code</label>
                 <input type="text" name="zip" id="zip" placeholder="Enter your zip-code" />
               </div>
-              <div class="form-group single" id="">
-                <label for="payment">Payment Method</label>
+              <div class="form-group single">
+                <label for="payment-method">Payment Method</label>
                 <select title="payment" name="payment" id="payment-method">
                   <option value="Credit/Debit-Card">Credit/Debit-Card</option>
                   <option value=">Pay-Pal">Pay-Pal</option>
@@ -383,7 +385,7 @@
             <input id="place-order-button" class="add-to-cart" type="button" name="submit" value="Place Order" />
           </form>
         </div>
-      </span>
+      </div>
     </div>
     <i class="fa-solid fa-xmark close-button"></i>
   </div>
