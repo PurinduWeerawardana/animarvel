@@ -119,14 +119,13 @@ h1 {
 
 .item-info {
   position: relative;
-  bottom: 100px;
-  width: 100%;
+  bottom: 106px;
   line-height: 70%;
   text-align: center;
   padding-top: 35px;
   padding-bottom: 14px;
   border-radius: 50px;
-  background-image: linear-gradient(#fff8f869, #1c1c1c);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .item-info h2 {
