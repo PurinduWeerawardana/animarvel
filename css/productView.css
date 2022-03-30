@@ -12,7 +12,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgb(27, 27, 27);
+  background-color: rgba(27, 27, 27, 0.925);
+  border: 2px solid #000;
   z-index: 10;
   border-radius: 40px;
 }
