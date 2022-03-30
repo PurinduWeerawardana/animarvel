@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./images/logo.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./css/common.css" />
+        <title>Page editor | Ginura</title>
+        <style>
+            body {
+                background-color: rgb(0, 0, 0);
+                background-size: cover;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
-    <title>Page editor | Ginura</title>
-    <style>
-        body {
-            background-color: rgb(0, 0, 0);
-            background-size: cover;
-        }
+            .contents {
+                width: max-content;
+                margin: auto;
+                border-style: solid;
+                padding-left: 30px;
+                padding-right: 30px;
+                background: #2ee59d;
+                border-radius: 30px;
+                opacity: 0.9;
+                font-size: 25px;
+                align-content: center;
+            }
 
-        .contents {
-            width: max-content;
-            margin: auto;
-            border-style: solid;
-            padding-left: 30px;
-            padding-right: 30px;
-            background: rgb(40, 173, 218);
-            border-radius: 30px;
-            opacity: .9;
-            font-size: 25px;
-            align-content: center;
-        }
+            .bold {
+                font-weight: bold;
+            }
 
-        .font {
-            font-size: 35px;
-        }
+            img {
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+                margin: auto;
+            }
+        </style>
+        <link rel="stylesheet" href="pageeditor.css" />
+    </head>
 
-        img {
-            position: relative;
-            left: 50%;
-            transform: translate(-50%, 0);
-            margin: auto;
-        }
-    </style>
-    <link rel="stylesheet" href="pageeditor.css">
-</head>
+    <body>
+        <img src="./images/Thumbnails/logo.png" alt="Animarvel logo" />
 
-<body>
-    <img src="./images/Thumbnails/logo.png" width="350pt" alt="Animarvel logo">
-
-    <div class="contents">
-        <div class="text">
-
-            <dl><b>Student name: </b>Ginura Ransika</dl>
-            <dl><b>Student role:</b>2<br>
-                <dl><b>Tasks completed:</b></dl>
-                <li>Created Main Page</li>
-                <li>Created Main Site Navigation</li>
-                <li>Created Query Form</li>
-                <li>Created page editor</li>
-
-            </dl><br><br>
-            <p> To go to home page: <a href="main.html">HOME PAGE</a></p>
+        <div class="contents">
+            <div class="text">
+                <p><span class="bold">Student name:</span> Ginura Ransika</p>
+                <p><span class="bold">Student role:</span> 2</p>
+                <p><span class="bold">Tasks completed:</span></p>
+                <ul>
+                    <li>Created Main Page</li>
+                    <li>Created Main Site Navigation</li>
+                    <li>Created External CSS</li>
+                    <li>Created Query Form</li>
+                    <li>Created Page Editor</li>
+                </ul>
+                <p>To go to home page: <a href="./index.html">HOME PAGE</a></p>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>

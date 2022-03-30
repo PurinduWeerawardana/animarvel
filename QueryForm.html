@@ -5,7 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Query Form</title>
-        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
+        <link
+            rel="shortcut icon"
+            href="./images/logo.png"
+            type="image/x-icon"
+        />
+
         <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
         <link rel="stylesheet" href="./css/queryForm.css" />
         <link rel="stylesheet" href="./css/footerEditor.css" />
@@ -21,11 +27,14 @@
     <body>
         <header id="primary-header-navigation">
             <div id="logo"></div>
+            <!-- aria-controls the specific id and when you click the button 
+                aria-expanded will be true -->
             <button
                 class="navigation-toggle"
                 aria-controls="navigation-bar-ul"
                 aria-expanded="false"
             >
+                <!-- only screen readers will read -->
                 <span class="sr-only">Menu</span>
             </button>
             <nav class="navigation-bar">
@@ -35,6 +44,7 @@
                     class="navigation-bar-ul"
                 >
                     <li>
+                        <!-- data-text will be written when you hover on the text -->
                         <a
                             href="./index.html"
                             class="nav-bar-titles"
@@ -68,14 +78,6 @@
                     </li>
                     <li>
                         <a
-                            href="./Discounts.html"
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Discounts"
-                            >&nbsp;&nbsp;Discounts</a
-                        >
-                    </li>
-                    <li>
-                        <a
                             href="./buyMerch.html"
                             class="nav-bar-titles"
                             data-text="&nbsp;&nbsp;Buy&minus;Merch"
@@ -84,10 +86,10 @@
                     </li>
                     <li>
                         <a
-                            href="./buyTickets.html"
+                            href="./packages.html"
                             class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Buy&minus;Tickets"
-                            >&nbsp;&nbsp;Buy&minus;Tickets</a
+                            data-text="&nbsp;&nbsp;Packages"
+                            >&nbsp;&nbsp;Packages</a
                         >
                     </li>
                     <li>

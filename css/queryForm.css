@@ -32,10 +32,11 @@ body {
     align-items: center;
     padding: 10px;
     color: #fff;
+    margin: 20px;
 }
 
 #query-form-container {
-    max-width: 700px;
+    max-width: 650px;
     width: 100%;
     padding: 45px 30px 45px 90px;
     border-radius: 5px;
