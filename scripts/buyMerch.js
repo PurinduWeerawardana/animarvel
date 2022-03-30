@@ -48,6 +48,7 @@ categoryButtons.forEach(function (button) {
   }
 });
 
+//get url parameteres from main page
 let queryString = window.location.search;
 urlParams = new URLSearchParams(queryString);
 
