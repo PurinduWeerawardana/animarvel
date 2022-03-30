@@ -1,8 +1,10 @@
+// get the updated url from the QuerySubjectHome.js
 let querySubjects = window.location.search;
 urlParams = new URLSearchParams(querySubjects);
 
 
-
+// This will check the input value on click and change events 
+// then change the style class accordingly.
 function checkNames(){
     let name_object = document.getElementById("name");
     if (name_object.value !== ""){
@@ -17,6 +19,8 @@ function checkNames(){
 
 
 
+// This will check the input value on change event
+// then validate the input value and alert a message and change the style class accordingly.
 function checkAndValidateEmail(){
     let email_object = document.getElementById("email");
 
@@ -40,6 +44,9 @@ function checkAndValidateEmail(){
     }
 }
 
+
+// This will check the input value on click event
+// then validate the input value and change the style class accordingly.
 function checkEmail(){
     let email_object = document.getElementById("email");
 
@@ -62,7 +69,8 @@ function checkEmail(){
     }
 }
 
-
+// This will check the selected value on click and change events 
+// then change the style class accordingly.
 function checkSubject(){
     let subject_object = document.getElementById("subject");
     if (subject_object[subject_object.selectedIndex].value != ""){
@@ -76,7 +84,8 @@ function checkSubject(){
 }
 
 
-
+// This will check the input value on click and change events 
+// then change the style class accordingly.
 function checkDetails(){
     let textarea_object = document.getElementById("details");
     if (textarea_object.value !== ""){
@@ -89,7 +98,8 @@ function checkDetails(){
     }
 }
 
-
+// this will run on click event in view query button 
+// will run all the validation function and update the respective arrays
 function viewQueryButton(){
     let unfilled_fields = [];
     let filled_fields = [];
@@ -105,7 +115,7 @@ function viewQueryButton(){
     }
 }
 
-
+// will move between query-form-container and filled-query using styles
 function editQueryForm(){
     document.getElementById("filled-query").style.display = "none";
     document.getElementById("query-form-container").style.display = "block";
@@ -117,6 +127,8 @@ function mailForm(){
     document.getElementById("query-form").submit();
 }
 
+// this will validate the input data and update the respective array
+// will change the style if user haven't entered anything
 function validateName(unfilled_fields, filled_fields){
     let name= document.getElementById("name").value;
     if(name != ""){
@@ -127,7 +139,8 @@ function validateName(unfilled_fields, filled_fields){
         document.getElementById("name").classList.add("empty-input-text");
     }
 }
-
+// this will validate the input data and update the respective array
+// will change the style if user haven't entered anything
 function validateEmail(unfilled_fields, filled_fields){
     let email = document.getElementById("email").value;
     if(email != ""){
@@ -138,7 +151,8 @@ function validateEmail(unfilled_fields, filled_fields){
         document.getElementById("email").classList.add("empty-input-text");
     }
 }
-    
+// this will validate the selected data and update the respective array
+// will change the style if user haven't selected anything   
 function validateSubject(unfilled_fields,filled_fields){
     let subject_array = []
     subject_array = document.getElementById("subject");
@@ -151,7 +165,8 @@ function validateSubject(unfilled_fields,filled_fields){
         document.getElementById("subject").classList.add("empty-select");
     }
 }
-
+// this will validate the input data and update the respective array
+// will change the style if user haven't entered anything
 function validateDetails(unfilled_fields, filled_fields){
     let details = document.getElementById("details").value;
     if (details != ""){
@@ -163,6 +178,8 @@ function validateDetails(unfilled_fields, filled_fields){
     }
 }
 
+// this will print inside the tags which have below element IDs
+// and change the styles on query-form-container and filled-query
 function printFilledFields(filled_fields){
     const element_ids = ["filled-name","filled-email", "filled-subject","filled-details"]
     for (let index=0; index<4; index++){
@@ -172,7 +189,7 @@ function printFilledFields(filled_fields){
     document.getElementById("filled-query").style.display = "block";
 }
 
-
+// will alert the missing input fields
 function printUnfilledFields(unfilled_fields){
     if (unfilled_fields.length == 1){
         let unfilled_field_string = unfilled_fields.join(" , ");
@@ -187,7 +204,7 @@ function printUnfilledFields(unfilled_fields){
 
 
 
-
+// if user select a subject from the main page that will be updated on the query form
 if (urlParams.get("button")==="Tickets-button"){
     let subject_name="Tickets"
     document.getElementById("subject").value=subject_name;
