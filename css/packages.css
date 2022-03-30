@@ -1,7 +1,12 @@
 body {
   background-color: #000;
   color: #fff;
+
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 #packages-description {
   text-align: center;
@@ -33,7 +38,7 @@ body {
 
 #packages-part {
   position: relative;
-  bottom: 230px;
+  bottom: 40px;
   color: #fff;
   font-family: sans-serif;
   display: grid;
@@ -284,7 +289,7 @@ p {
   width: 98%;
   height: auto;
   margin: 100px auto;
-  border: 5px solid #fff;
+  
   background: rgb(0, 255, 111);
   background: radial-gradient(
     circle,
@@ -374,3 +379,60 @@ p {
   background-color: rgb(27, 27, 27);
   font-size: larger;
 }
+
+/*--------------Discount---------------*/
+.row1{
+  text-align: center;
+  font-size: 30px;
+}
+.row2{
+  transform: translateX(21vw);
+  display: inline-block;
+  font-size: 30px;
+}
+.row3{
+  transform: translateX(42vw);
+  display: inline-block;
+  font-size: 30px;
+}
+
+.tablealign{
+  width: 96%;
+  position: relative;
+  text-align: center;
+  left: 47%;
+  transform: translateX(-50%);
+}
+
+td {
+  color: rgb(253, 0, 0);
+  padding: 10px;
+}
+
+@keyframes zoom {
+  to {
+    transform: scale(0.1);
+  }
+}
+
+.glows {
+  animation: glow 0.5s infinite alternate;
+}
+@keyframes glow {
+  to {
+    text-shadow: 0 0 15px #ff0000, 0 0 15px #f50057;
+  }
+}
+img {
+  border-radius: 25px;
+}
+
+.align {
+  margin-left: 79%;
+}
+p{
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+}
+
