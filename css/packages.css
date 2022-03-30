@@ -21,6 +21,257 @@ body{
     border: 5px solid #fff;
 }
 
+.package img {
+        max-width: 100%;
+    }
+
+    #packages-part {
+        position: relative;
+        top: -230px;
+        color: #fff;
+        font-family: sans-serif;
+        display: grid;
+        align-items: center;
+    }
+
+    #packages-body {
+        margin: auto;
+        padding: 0 2rem;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10vw;
+        grid-row-gap: 1px;
+        background: rgb(0, 255, 111);
+        background: radial-gradient(
+            circle,
+            rgba(0, 255, 111, 0.28335084033613445) 0%,
+            rgba(0, 0, 0, 0) 48%,
+            rgba(0, 0, 0, 0) 100%
+        );
+    }
+
+    #packages-body .package-box {
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .package h2,
+    h3,
+    p {
+        margin: 0;
+    }
+
+    .package {
+        position: relative;
+        width: 15.5em;
+    }
+
+    /* will display the small package images in a column wise */
+    .other-package-images {
+        display: flex;
+        text-align: left;
+    } /* will round the small package image */
+    .other-package-images img {
+        display: inline;
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+    }
+    .view-box .other-package-images img {
+        border: 2px solid rgb(14, 14, 14);
+    } /* This will put the small package images in layers */
+    .view-box .other-package-images img:nth-of-type(1) {
+        transform: translateX(50%);
+        z-index: 1;
+    }
+    .view-box .other-package-images img:nth-of-type(2) {
+        transform: translateX(25%);
+    }
+
+    .view-box .package-name {
+        margin-top: 0.75em;
+        padding: 0px;
+        font-size: 1.2em;
+    }
+    .package:hover .view-box .package-name {
+        animation: packageName 250ms forwards;
+        font-size: 1.8em;
+    }
+
+    .view-box .package-details {
+        font-size: 0.9em;
+    }
+
+    /* package number's style */
+    .package-number {
+        position: absolute;
+        top: 0;
+        right: 0.75em;
+        z-index: 1000;
+        font-weight: bold;
+        font-size: 1.25rem;
+        padding: 0.5em 0.5em 0.75em;
+
+        background-color: rgba(0, 0, 0, 0.712);
+        clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
+        transition: transform 250ms cubic-bezier(0.21, 1i, 0.81, 1);
+    } /* package number will fit the popup box's edge */
+    .package:hover .package-number {
+        transform: translate(90%, -28%);
+        background-color: rgba(255, 255, 255, 0.582);
+        color: #000000;
+    }
+
+    /* this will display the view-box-title in a column */
+    .view-box-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* this will hide the view-box-title */
+    .package:hover .view-box .view-box-title {
+        opacity: 0;
+    }
+
+    .view-box {
+        transition: 250ms;
+    }
+    .package:hover .view-box {
+        transform: translateY(-30%) scale(0.8);
+    }
+
+    .package-image {
+        border-radius: 0.5em;
+    }
+
+    /* this will hide the popup box until hover it */
+    .popup-box {
+        opacity: 0;
+        position: absolute;
+        top: 55%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+        transform: translateY(35%);
+    }
+    /* will show the popup box  */
+    .package:hover .popup-box {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 250ms ease, opacity 150ms linear;
+    }
+
+    .popup-box .package-information {
+        margin: 1em 0;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    /* styles for popup box's background */
+    .package .popup-box-background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transform: scale(0.2, 0.9);
+        opacity: 0;
+        border-radius: 0.5em;
+
+        background: rgba(0, 0, 0, 0.479);
+        border: 1px solid #00ff88;
+        -webkit-backdrop-filter: blur(25px);
+        backdrop-filter: blur(25px);
+    }
+
+    /* popup box' background will scale up and move into y direction */
+    .package:hover .popup-box-background {
+        opacity: 1;
+        transition: transform 250ms cubic-bezier(0.21, 1, 0.81, 1),
+            opacity 100ms linear;
+        transform: scale(1.25, 1.4) translateY(11%);
+    }
+
+    /* change the package name when you hover on the picture */
+    @keyframes packageName {
+        0% {
+            text-align: left;
+            opacity: 1;
+        }
+
+        20% {
+            text-align: left;
+            opacity: 0;
+        }
+
+        50% {
+            text-align: center;
+            opacity: 0;
+            transform: scale(1.5);
+        }
+        100% {
+            text-align: center;
+            opacity: 1;
+            transform: scale(1.5);
+        }
+    }
+
+    /* responsive with the screen width and change the #packages-part height to avoid the overlapping
+        and change the layout of the package containers */
+    @media only screen and (max-width: 1800px) {
+        #packages-part {
+            height: 150vh;
+        }
+    }
+    @media only screen and (max-width: 1200px) {
+        #packages-part {
+            height: 130vh;
+        }
+    }
+
+    @media only screen and (max-width: 1100px) {
+        #packages-part {
+            height: 200vh;
+        }
+        #packages-body {
+            width: 98%;
+            margin: 0.5rem auto;
+            padding: 0.5rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #packages-body .package-box {
+            height: 600px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        #packages-part {
+            height: 200vh;
+        }
+    }
+
+    @media only screen and (max-width: 660px) {
+        #packages-part {
+            height: 500vh;
+        }
+        #packages-body {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #packages-body .package-box {
+            height: 700px;
+        }
+    }
+
 #packages-discounts{
     text-align: center;
     position: relative;
