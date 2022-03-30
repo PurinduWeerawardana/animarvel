@@ -19,6 +19,7 @@
     transition: 1.5s;
 }
 
+/* this will change the ghosting-title's font-size according to the width */
 @media (max-width: 1450px) {
     .ghosting-title h1 {
         font-size: 4.6em;
@@ -45,6 +46,7 @@
     }
 }
 
+/* will hide the ghosting title */
 .ghosting-title:hover span {
     filter: blur(20px);
     opacity: 0;
@@ -89,6 +91,7 @@
     transition-delay: 1.1s;
 }
 
+/* to change between ghosting-title and query-subject-box */
 .not-display {
     display: none;
 }
@@ -126,6 +129,7 @@
         rgba(0, 0, 0, 0) 100%
     );
 }
+
 #subjects-body .subject-box {
     height: 650px;
     display: flex;
@@ -144,40 +148,43 @@ p {
     width: 15.5em;
 }
 
+/* will display the small animal images in a column wise */
 .other-subject-images {
     display: flex;
     text-align: left;
-}
-
+} /* will round the small animal image */
 .other-subject-images img {
     display: inline;
     width: 2.5em;
     height: 2.5em;
     border-radius: 50%;
 }
+.view-box .other-subject-images img {
+    border: 2px solid rgb(14, 14, 14);
+} /* This will put the small animal images in layers */
+.view-box .other-subject-images img:nth-of-type(1) {
+    transform: translateX(50%);
+    z-index: 1;
+}
+.view-box .other-subject-images img:nth-of-type(2) {
+    transform: translateX(25%);
+}
 
-.front .subject-name {
-    /* text-align: left; */
+.view-box .subject-name {
     margin-top: 0.75em;
     padding: 0px;
     font-size: 1.2em;
 }
-.front .subject-details {
+.subject:hover .view-box .subject-name {
+    animation: subjectName 250ms forwards;
+    font-size: 1.8em;
+}
+
+.view-box .subject-details {
     font-size: 0.9em;
 }
-.front .other-subject-images img {
-    border: 2px solid rgb(14, 14, 14);
-}
 
-.front .other-subject-images img:nth-of-type(1) {
-    transform: translateX(50%);
-    z-index: 1;
-}
-
-.front .other-subject-images img:nth-of-type(2) {
-    transform: translateX(25%);
-}
-
+/* subject number's style */
 .subject-number {
     position: absolute;
     top: 0;
@@ -189,30 +196,38 @@ p {
 
     background-color: rgba(0, 0, 0, 0.712);
     clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
-    transition: transform 250ms cubic-bezier(0.21, 1, 0.81, 1);
-}
-
-.stats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.front {
-    transition: 250ms;
-}
-
+    transition: transform 250ms cubic-bezier(0.21, 1i, 0.81, 1);
+} /* subject number will fit the popup box's edge */
 .subject:hover .subject-number {
     transform: translate(90%, -28%);
     background-color: rgba(255, 255, 255, 0.582);
     color: #000000;
 }
 
+/* this will display the view-box-title in a column */
+.view-box-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* this will hide the view-box-title */
+.subject:hover .view-box .view-box-title {
+    opacity: 0;
+}
+
+.view-box {
+    transition: 250ms;
+}
+.subject:hover .view-box {
+    transform: translateY(-30%) scale(0.8);
+}
+
 .subject-image {
     border-radius: 0.5em;
 }
 
-.back {
+/* this will hide the popup box until hover it */
+.popup-box {
     opacity: 0;
     position: absolute;
     top: 55%;
@@ -224,21 +239,21 @@ p {
     gap: 0.5em;
     transform: translateY(35%);
 }
-
-.subject:hover .back {
+/* will show the popup box  */
+.subject:hover .popup-box {
     opacity: 1;
     transform: translateY(0);
     transition: transform 250ms ease, opacity 150ms linear;
 }
 
-.back .subject-information {
+.popup-box .subject-information {
     margin: 1em 0;
     font-size: 1.1rem;
     text-align: center;
 }
 
-/* correct */
-.subject .background {
+/* styles for popup box's background */
+.subject .popup-box-background {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -255,24 +270,12 @@ p {
     backdrop-filter: blur(25px);
 }
 
-.subject:hover .background {
+/* popup box' background will scale up and move into y direction */
+.subject:hover .popup-box-background {
     opacity: 1;
     transition: transform 250ms cubic-bezier(0.21, 1, 0.81, 1),
         opacity 100ms linear;
     transform: scale(1.25, 1.4) translateY(11%);
-}
-
-.subject:hover .front {
-    transform: translateY(-30%) scale(0.8);
-}
-
-.subject:hover .front .stats {
-    opacity: 0;
-}
-
-.subject:hover .front .subject-name {
-    animation: subjectName 250ms forwards;
-    font-size: 1.8em;
 }
 
 /* change the subject name when you hover on the picture */

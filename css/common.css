@@ -1,132 +1,129 @@
+/* common button's style */
 .buttons {
-  font-family: "Barlow Condensed", sans-serif;
-  font-size: 20px;
-  width: 175px;
-  height: 60px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    width: 175px;
+    height: 60px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
 }
 
 .buttons:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 .buttons:active {
-  color: #000;
-  font-size: 25px;
+    color: #000;
+    font-size: 25px;
 }
 
 .buttons:active:after {
-  background: transparent;
+    background: transparent;
 }
 
 .buttons:hover:before {
-  opacity: 1;
+    opacity: 1;
 }
 
 .buttons:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }
 
 @keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
 }
 
 /*animated text*/
 svg {
-  display: block;
-  font: 10.5em "Montserrat";
-  width: 60vw;
-  
-  margin: 0 auto;
+    display: block;
+    font: 10.5em "Montserrat";
+    width: 60vw;
+
+    margin: 0 auto;
 }
 
 .text-copy {
-  fill: none;
-  stroke: white;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 5px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
 }
 
 .text-copy:nth-child(1) {
-  stroke: #3fdd3f
-
-  ;
-  animation-delay: -1;
+    stroke: #3fdd3f;
+    animation-delay: -1;
 }
 
 .text-copy:nth-child(2) {
-  stroke: #3fdd3f
-
-  ;
-  animation-delay: -2s;
+    stroke: #3fdd3f;
+    animation-delay: -2s;
 }
 
 .text-copy:nth-child(3) {
-  stroke: #9abd00;
-  animation-delay: -3s;
+    stroke: #9abd00;
+    animation-delay: -3s;
 }
 
 .text-copy:nth-child(4) {
-  stroke: #00bd84;
-  animation-delay: -4s;
+    stroke: #00bd84;
+    animation-delay: -4s;
 }
 
 .text-copy:nth-child(5) {
-  stroke: #ffffff;
-  animation-delay: -5s;
+    stroke: #ffffff;
+    animation-delay: -5s;
 }
 
 @keyframes stroke-offset {
-  100% {
-    stroke-dashoffset: -35%;
-  }
+    100% {
+        stroke-dashoffset: -35%;
+    }
 }
