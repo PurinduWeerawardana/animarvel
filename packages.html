@@ -1,248 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./images/logo.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/packages.css" />
+        <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
+        <script
+            src="https://kit.fontawesome.com/0357fe80c5.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./scripts/buyPackages.js" defer></script>
+        <script src="./nav-bar/navigation.js" defer></script>
+        <title>Our Packages</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/packages.css">
-    <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
-    <script src="https://kit.fontawesome.com/0357fe80c5.js" crossorigin="anonymous"></script>
-    <script src="./scripts/buyPackages.js" defer></script>
-    <script src="./nav-bar/navigation.js" defer></script>
-    <title>Our Packages</title>
-</head>
-
-<body>
-    <header id="primary-header-navigation">
-        <div id="logo"></div>
-        <!-- aria-controls the specific id and when you click the button 
+    <body>
+        <header id="primary-header-navigation">
+            <div id="logo"></div>
+            <!-- aria-controls the specific id and when you click the button 
                     aria-expanded will be true -->
-        <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
-            <!-- only screen readers will read -->
-            <span class="sr-only">Menu</span>
-        </button>
-        <nav class="navigation-bar">
-            <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
-                <li>
-                    <!-- data-text will be written when you hover on the text -->
-                    <a href="./index.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
-                </li>
-                <li>
-                    <a href="#packages-description" class="nav-bar-titles" data-text="&nbsp;&nbsp;Packages">&nbsp;&nbsp;Packages</a>
-                </li>
-                <li>
-                    <a href="#packages-comparison" class="nav-bar-titles"
-                        data-text="&nbsp;&nbsp;Comapare">&nbsp;&nbsp;Comapare</a>
-                </li>
-                <li>
-                    <a href="#packages-discounts" class="nav-bar-titles"
-                        data-text="&nbsp;&nbsp;Discounts">&nbsp;&nbsp;Discounts</a>
-                </li>
-                <li>
-                    <a href="#packages-purchase" class="nav-bar-titles"
-                        data-text="&nbsp;&nbsp;Purchase">&nbsp;&nbsp;Purchase</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div id="packages-description">
-        <h1 class="heading-title">Packages description</h1>
-    </div>
-    <div id="packages-comparison">
-        <h1 class="heading-title">Packages comparison</h1>
-        <div id="packages-part">
-            <div id="packages-body">
-                <div class="package-box">
-                    <div class="package">
-                        <div class="package-number">1</div>
-                        <div class="view-box">
-                            <img class="package-image" src="./images/querySubject/tickets.jpg" alt="image of a ticket" />
-                            <h3 class="package-name">Tickets</h3>
-                            <div class="view-box-title">
-                                <p class="package-details">
-                                    Queries about tickets
-                                </p>
-                                <div class="other-package-images">
-                                    <img src="./images/querySubject/hippopotamus.jpg" alt="picture of a hippopotamus" />
-                                    <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
-                                    <img src="./images/querySubject/rhinoceros.jpg" alt="picture of a rhinoceros" />
+            <button
+                class="navigation-toggle"
+                aria-controls="navigation-bar-ul"
+                aria-expanded="false"
+            >
+                <!-- only screen readers will read -->
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav class="navigation-bar">
+                <ul
+                    id="navigation-bar-ul"
+                    data-visible="false"
+                    class="navigation-bar-ul"
+                >
+                    <li>
+                        <!-- data-text will be written when you hover on the text -->
+                        <a
+                            href="./index.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Home"
+                            >&nbsp;&nbsp;Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#packages-description"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Packages"
+                            >&nbsp;&nbsp;Packages</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#packages-comparison"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Compare"
+                            >&nbsp;&nbsp;Compare</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#packages-discounts"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Discounts"
+                            >&nbsp;&nbsp;Discounts</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#packages-purchase"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Purchase"
+                            >&nbsp;&nbsp;Purchase</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="packages-description">
+            <h1 class="heading-title">Packages description</h1>
+        </div>
+        <div id="packages-comparison">
+            <h1 class="heading-title">Packages comparison</h1>
+            <div id="packages-part">
+                <div id="packages-body">
+                    <div class="package-box">
+                        <div class="package">
+                            <div class="package-number">1</div>
+                            <div class="view-box">
+                                <img
+                                    class="package-image"
+                                    src="./images/querySubject/tickets.jpg"
+                                    alt="image of a ticket"
+                                />
+                                <h3 class="package-name">Tickets</h3>
+                                <div class="view-box-title">
+                                    <p class="package-details">
+                                        Queries about tickets
+                                    </p>
+                                    <div class="other-package-images">
+                                        <img
+                                            src="./images/querySubject/hippopotamus.jpg"
+                                            alt="picture of a hippopotamus"
+                                        />
+                                        <img
+                                            src="./images/querySubject/penguin.jpg"
+                                            alt="picture of a penguin"
+                                        />
+                                        <img
+                                            src="./images/querySubject/rhinoceros.jpg"
+                                            alt="picture of a rhinoceros"
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popup-box">
-                            <div class="package-information">
-                                <p class="information">
-                                    <span>Unclear about our packages, tickets and
-                                        discounts? Click here to ask from
-                                        us.</span>
-                                </p>
+                            <div class="popup-box">
+                                <div class="package-information">
+                                    <p class="information">
+                                        <span
+                                            >Unclear about our packages, tickets
+                                            and discounts? Click here to ask
+                                            from us.</span
+                                        >
+                                    </p>
+                                </div>
+                                <div class="package-button">
+                                    <button id="Tickets-button" class="buttons">
+                                        Tickets
+                                    </button>
+                                </div>
                             </div>
-                            <div class="package-button">
-                                <button id="Tickets-button" class="buttons">
-                                    Tickets
-                                </button>
-                            </div>
+                            <div class="popup-box-background"></div>
                         </div>
-                        <div class="popup-box-background"></div>
                     </div>
-                </div>
-                <div class="package-box">
-                    <div class="package">
-                        <div class="package-number">2</div>
-                        <div class="view-box">
-                            <img class="package-image" src="./images/querySubject/delivery.jpg" alt="delivery image" />
-                            <h3 class="package-name">Delivery</h3>
-                            <div class="view-box-title">
-                                <p class="package-details">
-                                    Any troubles in delivery
-                                </p>
-                                <div class="other-package-images">
-                                    <img src="./images/querySubject/rhinoceros.jpg" alt="picture of a rhinoceros" />
-                                    <img src="./images/querySubject/panda.jpg" alt="picture of a panda" />
-                                    <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
+                    <div class="package-box">
+                        <div class="package">
+                            <div class="package-number">2</div>
+                            <div class="view-box">
+                                <img
+                                    class="package-image"
+                                    src="./images/querySubject/delivery.jpg"
+                                    alt="delivery image"
+                                />
+                                <h3 class="package-name">Delivery</h3>
+                                <div class="view-box-title">
+                                    <p class="package-details">
+                                        Any troubles in delivery
+                                    </p>
+                                    <div class="other-package-images">
+                                        <img
+                                            src="./images/querySubject/rhinoceros.jpg"
+                                            alt="picture of a rhinoceros"
+                                        />
+                                        <img
+                                            src="./images/querySubject/panda.jpg"
+                                            alt="picture of a panda"
+                                        />
+                                        <img
+                                            src="./images/querySubject/penguin.jpg"
+                                            alt="picture of a penguin"
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popup-box">
-                            <div class="package-information">
-                                <p class="information">
-                                    <span>Make sure that it will be delivered to
-                                        your doorstep. Click here for
-                                        clarifications on delivery.</span>
-                                </p>
+                            <div class="popup-box">
+                                <div class="package-information">
+                                    <p class="information">
+                                        <span
+                                            >Make sure that it will be delivered
+                                            to your doorstep. Click here for
+                                            clarifications on delivery.</span
+                                        >
+                                    </p>
+                                </div>
+                                <div class="package-button">
+                                    <button id="Deliver-button" class="buttons">
+                                        Delivery
+                                    </button>
+                                </div>
                             </div>
-                            <div class="package-button">
-                                <button id="Deliver-button" class="buttons">
-                                    Delivery
-                                </button>
-                            </div>
+                            <div class="popup-box-background"></div>
                         </div>
-                        <div class="popup-box-background"></div>
                     </div>
-                </div>
-                <div class="package-box">
-                    <div class="package">
-                        <div class="package-number">3</div>
-                        <div class="view-box">
-                            <img class="package-image" src="./images/querySubject/products.jpg" alt="products image" />
-                            <h3 class="package-name">Product</h3>
-                            <div class="view-box-title">
-                                <p class="package-details">
-                                    Any Damages in Products
-                                </p>
-                                <div class="other-package-images">
-                                    <img src="./images/querySubject/penguin.jpg" alt="picture of a penguin" />
-                                    <img src="./images/querySubject/lion.jpg" alt="picture of a lion" />
-                                    <img src="./images/querySubject/zebra.jpg" alt="picture of a zebra" />
+                    <div class="package-box">
+                        <div class="package">
+                            <div class="package-number">3</div>
+                            <div class="view-box">
+                                <img
+                                    class="package-image"
+                                    src="./images/querySubject/products.jpg"
+                                    alt="products image"
+                                />
+                                <h3 class="package-name">Product</h3>
+                                <div class="view-box-title">
+                                    <p class="package-details">
+                                        Any Damages in Products
+                                    </p>
+                                    <div class="other-package-images">
+                                        <img
+                                            src="./images/querySubject/penguin.jpg"
+                                            alt="picture of a penguin"
+                                        />
+                                        <img
+                                            src="./images/querySubject/lion.jpg"
+                                            alt="picture of a lion"
+                                        />
+                                        <img
+                                            src="./images/querySubject/zebra.jpg"
+                                            alt="picture of a zebra"
+                                        />
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="popup-box">
-                            <div class="package-information">
-                                <p class="information">
-                                    <span>It is all about your concerns over the
-                                        Animarvel gears. Click here for your
-                                        queries about our products.</span>
-                                </p>
+                            <div class="popup-box">
+                                <div class="package-information">
+                                    <p class="information">
+                                        <span
+                                            >It is all about your concerns over
+                                            the Animarvel gears. Click here for
+                                            your queries about our
+                                            products.</span
+                                        >
+                                    </p>
+                                </div>
+                                <div class="package-button">
+                                    <button id="Product-button" class="buttons">
+                                        Product
+                                    </button>
+                                </div>
                             </div>
-                            <div class="package-button">
-                                <button id="Product-button" class="buttons">
-                                    Product
-                                </button>
-                            </div>
+                            <div class="popup-box-background"></div>
                         </div>
-                        <div class="popup-box-background"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="packages-discounts">
-        <h1 class="heading-title">Packages discounts</h1>
-        <div class ="discback">
-        <hr>
-			<p>֍ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On Going Discounts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				֍</p>
-			<hr size=3>
-			<table cellspacing="20" class="tablealign">
-				<tr>
-					<td><img src="./images/Thumbnails/Aquarium.png" width="250pt" height="150" alt="Aquarium"></td>
-					<td><img src="./images/Thumbnails/jurong-birdpark_2.png" width="250pt" height="150" alt="BirdPark%">
-					</td>
-					<td><img src="./images/Thumbnails/Tera-park.png" width="250pt" height="150" alt="Tera Park"></td>
-				</tr>
-				<tr class="glows">
-					<td class ="row1">Animarvel Aquarium<br>(Up to 20%)</td>
-					<td class ="row1">Animarvel BirdPark<br>(Up to 15%)</td>
-					<td class ="row1">Animarvel Tera Park<br>(Up to 10%)</td>
-				</tr>
-				<tr>
-					<td><img src="./images/Thumbnails/Reptiles.jpg.png" class="align" width="250pt" height="150"
-							alt="Reptitles"></td>
-					<td><img src="./images/Thumbnails/d_20181208224534.png" class="align" width="250pt" height="150"
-							alt="Snow Area"></td>
-				</tr>
-				<tr class="glows">
-					<td class ="row2" >Reptitles<br>(Up to 25%)</td>
-					<td class ="row3" >Mini Arctic<br>(Up to 30%)</td>
-				</tr>
-			</table>
-			<br><br><br>
-		</div>
-    </div>
-    <div id="packages-purchase">
-        <div id="packages-form-area">
-            <h1 class="heading-title"><i class="fa-solid fa-ticket title-icons"></i> Purchase Packages</h1>
-            <div id="packages-form">
-                <form>
-                    <div class="name-area">
-                        <div>
-                            <label for="fName">First Name</label>
-                            <input type="text" id="fName" placeholder="Enter First Name">
-                        </div>
-                        <div>
-                            <label for="lName">Last Name</label>
-                            <input type="text" id="lName" placeholder="Enter Last Name">
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <label for="email">Email</label>
-                    <input id="email" placeholder="Enter Your Email">
-                    <br>
-
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" placeholder="Enter Your Phone Number">
-                    <br>
-
-                    <label for="visiting-date">Visiting Date</label>
-                    <input type="date" id="visiting-date">
-                    <br>
-
-                    <label for="packages-type">Package Type</label>
-                    <select id="packages-type">
-                        <option disabled selected value="1">~Please select~</option>
-                        <option value="p1">Package 1</option>
-                        <option value="p2">Package 2</option>
-                        <option value="p3">Package 3</option>
-                    </select>
-                    <div class="count-area">
-                        <label for="visiting-date">Package count</label>
-                        <input type="number" name="packages-count" id="packages-count" placeholder="Enter how many packages" min="1" max="30">
-                    </div>
-                    <br>
-                    <div id="buttons">
-                        <button id="clear-btn" type="button" class="buttons"><i class="fa-solid fa-eraser"></i> Clear Form</button>
-                        <button id="submit-btn" type="button" class="buttons"><i class="fa-solid fa-dollar-sign"></i> Purchase</button>
-                    </div>
-                </form>
+        <div id="packages-discounts">
+            <h1 class="heading-title">Packages discounts</h1>
+            <div class="discback">
+                <hr />
+                <p>
+                    ֍ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On Going Discounts
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ֍
+                </p>
+                <hr size="3" />
+                <table cellspacing="20" class="tablealign">
+                    <tr>
+                        <td>
+                            <img
+                                src="./images/Thumbnails/Aquarium.png"
+                                width="250pt"
+                                height="150"
+                                alt="Aquarium"
+                            />
+                        </td>
+                        <td>
+                            <img
+                                src="./images/Thumbnails/jurong-birdpark_2.png"
+                                width="250pt"
+                                height="150"
+                                alt="BirdPark%"
+                            />
+                        </td>
+                        <td>
+                            <img
+                                src="./images/Thumbnails/Tera-park.png"
+                                width="250pt"
+                                height="150"
+                                alt="Tera Park"
+                            />
+                        </td>
+                    </tr>
+                    <tr class="glows">
+                        <td class="row1">
+                            Animarvel Aquarium<br />(Up to 20%)
+                        </td>
+                        <td class="row1">
+                            Animarvel BirdPark<br />(Up to 15%)
+                        </td>
+                        <td class="row1">
+                            Animarvel Tera Park<br />(Up to 10%)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img
+                                src="./images/Thumbnails/Reptiles.jpg.png"
+                                class="align"
+                                width="250pt"
+                                height="150"
+                                alt="Reptitles"
+                            />
+                        </td>
+                        <td>
+                            <img
+                                src="./images/Thumbnails/d_20181208224534.png"
+                                class="align"
+                                width="250pt"
+                                height="150"
+                                alt="Snow Area"
+                            />
+                        </td>
+                    </tr>
+                    <tr class="glows">
+                        <td class="row2">Reptitles<br />(Up to 25%)</td>
+                        <td class="row3">Mini Arctic<br />(Up to 30%)</td>
+                    </tr>
+                </table>
+                <br /><br /><br />
             </div>
         </div>
-    </div>
-</body>
+        <div id="packages-purchase">
+            <div id="packages-form-area">
+                <h1 class="heading-title">
+                    <i class="fa-solid fa-ticket title-icons"></i> Purchase
+                    Packages
+                </h1>
+                <div id="packages-form">
+                    <form>
+                        <div class="name-area">
+                            <div>
+                                <label for="fName">First Name</label>
+                                <input
+                                    type="text"
+                                    id="fName"
+                                    placeholder="Enter First Name"
+                                />
+                            </div>
+                            <div>
+                                <label for="lName">Last Name</label>
+                                <input
+                                    type="text"
+                                    id="lName"
+                                    placeholder="Enter Last Name"
+                                />
+                            </div>
+                        </div>
 
+                        <br />
+
+                        <label for="email">Email</label>
+                        <input id="email" placeholder="Enter Your Email" />
+                        <br />
+
+                        <label for="phone">Phone</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter Your Phone Number"
+                        />
+                        <br />
+
+                        <label for="visiting-date">Visiting Date</label>
+                        <input type="date" id="visiting-date" />
+                        <br />
+
+                        <label for="packages-type">Package Type</label>
+                        <select id="packages-type">
+                            <option disabled selected value="1">
+                                ~Please select~
+                            </option>
+                            <option value="p1">Package 1</option>
+                            <option value="p2">Package 2</option>
+                            <option value="p3">Package 3</option>
+                        </select>
+                        <div class="count-area">
+                            <label for="visiting-date">Package count</label>
+                            <input
+                                type="number"
+                                name="packages-count"
+                                id="packages-count"
+                                placeholder="Enter how many packages"
+                                min="1"
+                                max="30"
+                            />
+                        </div>
+                        <br />
+                        <div id="buttons">
+                            <button
+                                id="clear-btn"
+                                type="button"
+                                class="buttons"
+                            >
+                                <i class="fa-solid fa-eraser"></i> Clear Form
+                            </button>
+                            <button
+                                id="submit-btn"
+                                type="button"
+                                class="buttons"
+                            >
+                                <i class="fa-solid fa-dollar-sign"></i> Purchase
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

@@ -4,6 +4,7 @@ body {
   max-width: 1000vh;
   height: 100vh;
 }
+
 footer {
   background-color: #111;
   text-align: center;
@@ -43,7 +44,7 @@ footer {
 .Svg{
   display: flex;
   justify-content: center;
-  margin-top: -6.6%;
+  align-items: center; 
 }
 
 

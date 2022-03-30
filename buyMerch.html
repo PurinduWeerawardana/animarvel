@@ -1,457 +1,707 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- title icon -->
+        <link
+            rel="shortcut icon"
+            href="./images/logo.png"
+            type="image/x-icon"
+        />
 
-  <!-- title icon -->
-  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+        <!-- navigation bar css and js -->
+        <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
+        <script src="./nav-bar/navigation.js" defer></script>
 
-  <!-- navigation bar css and js -->
-  <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
-  <script src="./nav-bar/navigation.js" defer></script>
+        <!-- common css -->
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/footerEditor.css" />
 
-  <!-- common css -->
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/footerEditor.css" />
+        <!-- Buy Merch css -->
+        <link rel="stylesheet" href="./css/buyMerch.css" />
+        <link rel="stylesheet" href="./css/productView.css" />
+        <link rel="stylesheet" href="./css/orderView.css" />
+        <link rel="stylesheet" href="./css/invoice.css" />
 
-  <!-- Buy Merch css -->
-  <link rel="stylesheet" href="./css/buyMerch.css" />
-  <link rel="stylesheet" href="./css/productView.css">
-  <link rel="stylesheet" href="./css/orderView.css">
-  <link rel="stylesheet" href="./css/invoice.css">
+        <!-- Buy Merch JS -->
+        <script src="./scripts/buyMerch.js" defer></script>
+        <script src="./scripts/orderValidation.js" defer></script>
+        <script src="./scripts/productView.js" defer></script>
 
-  <!-- Buy Merch JS -->
-  <script src="./scripts/buyMerch.js" defer></script>
-  <script src="./scripts/orderValidation.js" defer></script>
-  <script src="./scripts/productView.js" defer></script>
+        <!-- font awesome for icons -->
+        <script
+            src="https://kit.fontawesome.com/2a1ce906ef.js"
+            crossorigin="anonymous"
+        ></script>
 
-  <!-- font awesome for icons -->
-  <script src="https://kit.fontawesome.com/2a1ce906ef.js" crossorigin="anonymous"></script>
+        <!-- google fonts for styling text -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap"
+            rel="stylesheet"
+        />
 
-  <!-- google fonts for styling text -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap" rel="stylesheet" />
+        <title>Buy Merch</title>
+    </head>
 
-  <title>Buy Merch</title>
-</head>
+    <body>
+        <header id="primary-header-navigation">
+            <div id="logo"></div>
+            <!-- aria-controls the specific id and when you click the button 
+        aria-expanded will be true -->
+            <button
+                class="navigation-toggle"
+                aria-controls="navigation-bar-ul"
+                aria-expanded="false"
+            >
+                <!-- only screen readers will read -->
+                <span class="sr-only">Menu</span>
+            </button>
+            <nav class="navigation-bar">
+                <ul
+                    id="navigation-bar-ul"
+                    data-visible="false"
+                    class="navigation-bar-ul"
+                >
+                    <li>
+                        <!-- data-text will be written when you hover on the text -->
+                        <a
+                            href="./index.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Home"
+                            >&nbsp;&nbsp;Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./gallery.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Zones"
+                            >&nbsp;&nbsp;Zones</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./svg.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Site&minus;Map"
+                            >&nbsp;&nbsp;Site&minus;Map</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./quiz.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Quiz"
+                            >&nbsp;&nbsp;Quiz</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./buyMerch.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Buy&minus;Merch"
+                            >&nbsp;&nbsp;Buy&minus;Merch</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./packages.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Packages"
+                            >&nbsp;&nbsp;Packages</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="./QueryForm.html"
+                            class="nav-bar-titles"
+                            data-text="&nbsp;&nbsp;Queries"
+                            >&nbsp;&nbsp;Queries</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-  <!-- navigation bar -->
-  <header id="primary-header-navigation">
-    <div id="logo"></div>
-    <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
-      <span class="sr-only">Menu</span>
-    </button>
-    <nav class="navigation-bar">
-      <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
-        <li>
-          <a href="./index.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
-        </li>
-        <li>
-          <a href="./gallery.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Zones">&nbsp;&nbsp;Zones</a>
-        </li>
-        <li>
-          <a href="./svg.html" class="nav-bar-titles"
-            data-text="&nbsp;&nbsp;Site&minus;Map">&nbsp;&nbsp;Site&minus;Map</a>
-        </li>
-        <li>
-          <a href="./quiz.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
-        </li>
-        <li>
-          <a href="./packages.html" class="nav-bar-titles"
-            data-text="&nbsp;&nbsp;Our&minus;Packages">&nbsp;&nbsp;Our&minus;Packages</a>
-        </li>
-        <li>
-          <a href="./QueryForm.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        <!-- main content -->
+        <h1 id="merch-header">
+            <span id="cart-icon-heading"
+                ><i class="fa-solid fa-cart-shopping"> </i
+            ></span>
+            Grab Your Merch!
+        </h1>
 
-  <!-- main content -->
-  <h1 id="merch-header">
-    <span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!
-  </h1>
+        <!-- cart button -->
+        <button class="cart-button" id="cart-button">
+            <i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View Cart
+        </button>
 
-  <!-- cart button -->
-  <button class="cart-button" id="cart-button"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View
-    Cart</button>
-
-  <!-- category selectors -->
-  <div id="categories">
-    <button class="category-buttons category-button-selected" id="all">ALL-ITEMS</button>
-    <button class="category-buttons" id="t-shirts">T-SHIRTS</button>
-    <button class="category-buttons" id="statues">STATUES</button>
-    <button class="category-buttons" id="mugs">MUGS</button>
-    <button class="category-buttons" id="back-covers">BACK-COVERS</button>
-    <button class="category-buttons" id="others">OTHERS</button>
-  </div>
-
-  <!-- products -->
-  <div id="item-area">
-    <div id="item-card1" class="item-card other">
-      <div id="item-preview1" class="item-preview">
-        <img class="product-image" src="./images/merch/others/face-mask/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Face Mask</h2>
-        <p class="product-price">$20.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card2" class="item-card t-shirt">
-      <div id="item-preview2" class="item-preview">
-        <img class="product-image" src="./images/merch/t-shirts/t-shirt-4/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Sweatshirt</h2>
-        <p class="product-price">$60.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card3" class="item-card mug">
-      <div id="item-preview3" class="item-preview">
-        <img class="product-image" src="./images/merch/mugs/mug-1/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Black Mug</h2>
-        <p class="product-price">$19.19</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card4" class="item-card t-shirt">
-      <div id="item-preview4" class="item-preview">
-        <img class="product-image" src="./images/merch/t-shirts/t-shirt-1/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Black T-Shirt</h2>
-        <p class="product-price">$50.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card5" class="item-card other">
-      <div id="item-preview5" class="item-preview">
-        <img class="product-image" src="./images/merch/others/pillow/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Pillow</h2>
-        <p class="product-price">$20.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card6" class="item-card other">
-      <div id="item-preview6" class="item-preview">
-        <img class="product-image" src="./images/merch/others/cap/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Cap</h2>
-        <p class="product-price">$10.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card7" class="item-card statue">
-      <div id="item-preview7" class="item-preview">
-        <img class="product-image" src="./images/merch/statues/statue-1/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Tiger Statue</h2>
-        <p class="product-price">$39.69</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card8" class="item-card other">
-      <div id="item-preview8" class="item-preview">
-        <img class="product-image" src="./images/merch/others/bag/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-GymSack</h2>
-        <p class="product-price">$20.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card9" class="item-card back-cover">
-      <div id="item-preview9" class="item-preview">
-        <img class="product-image" src="./images/merch/back-covers/back-cover-1/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Black Cover</h2>
-        <p class="product-price">$9.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card10" class="item-card other">
-      <div id="item-preview10" class="item-preview">
-        <img class="product-image" src="./images/merch/others/tiger-teddy/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Tiger Teddy</h2>
-        <p class="product-price">$20.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card11" class="item-card mug">
-      <div id="item-preview11" class="item-preview">
-        <img class="product-image" src="./images/merch/mugs/mug-2/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-White Mug</h2>
-        <p class="product-price">$19.19</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card12" class="item-card t-shirt">
-      <div id="item-preview12" class="item-preview">
-        <img class="product-image" src="./images/merch/t-shirts/t-shirt-2/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Yoga T-Shirt</h2>
-        <p class="product-price">$40.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card13" class="item-card mug">
-      <div id="item-preview13" class="item-preview">
-        <img class="product-image" src="./images/merch/mugs/mug-3/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Coffee Cup</h2>
-        <p class="product-price">$19.19</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card14" class="item-card t-shirt">
-      <div id="item-preview14" class="item-preview">
-        <img class="product-image" src="./images/merch/t-shirts/t-shirt-3/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM-Crop Top</h2>
-        <p class="product-price">$30.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card15" class="item-card back-cover">
-      <div id="item-preview15" class="item-preview">
-        <img class="product-image" src="./images/merch/back-covers/back-cover-2/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM Cover 1</h2>
-        <p class="product-price">$9.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-    <div id="item-card16" class="item-card back-cover">
-      <div id="item-preview16" class="item-preview">
-        <img class="product-image" src="./images/merch/back-covers/back-cover-3/preview-1.jpg" alt="thumbnail" />
-      </div>
-      <div class="item-info">
-        <h2 class="product-title">AM Cover 2</h2>
-        <p class="product-price">$9.00</p>
-        <button class="buttons btn-merch">
-          Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- product preview  -->
-  <div id="product-view" class="product-view hidden">
-    <span id="preview" class="preview">
-      <i class="fa-solid fa-arrow-left" id="left-arrow"></i>
-      <img id="preview-image" class="selected-product-image" src="./images/merch/Error_Img.png" alt="preview" />
-      <i class="fa-solid fa-arrow-right" id="right-arrow"></i>
-    </span>
-    <div class="order">
-      <div id="info-and-form">
-        <div id="borderLeft"></div>
-        <div id="product-description" class="item-description">
-          <h1 class="selected-product-title">Title</h1>
-          <h2 class="caption">Price</h2>
-          <p class="selected-product-price">$<span class=""></span></p>
+        <!-- category selectors -->
+        <div id="categories">
+            <button class="category-buttons category-button-selected" id="all">
+                ALL-ITEMS
+            </button>
+            <button class="category-buttons" id="t-shirts">T-SHIRTS</button>
+            <button class="category-buttons" id="statues">STATUES</button>
+            <button class="category-buttons" id="mugs">MUGS</button>
+            <button class="category-buttons" id="back-covers">
+                BACK-COVERS
+            </button>
+            <button class="category-buttons" id="others">OTHERS</button>
         </div>
-        <div class="order-form">
-          <form>
-            <div id="size-selector" class="size-selector hidden">
-              <h2 class="caption">Size</h2>
-              <span class="radio-box">
-                <input type="radio" id="small" name="size" value="small">
-                <label for="small">S</label>
-              </span>
-              <span class="radio-box">
-                <input type="radio" id="medium" name="size" value="medium" checked>
-                <label for="medium">M</label>
-              </span>
-              <span class="radio-box">
-                <input type="radio" id="large" name="size" value="large">
-                <label for="large">L</label>
-              </span>
-              <span class="radio-box">
-                <input type="radio" id="xlarge" name="size" value="xlarge">
-                <label for="xlarge">XL</label>
-              </span>
+
+        <!-- products -->
+        <div id="item-area">
+            <div id="item-card1" class="item-card other">
+                <div id="item-preview1" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/others/face-mask/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Face Mask</h2>
+                    <p class="product-price">$20.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
             </div>
-            <div id="quantity-selector" class="quantity-selector">
-              <h2 class="caption">Quantity</h2>
-              <input type="button" value="-" class="minus" id="minus">
-              <input title="quantity" type="text" value="1" id="quantity" name="quantity" readonly>
-              <input type="button" value="+" class="plus" id="plus">
+            <div id="item-card2" class="item-card t-shirt">
+                <div id="item-preview2" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/t-shirts/t-shirt-4/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Sweatshirt</h2>
+                    <p class="product-price">$60.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
             </div>
-            <div class="order-submit">
-              <button type="button" id="btn-add-to-cart" class="buttons btn-merch">
-                Add to Cart <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-              <button type="button" value="Buy Now" class="buttons btn-merch" id="buy-now-button">
-                Buy Now <i class="fa-solid fa-money-bill-1"></i>
-              </button>
+            <div id="item-card3" class="item-card mug">
+                <div id="item-preview3" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/mugs/mug-1/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Black Mug</h2>
+                    <p class="product-price">$19.19</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
             </div>
-          </form>
+            <div id="item-card4" class="item-card t-shirt">
+                <div id="item-preview4" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/t-shirts/t-shirt-1/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Black T-Shirt</h2>
+                    <p class="product-price">$50.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card5" class="item-card other">
+                <div id="item-preview5" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/others/pillow/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Pillow</h2>
+                    <p class="product-price">$20.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card6" class="item-card other">
+                <div id="item-preview6" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/others/cap/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Cap</h2>
+                    <p class="product-price">$10.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card7" class="item-card statue">
+                <div id="item-preview7" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/statues/statue-1/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Tiger Statue</h2>
+                    <p class="product-price">$39.69</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card8" class="item-card other">
+                <div id="item-preview8" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/others/bag/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-GymSack</h2>
+                    <p class="product-price">$20.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card9" class="item-card back-cover">
+                <div id="item-preview9" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/back-covers/back-cover-1/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Black Cover</h2>
+                    <p class="product-price">$9.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card10" class="item-card other">
+                <div id="item-preview10" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/others/tiger-teddy/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Tiger Teddy</h2>
+                    <p class="product-price">$20.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card11" class="item-card mug">
+                <div id="item-preview11" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/mugs/mug-2/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-White Mug</h2>
+                    <p class="product-price">$19.19</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card12" class="item-card t-shirt">
+                <div id="item-preview12" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/t-shirts/t-shirt-2/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Yoga T-Shirt</h2>
+                    <p class="product-price">$40.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card13" class="item-card mug">
+                <div id="item-preview13" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/mugs/mug-3/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Coffee Cup</h2>
+                    <p class="product-price">$19.19</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card14" class="item-card t-shirt">
+                <div id="item-preview14" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/t-shirts/t-shirt-3/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM-Crop Top</h2>
+                    <p class="product-price">$30.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card15" class="item-card back-cover">
+                <div id="item-preview15" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/back-covers/back-cover-2/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM Cover 1</h2>
+                    <p class="product-price">$9.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="item-card16" class="item-card back-cover">
+                <div id="item-preview16" class="item-preview">
+                    <img
+                        class="product-image"
+                        src="./images/merch/back-covers/back-cover-3/preview-1.jpg"
+                        alt="thumbnail"
+                    />
+                </div>
+                <div class="item-info">
+                    <h2 class="product-title">AM Cover 2</h2>
+                    <p class="product-price">$9.00</p>
+                    <button class="buttons btn-merch">
+                        Add to Cart <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <i class="fa-solid fa-xmark close-button"></i>
-  </div>
 
-  <!-- cart view-->
-  <div id="order-view" class="product-view hidden">
-    <div id="order-title">
-      <h1>Order Details</h1>
-    </div>
-    <div id="cart-and-details">
-      <div id="cart">
-        <div id="total">
-          <h2 class="caption">Total Price</h2>
-          <h2 class="total-price">$<span id="price">00.00</span></h2>
+        <!-- product preview  -->
+        <div id="product-view" class="product-view hidden">
+            <span id="preview" class="preview">
+                <i class="fa-solid fa-arrow-left" id="left-arrow"></i>
+                <img
+                    id="preview-image"
+                    class="selected-product-image"
+                    src="./images/merch/Error_Img.png"
+                    alt="preview"
+                />
+                <i class="fa-solid fa-arrow-right" id="right-arrow"></i>
+            </span>
+            <div class="order">
+                <div id="info-and-form">
+                    <div id="borderLeft"></div>
+                    <div id="product-description" class="item-description">
+                        <h1 class="selected-product-title">Title</h1>
+                        <h2 class="caption">Price</h2>
+                        <p class="selected-product-price">
+                            $<span class=""></span>
+                        </p>
+                    </div>
+                    <div class="order-form">
+                        <form>
+                            <div
+                                id="size-selector"
+                                class="size-selector hidden"
+                            >
+                                <h2 class="caption">Size</h2>
+                                <span class="radio-box">
+                                    <input
+                                        type="radio"
+                                        id="small"
+                                        name="size"
+                                        value="small"
+                                    />
+                                    <label for="small">S</label>
+                                </span>
+                                <span class="radio-box">
+                                    <input
+                                        type="radio"
+                                        id="medium"
+                                        name="size"
+                                        value="medium"
+                                        checked
+                                    />
+                                    <label for="medium">M</label>
+                                </span>
+                                <span class="radio-box">
+                                    <input
+                                        type="radio"
+                                        id="large"
+                                        name="size"
+                                        value="large"
+                                    />
+                                    <label for="large">L</label>
+                                </span>
+                                <span class="radio-box">
+                                    <input
+                                        type="radio"
+                                        id="xlarge"
+                                        name="size"
+                                        value="xlarge"
+                                    />
+                                    <label for="xlarge">XL</label>
+                                </span>
+                            </div>
+                            <div
+                                id="quantity-selector"
+                                class="quantity-selector"
+                            >
+                                <h2 class="caption">Quantity</h2>
+                                <input
+                                    type="button"
+                                    value="-"
+                                    class="minus"
+                                    id="minus"
+                                />
+                                <input
+                                    title="quantity"
+                                    type="text"
+                                    value="1"
+                                    id="quantity"
+                                    name="quantity"
+                                    readonly
+                                />
+                                <input
+                                    type="button"
+                                    value="+"
+                                    class="plus"
+                                    id="plus"
+                                />
+                            </div>
+                            <div class="order-submit">
+                                <button
+                                    type="button"
+                                    id="btn-add-to-cart"
+                                    class="buttons btn-merch"
+                                >
+                                    Add to Cart
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                                <button
+                                    type="button"
+                                    value="Buy Now"
+                                    class="buttons btn-merch"
+                                    id="buy-now-button"
+                                >
+                                    Buy Now
+                                    <i class="fa-solid fa-money-bill-1"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close-button"></i>
         </div>
-        <div id="cart-list">
-          <ol id="cart-items">
-          </ol>
+
+        <!-- cart view-->
+        <div id="order-view" class="product-view hidden">
+            <div id="order-title">
+                <h1>Order Details</h1>
+            </div>
+            <div id="cart-and-details">
+                <div id="cart">
+                    <div id="total">
+                        <h2 class="caption">Total Price</h2>
+                        <h2 class="total-price">
+                            $<span id="price">00.00</span>
+                        </h2>
+                    </div>
+                    <div id="cart-list">
+                        <ol id="cart-items"></ol>
+                    </div>
+                </div>
+                <div id="details">
+                    <div id="order-details-form">
+                        <form id="order-details">
+                            <fieldset>
+                                <legend>Personal details</legend>
+                                <div class="form-group double">
+                                    <label for="first-name">First Name</label>
+                                    <input
+                                        type="text"
+                                        name="first-name"
+                                        id="first-name"
+                                        placeholder="Enter your first name"
+                                    />
+                                </div>
+                                <div class="form-group double">
+                                    <label for="last-name">Last Name</label>
+                                    <input
+                                        type="text"
+                                        name="last-name"
+                                        id="last-name"
+                                        placeholder="Enter your last name"
+                                    />
+                                </div>
+                                <div class="form-group single">
+                                    <label for="email">Email</label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Enter your email"
+                                    />
+                                </div>
+                                <div class="form-group single">
+                                    <label for="address">Address</label>
+                                    <input
+                                        type="text"
+                                        name="address"
+                                        id="address"
+                                        placeholder="Enter your address"
+                                    />
+                                </div>
+                                <div class="form-group double">
+                                    <label for="city">City</label>
+                                    <input
+                                        type="text"
+                                        name="city"
+                                        id="city"
+                                        placeholder="Enter your city"
+                                    />
+                                </div>
+                                <div class="form-group double">
+                                    <label for="zip">Zip-Code</label>
+                                    <input
+                                        type="text"
+                                        name="zip"
+                                        id="zip"
+                                        placeholder="Enter your zip-code"
+                                    />
+                                </div>
+                                <div class="form-group single">
+                                    <label for="payment-method"
+                                        >Payment Method</label
+                                    >
+                                    <select
+                                        title="payment"
+                                        name="payment"
+                                        id="payment-method"
+                                    >
+                                        <option value="Credit/Debit-Card">
+                                            Credit/Debit-Card
+                                        </option>
+                                        <option value=">Pay-Pal">
+                                            Pay-Pal
+                                        </option>
+                                        <option value="Bank-Transfer">
+                                            Bank-Transfer
+                                        </option>
+                                        <option
+                                            value="Cash-On-Delivery"
+                                            selected
+                                        >
+                                            Cash-On-Delivery
+                                        </option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <input
+                                id="place-order-button"
+                                class="buttons btn-merch"
+                                type="button"
+                                name="submit"
+                                value="Place Order"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-xmark close-button"></i>
         </div>
-      </div>
-      <div id="details">
-        <div id="order-details-form">
-          <form id="order-details">
-            <fieldset>
-              <legend>Personal details</legend>
-              <div class="form-group double">
-                <label for="first-name">First Name</label>
-                <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" />
-              </div>
-              <div class="form-group double">
-                <label for="last-name">Last Name</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name" />
-              </div>
-              <div class="form-group single">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email" />
-              </div>
-              <div class="form-group single">
-                <label for="address">Address</label>
-                <input type="text" name="address" id="address" placeholder="Enter your address" />
-              </div>
-              <div class="form-group double">
-                <label for="city">City</label>
-                <input type="text" name="city" id="city" placeholder="Enter your city" />
-              </div>
-              <div class="form-group double">
-                <label for="zip">Zip-Code</label>
-                <input type="text" name="zip" id="zip" placeholder="Enter your zip-code" />
-              </div>
-              <div class="form-group single">
-                <label for="payment-method">Payment Method</label>
-                <select title="payment" name="payment" id="payment-method">
-                  <option value="Credit/Debit-Card">Credit/Debit-Card</option>
-                  <option value=">Pay-Pal">Pay-Pal</option>
-                  <option value="Bank-Transfer">Bank-Transfer</option>
-                  <option value="Cash-On-Delivery" selected>Cash-On-Delivery</option>
-                </select>
-              </div>
-            </fieldset>
-            <input id="place-order-button" class="buttons btn-merch" type="button" name="submit" value="Place Order" />
-          </form>
+
+        <!-- invoice part -->
+        <div id="invoice" class="hidden">
+            <div id="invoice-header">
+                <div id="invoice-logo">
+                    <img src="./images/logo.png" alt="logo" />
+                </div>
+                <div id="invoice-info">
+                    <div id="invoice-title">Invoice</div>
+                    <p>
+                        <span id="invoice-id">Invoice ID: #</span>
+                        <span id="invoice-date">Invoice Date:&nbsp;</span>
+                    </p>
+                </div>
+            </div>
+            <div id="invoice-body">
+                <div id="delivery-details">
+                    <h2>Delivery Details</h2>
+                    <p>
+                        <span id="full-name">Name:&nbsp;</span><br />
+                        <span id="email-order">Email:&nbsp;</span><br />
+                        <span id="address-order">Address:&nbsp;</span><br />
+                        <span id="city-order">City:&nbsp;</span><br />
+                        <span id="zip-order">Zip Code:&nbsp;</span><br />
+                        <span id="payment-method-order"
+                            >Payment Method:&nbsp;</span
+                        ><br />
+                    </p>
+                </div>
+                <div id="product-details"></div>
+            </div>
+            <div id="invoice-footer">
+                <p>Thank you for your order!</p>
+                <button onclick="printInvoice()" class="buttons btn-merch">
+                    <i class="fa-solid fa-print"></i>&nbsp;&nbsp;Print
+                </button>
+                <button onclick="closeInvoice()" class="buttons btn-merch">
+                    <i class="fa-solid fa-circle-xmark"></i>&nbsp;&nbsp;Close
+                </button>
+            </div>
         </div>
-      </div>
-    </div>
-    <i class="fa-solid fa-xmark close-button"></i>
-  </div>
 
-  <!-- invoice part -->
-  <div id="invoice" class="hidden">
-    <div id="invoice-header">
-      <div id="invoice-logo">
-        <img src="./images/logo.png" alt="logo">
-      </div>
-      <div id="invoice-info">
-        <div id="invoice-title">Invoice</div>
-        <p>
-          <span id="invoice-id">Invoice ID: #</span>
-          <span id="invoice-date">Invoice Date:&nbsp;</span>
-        </p>
-      </div>
-    </div>
-    <div id="invoice-body">
-      <div id="delivery-details">
-        <h2>Delivery Details</h2>
-        <p>
-          <span id="full-name">Name:&nbsp;</span><br>
-          <span id="email-order">Email:&nbsp;</span><br>
-          <span id="address-order">Address:&nbsp;</span><br>
-          <span id="city-order">City:&nbsp;</span><br>
-          <span id="zip-order">Zip Code:&nbsp;</span><br>
-          <span id="payment-method-order">Payment Method:&nbsp;</span><br>
-        </p>
-      </div>
-      <div id="product-details">
-
-      </div>
-    </div>
-    <div id="invoice-footer">
-      <p>Thank you for your order!</p>
-      <button onclick="printInvoice()" class="buttons btn-merch"><i
-          class="fa-solid fa-print"></i>&nbsp;&nbsp;Print</button>
-      <button onclick="closeInvoice()" class="buttons btn-merch"><i
-          class="fa-solid fa-circle-xmark"></i>&nbsp;&nbsp;Close</button>
-    </div>
-  </div>
-
-  <!-- footer with page editor -->
-  <footer>
-    <p>Page editor: <a href="./Purindu.html"><span>(1)-Purindu Weerawardana</span></a></p>
-    <p>Copyright &copy; All rights Reserved. </p>
-    <p>Last Updated 28/03/2022</p>
-  </footer>
-</body>
-
+        <!-- footer with page editor -->
+        <footer>
+            <p>
+                Page editor:
+                <a href="./Purindu.html"
+                    ><span>(1)-Purindu Weerawardana</span></a
+                >
+            </p>
+            <p>Copyright &copy; All rights Reserved.</p>
+            <p>Last Updated 28/03/2022</p>
+        </footer>
+    </body>
 </html>
