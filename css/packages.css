@@ -299,6 +299,7 @@ p {
   );
 }
 
+/*--------------Purchase---------------*/
 #packages-purchase {
   text-align: center;
   position: relative;
@@ -378,7 +379,7 @@ p {
 #packages-form option {
   background-color: rgb(27, 27, 27);
   font-size: larger;
-}
+}                                                           
 
 /*--------------Discount---------------*/
 .row1{
