@@ -5,77 +5,93 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- title icon -->
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
+  <!-- navigation bar css and js -->
   <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
   <script src="./nav-bar/navigation.js" defer></script>
+
+  <!-- common css -->
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/footerEditor.css" />
+
+  <!-- Buy Merch css -->
   <link rel="stylesheet" href="./css/buyMerch.css" />
   <link rel="stylesheet" href="./css/productView.css">
   <link rel="stylesheet" href="./css/orderView.css">
   <link rel="stylesheet" href="./css/invoice.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/2a1ce906ef.js" crossorigin="anonymous"></script>
+
+  <!-- Buy Merch JS -->
   <script src="./scripts/buyMerch.js" defer></script>
   <script src="./scripts/orderValidation.js" defer></script>
   <script src="./scripts/productView.js" defer></script>
+
+  <!-- font awesome for icons -->
+  <script src="https://kit.fontawesome.com/2a1ce906ef.js" crossorigin="anonymous"></script>
+
+  <!-- google fonts for styling text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@700&display=swap" rel="stylesheet" />
+
   <title>Buy Merch</title>
 </head>
 
 <body>
-  <div>
-    <header id="primary-header-navigation">
-      <div id="logo"></div>
-      <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-      </button>
-      <nav class="navigation-bar">
-        <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
-          <li>
-            <a href="./index.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
-          </li>
-          <li>
-            <a href="./gallery.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Zones">&nbsp;&nbsp;Zones</a>
-          </li>
-          <li>
-            <a href="./svg.html" class="nav-bar-titles"
-              data-text="&nbsp;&nbsp;Site&minus;Map">&nbsp;&nbsp;Site&minus;Map</a>
-          </li>
-          <li>
-            <a href="./quiz.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
-          </li>
-          <li>
-            <a href="./packages.html" class="nav-bar-titles"
-              data-text="&nbsp;&nbsp;Our&minus;Packages">&nbsp;&nbsp;Our&minus;Packages</a>
-          </li>
-          <li>
-            <a href="./QueryForm.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-  <div>
-    <h1 id="merch-header">
-      <span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!
-    </h1>
-  </div>
-  <div>
-    <button class="cart-button" id="cart-button"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View
-      Cart</button>
-  </div>
-  <div id="categories">
-    <button class="category-buttons category-button-selected" id="all">
-      ALL-ITEMS
+  <!-- navigation bar -->
+  <header id="primary-header-navigation">
+    <div id="logo"></div>
+    <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
+      <span class="sr-only">Menu</span>
     </button>
+    <nav class="navigation-bar">
+      <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
+        <li>
+          <a href="./index.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
+        </li>
+        <li>
+          <a href="./gallery.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Zones">&nbsp;&nbsp;Zones</a>
+        </li>
+        <li>
+          <a href="./svg.html" class="nav-bar-titles"
+            data-text="&nbsp;&nbsp;Site&minus;Map">&nbsp;&nbsp;Site&minus;Map</a>
+        </li>
+        <li>
+          <a href="./quiz.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
+        </li>
+        <li>
+          <a href="./packages.html" class="nav-bar-titles"
+            data-text="&nbsp;&nbsp;Our&minus;Packages">&nbsp;&nbsp;Our&minus;Packages</a>
+        </li>
+        <li>
+          <a href="./QueryForm.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main content -->
+  <h1 id="merch-header">
+    <span id="cart-icon-heading"><i class="fa-solid fa-cart-shopping"> </i></span> Grab Your Merch!
+  </h1>
+
+  <!-- cart button -->
+  <button class="cart-button" id="cart-button"><i id="cart-icon" class="fa-solid fa-cart-shopping"></i> View
+    Cart</button>
+
+  <!-- category selectors -->
+  <div id="categories">
+    <button class="category-buttons category-button-selected" id="all">ALL-ITEMS</button>
     <button class="category-buttons" id="t-shirts">T-SHIRTS</button>
     <button class="category-buttons" id="statues">STATUES</button>
     <button class="category-buttons" id="mugs">MUGS</button>
     <button class="category-buttons" id="back-covers">BACK-COVERS</button>
     <button class="category-buttons" id="others">OTHERS</button>
   </div>
+
+  <!-- products -->
   <div id="item-area">
     <div id="item-card1" class="item-card other">
       <div id="item-preview1" class="item-preview">
@@ -270,6 +286,8 @@
       </div>
     </div>
   </div>
+
+  <!-- product preview  -->
   <div id="product-view" class="product-view hidden">
     <span id="preview" class="preview">
       <i class="fa-solid fa-arrow-left" id="left-arrow"></i>
@@ -325,6 +343,8 @@
     </div>
     <i class="fa-solid fa-xmark close-button"></i>
   </div>
+
+  <!-- cart view-->
   <div id="order-view" class="product-view hidden">
     <div id="order-title">
       <h1>Order Details</h1>
@@ -386,6 +406,8 @@
     </div>
     <i class="fa-solid fa-xmark close-button"></i>
   </div>
+
+  <!-- invoice part -->
   <div id="invoice" class="hidden">
     <div id="invoice-header">
       <div id="invoice-logo">
@@ -424,6 +446,7 @@
     </div>
   </div>
 
+  <!-- footer with page editor -->
   <footer>
     <p>Page editor: <a href="./Purindu.html"><span>(1)-Purindu Weerawardana</span></a></p>
     <p>Copyright &copy; All rights Reserved. </p>
