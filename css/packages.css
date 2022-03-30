@@ -1,0 +1,40 @@
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+#packages-description{
+    text-align: center;
+    position: relative;
+    width:98%;
+    height:auto;
+    margin: 100px auto;
+    border: 5px solid #fff;
+}
+
+#packages-comparison{
+    text-align: center;
+    position: relative;
+    width:98%;
+    height:auto;
+    margin: 100px auto;
+    border: 5px solid #fff;
+}
+
+#packages-discounts{
+    text-align: center;
+    position: relative;
+    width:98%;
+    height:auto;
+    margin: 100px auto;
+    border: 5px solid #fff;
+}
+
+#packages-purchase{
+    text-align: center;
+    position: relative;
+    width:98%;
+    height:auto;
+    margin: 100px auto;
+    border: 5px solid #fff; solid #fff;
+}

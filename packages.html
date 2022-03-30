@@ -5,9 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/packages.css">
+    <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
+    <script src="./nav-bar/navigation.js" defer></script>
     <title>Our Packages</title>
 </head>
 <body>
-    
+    <header id="primary-header-navigation">
+        <div id="logo"></div>
+        <!-- aria-controls the specific id and when you click the button 
+                    aria-expanded will be true -->
+        <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
+            <!-- only screen readers will read -->
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav class="navigation-bar">
+            <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
+                <li>
+                    <!-- data-text will be written when you hover on the text -->
+                    <a href="#" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
+                </li>
+                <li>
+                    <a href="./gallery.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Zones">&nbsp;&nbsp;Zones</a>
+                </li>
+                <li>
+                    <a href="./svg.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Site&minus;Map">&nbsp;&nbsp;Site&minus;Map</a>
+                </li>
+                <li>
+                    <a href="./quiz.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
+                </li>
+                <li>
+                    <a href="./buyMerch.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Buy&minus;Merch">&nbsp;&nbsp;Buy&minus;Merch</a>
+                </li>
+                <li>
+                    <a href="./packages.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Our&minus;Packages">&nbsp;&nbsp;Our&minus;Packages</a>
+                </li>
+                <li>
+                    <a href="./QueryForm.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="packages-description">
+        <h1>Packages description</h1>
+    </div>
+    <div id="packages-comparison">
+        <h1>Packages comparison</h1>
+    </div>
+    <div id="packages-discounts">
+        <h1>Packages discounts</h1>
+    </div>
+    <div id="packages-purchase">
+        <h1>Packages purchase</h1>
+    </div>
 </body>
 </html>
