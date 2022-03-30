@@ -1,386 +1,388 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Barlow Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* initialized filled-query div to display none */
 #filled-query {
-    display: none;
+  display: none;
 }
 
 /* initialized query-form-container div to display block */
 #query-form-container {
-    display: block;
+  display: block;
 }
 
 /* Add a Background image to the whole page */
 body {
-    background-image: url("../images/queryForm-img/background1.jpg");
-    background-size: cover;
-    max-width: 100%;
+  background-image: url("../images/queryForm-img/background1.jpg");
+  background-size: cover;
+  max-width: 100%;
 }
 
 /* in here website container will be centered */
 #website-container {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    color: #fff;
-    margin: 20px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  margin: 30px;
 }
 
 #query-form-container {
-    max-width: 650px;
-    width: 100%;
-    padding: 45px 30px 45px 90px;
-    border-radius: 5px;
-
-    background: rgba(0, 0, 0, 0.26);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+  max-width: 650px;
+  width: 100%;
+  padding: 45px 30px 45px 90px;
+  border-radius: 5px;
+  font-family: "Barlow Condensed", sans-serif;
+  background: rgba(0, 0, 0, 0.26);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 #query-form-container:hover {
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
 }
 
 .title {
-    position: relative;
-    font-size: 35px;
-    font-weight: 750;
-    padding-bottom: 5px;
+  position: relative;
+  font-size: 35px;
+  font-weight: 750;
+  padding-bottom: 5px;
 }
 
 /* Add a small underline in the query form title */
 #query-form-container .title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background: linear-gradient(135deg, #3fdd3f, #0e7c64);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #3fdd3f, #0e7c64);
 }
 
 /* add a width and margin to input fields in query form */
 #query-form .user-details .user-name {
-    margin: 30px 0 15px 0;
-    width: 75%;
+  margin: 30px 0 15px 0;
+  width: 75%;
 }
 #query-form .user-details .user-email {
-    margin: 20px 0 15px 0;
-    width: 90%;
+  margin: 20px 0 15px 0;
+  width: 90%;
 }
 #query-form .query-subject {
-    margin: 20px 0 15px 0;
-    width: 50%;
+  margin: 20px 0 15px 0;
+  width: 50%;
 }
 
 #query-form .query-details {
-    margin: 20px 0 40px 0;
-    width: 100%;
+  margin: 20px 0 40px 0;
+  width: 100%;
 }
 
 .input-text {
-    display: block;
-    height: 45px;
-    width: 80%;
-    outline: none;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    transition: all 1s ease;
-    font-weight: 750;
-
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  height: 45px;
+  width: 80%;
+  outline: none;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  transition: all 1s ease;
+  font-weight: 750;
+  font-family: "Barlow Condensed", sans-serif;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 .input-text:focus {
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
-    color: #fff;
+  background: rgba(0, 0, 0, 0.486);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
+  color: #fff;
 }
 .input-text:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .empty-input-text {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgb(255, 63, 63);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgb(255, 63, 63);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
 }
 .filled-input-text {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.486);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
 }
 
 .select {
-    display: block;
-    height: 45px;
-    width: 80%;
-    outline: none;
-    padding-left: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    font-weight: 750;
-    transition: all 1s ease;
-    color: rgb(20, 20, 20);
-
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  height: 45px;
+  width: 80%;
+  outline: none;
+  padding-left: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 750;
+  transition: all 1s ease;
+  color: rgb(20, 20, 20);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 .empty-select {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgb(255, 63, 63);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgb(255, 63, 63);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
 }
 .filled-select {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.486);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
 }
 .select:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .select:focus {
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
-    color: #ccc;
+  background: rgba(0, 0, 0, 0.486);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
+  color: #ccc;
 }
 
 .input-textarea {
-    display: block;
-    height: 150px;
-    width: 72%;
-    outline: none;
-    padding: 15px;
-    margin-top: 5px;
-    font-size: 16px;
-    transition: all 1s ease;
+  display: block;
+  height: 150px;
+  width: 72%;
+  outline: none;
+  padding: 15px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  transition: all 1s ease;
 
-    background: rgba(255, 255, 255, 0.25);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 .empty-textarea {
-    background: rgba(255, 255, 255, 0.25);
-    border-color: rgb(255, 63, 63);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgb(255, 63, 63);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
 }
 .filled-textarea {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.486);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
 }
 .input-textarea:focus {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.486);
-    box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
-    border-color: #47b883;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.486);
+  box-shadow: 0 25px 45px rgba(80, 75, 75, 0.1);
+  border-color: #47b883;
 }
 .input-textarea:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* styles for placeholders */
 ::placeholder {
-    color: rgb(20, 20, 20);
-    font-weight: 750;
+  color: rgb(20, 20, 20);
+  font-weight: 750;
 }
 .input-text:focus::placeholder {
-    color: #ccc;
+  color: #ccc;
 }
 
 .labels {
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1em;
-    margin-bottom: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 5px;
 }
 
 /* if the width becomes lower than 584px these style will be applied*/
 @media (max-width: 584px) {
-    #query-form-container {
-        max-width: 100%;
-    }
+  #query-form-container {
+    max-width: 100%;
+  }
 
-    #query-form .user-details .user-name {
-        width: 100%;
-    }
-    #query-form .user-details .user-email {
-        width: 100%;
-    }
+  #query-form .user-details .user-name {
+    width: 100%;
+  }
+  #query-form .user-details .user-email {
+    width: 100%;
+  }
 
-    #query-form .query-subject {
-        width: 100%;
-    }
+  #query-form .query-subject {
+    width: 100%;
+  }
 
-    #query-form .query-details {
-        width: 100%;
-    }
+  #query-form .query-details {
+    width: 100%;
+  }
 
-    #scroll-set {
-        max-height: 300px;
-        overflow-y: scroll;
-    }
+  #scroll-set {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
 
-    #scroll-set::-webkit-scrollbar {
-        width: 0;
-    }
+  #scroll-set::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 #filled-query {
-    max-width: 700px;
-    width: 100%;
-    border-radius: 10px;
-    z-index: 10;
-    padding: 45px 30px;
-
-    background: rgba(36, 35, 35, 0.1);
-    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
+  max-width: 700px;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 10;
+  padding: 45px 30px;
+  background: rgba(36, 35, 35, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
 }
 
 #filled-query .title {
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 /* small underline in the query details title */
 #filled-query .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    background: linear-gradient(135deg, #3fdd3f, #0e7c64);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #3fdd3f, #0e7c64);
 }
 
 #filled-query .list {
-    position: relative;
-    display: flex;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin: 10px 0;
-    cursor: pointer;
-    transition: 0.5s;
+  font-family: "Barlow Condensed", sans-serif;
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 /* styles when you hover a list item in the query details page */
 #filled-query .list:hover {
-    background: rgba(255, 255, 255, 0.63);
-    box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
-    transform: scale(1.15) translateX(30px) translateY(-15px);
-    z-index: 1000;
+  background: rgba(255, 255, 255, 0.63);
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.15) translateX(30px) translateY(-15px);
+  z-index: 1000;
 }
 
 #filled-query .list .img {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-right: 10px;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
 }
 #filled-query .list .img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #filled-query .list .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    max-width: 80%;
-    white-space: nowrap;
-    overflow: auto;
-    text-overflow: clip;
+  font-family: "Barlow Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: clip;
 }
 
 #filled-query .list .content .filled-labels {
-    font-size: 1.2em;
-    line-height: 1.2em;
-    font-weight: 600;
-    transition: 0.5s;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
 }
 
 #filled-query .list .content .filled-details {
-    font-size: 1.2em;
-    transition: 0.5s;
-    max-width: 100%;
-    /* if the user enter a long text */
-    white-space: nowrap;
-    overflow: auto;
-    text-overflow: clip;
+  font-size: 1.2em;
+  transition: 0.5s;
+  max-width: 100%;
+  /* if the user enter a long text */
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: clip;
 }
 
 #filled-query .list:hover .content .filled-labels,
 #filled-query .list:hover .content .filled-details {
-    color: #333;
+  color: #333;
 }
 
 /* if the user enter a long text there will be a scroll bar with below style */
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 6px;
+  width: 3px;
+  height: 6px;
 }
 /* Track */
 .filled-details::-webkit-scrollbar-track {
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
 }
 /* Handle */
 .filled-details::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
 }
 .filled-details::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 .filled-details::-webkit-scrollbar-thumb:active {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #filled-query #edit-button {
-    float: left;
+  float: left;
 }
 #filled-query #send-button {
-    float: right;
+  float: right;
 }
