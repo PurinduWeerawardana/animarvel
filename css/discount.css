@@ -36,7 +36,7 @@ img {
 }
 
 .align {
-  margin-left: 45%;
+  margin-left: 79%;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
@@ -64,7 +64,6 @@ svg {
   display: block;
   font: 10.5em "Montserrat";
   width: 60vw;
-  
   margin: 0 auto;
 }
 
@@ -113,10 +112,28 @@ svg {
 }
 
 .row2{
-  transform: translateX(10vw);
+  transform: translateX(18vw);
   display: inline-block;
 }
 .row3{
-  transform: translateX(19vw);
+  transform: translateX(43vw);
   display: inline-block;
+}
+
+.pagecont{
+  width: 96%;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.svgalign{
+  margin-top: -6%;
+}
+.tablealign{
+  width: 96%;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }

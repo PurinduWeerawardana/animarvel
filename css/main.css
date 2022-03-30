@@ -64,6 +64,9 @@
   padding-top: 1rem;
 }
 
+.aboutAlign{
+  margin-top: 50%;
+}
 .about {
   display: flex;
   align-items: center;
@@ -138,17 +141,7 @@
   cursor: pointer;
 }
 
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
 
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
-}
 
 section {
   min-height: 50vh;

@@ -250,3 +250,17 @@ svg {
     stroke-dashoffset: -35%;
   }
 }
+
+.selection{
+  margin-bottom:-8%;
+}
+.selection1{
+  margin-top: 5%;
+}
+.imageSet{
+  width: 96%;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
