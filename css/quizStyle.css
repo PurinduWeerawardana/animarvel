@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
-  box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
 
@@ -16,6 +15,37 @@ body {
   margin: 0;
   align-items: center;
   height: 100vh;
+}
+
+#close-start {
+  display: none;
+}
+
+#start {
+  padding: 0 0 0 30px;
+}
+
+#start h2 {
+  color: white;
+  font-size: 5rem;
+  transition: 500ms ease;
+}
+
+#Start-button {
+  font-size: 2.2rem;
+  background-color: white;
+  border-radius: 10px;
+  color: purple;
+  display: block;
+  width: 10rem;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1.3rem;
+  margin-left: 28rem;
+}
+
+#start-button:hover {
+  background-color: aqua;
 }
 
 #static-weak {
@@ -85,15 +115,24 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
 }
 
-.quiz-container {
+#quiz {
+  display: none;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 10px 20x rgba(100, 100, 100, 0.1);
   width: 600px;
   overflow: hidden;
+}
+
+#quiz-start {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 20x rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+  box-shadow: 23px white;
 }
 
 .quiz-header {
@@ -112,8 +151,8 @@ ul {
 }
 
 ul li {
-  padding: 0;
-  font-size: 1.2rem;
+  padding-bottom: 6px;
+  font-size: 1.6rem;
   margin: 2 rem 0;
 }
 
@@ -121,7 +160,7 @@ ul li label {
   cursor: pointer;
 }
 
-button {
+#submit {
   background-color: limegreen;
   color: white;
   display: block;
@@ -129,7 +168,7 @@ button {
   cursor: pointer;
   font-size: 1.1rem;
   font-family: inherit;
-  padding: 1.3rem;
+  padding: 1.4rem;
 }
 
 button:hover {
@@ -139,4 +178,40 @@ button:hover {
 button:focus {
   outline: none;
   background-color: yellow;
+}
+
+#result {
+  display: none;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 20x rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden;
+}
+
+#active-result {
+  background-color: white;
+  border-radius: 5px;
+  width: 700px;
+}
+#User-score {
+  display: inline;
+  padding: 0 0 0 18rem;
+  font-size: 7rem;
+  color: red;
+}
+
+#You-score {
+  font-size: 3rem;
+}
+
+input {
+  transform: scale(1.5);
+}
+
+#question {
+  position: static;
+  font-size: 35px;
+  justify-content: right;
+  margin-bottom: 20px;
 }

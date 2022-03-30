@@ -1,5 +1,12 @@
-const time = document.getElementById("Timer");
-let timeshow = 1000;
+const start_Button = document.getElementById("Start-button")
+
+
+start_Button.onclick=() => {
+  document.getElementById("start").id = "close-start"
+  document.getElementById("quiz").id = "quiz-start"
+
+  const time = document.getElementById("Timer");
+let timeshow = 100000;
 
 displayTime(timeshow);
 
@@ -15,7 +22,8 @@ const countDown = setInterval(() => {
 function displayTime(second) {
   const min = Math.floor(second / 60);
   const sec = Math.floor(second % 60);
-  time.innerHTML = `${min < 10 ? "0" : ""}${min}:${sec < 10 ? "0" : ""}${sec}`;
+  time.innerHTML= `Time Left: ${min < 10 ? "0" : ""}${min}:${sec < 10 ? "0" : ""}${sec}`;
+}
 }
 
 const quizdata = [
@@ -119,7 +127,6 @@ loadquiz();
 
 function loadquiz() {
   deselectAnswers();
-
   const currentQuizData = quizdata[currentQuiz];
 
   questionE1.innerText = currentQuizData.question;
@@ -143,6 +150,7 @@ function getSelected() {
   return answer;
 }
 
+
 nextbtn.addEventListener("click", () => {
   const answer = getSelected();
   if (answer) {
@@ -154,25 +162,30 @@ nextbtn.addEventListener("click", () => {
     if (currentQuiz < quizdata.length) {
       loadquiz();
     } else {
-      quiz.innerHTML = `<h2>You answered ${correctQuestions}/${quizdata.length} questions correctly`;
+      document.getElementById("quiz-start").id = "quiz"
+      document.getElementById("result").id = "active-result"
       if (currentQuiz === 0 || score < 1) {
         score === 0;
       }
-      changeBackground();
+      changeBackground();  
     }
   }
 });
 
 function endTime() {
-  quiz.innerHTML = `<h2>You answered ${correctQuestions}/${quizdata.length} questions correctly`;
+  document.getElementById("quiz-start").id = "quiz"
+  document.getElementById("result").id = "active-result"
+  document.getElementById("User-score").innerHTML=`${score}`
   changeBackground();
 }
 
 function changeBackground() {
+  document.getElementById("User-score").innerHTML=`${score}`
+  document.getElementById("Number-score").innerHTML=`You have got ${correctQuestions} out of ${quizdata.length} questions right`
   if (score < 5) {
     document.getElementById("static").id = "static-weak";
   } else if (score < 9) {
-    document.getElementById("static").id = "static-low";
+    document.getElementById("static").id = "static-poor";
   } else if (score < 13) {
     document.getElementById("static").id = "static-average";
   } else if (score < 17) {

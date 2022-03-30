@@ -5,15 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
+
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/quizStyle.css">
     <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/footerEditor.css">
+    <link rel="stylesheet" href="./css/common.css">
     <script src="./nav-bar/navigation.js" defer></script>
+    <script src="./scripts/quizscript.js" defer></script>
 </head>
 
-<body id="static">
+<body>
     <header id="primary-header-navigation">
         <div id="logo"></div>
         <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
@@ -35,7 +37,7 @@
                     <a href="./quiz.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
                 </li>
                 <li>
-                    <a href="./Discounts.html" class="nav-bar-titles"
+                    <a href="./discounts.html" class="nav-bar-titles"
                         data-text="&nbsp;&nbsp;Discounts">&nbsp;&nbsp;Discounts</a>
                 </li>
                 <li>
@@ -47,40 +49,50 @@
                         data-text="&nbsp;&nbsp;Buy&minus;Tickets">&nbsp;&nbsp;Buy&minus;Tickets</a>
                 </li>
                 <li>
-                    <a href="./QueryForm.html" class="nav-bar-titles"
+                    <a href="./Ginura/QueryForm.html" class="nav-bar-titles"
                         data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="quiz-container" id="quiz">
-            <div class="quiz-header">
-                <h2 id="Timer">00:00</h2>
-                <h2 id="question">Question Text</h2>
-                <ul>
-                    <li>
-                        <input type="radio" name="answer" id="a" class="answer">
-                        <label for="a" id="a_text">Answer</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="b" class="answer">
-                        <label for="b" id="b_text">Answer</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="c" class="answer">
-                        <label for="c" id="c_text">Answer</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="answer" id="d" class="answer">
-                        <label for="d" id="d_text">Answer</label>
-                    </li>
-                </ul>
+    <section id="static">
+        <div class="container">
+            <div id="start">
+                <h2>Are you Ready For A Quiz?</h2>
+                <button id="Start-button">Start</button>
             </div>
-            <button id="submit">Submit</button>
+            <div class="quiz-container" id="quiz">
+                <div class="quiz-header">
+                    <h2 id="Timer">00:00</h2>
+                        <h2 id="question">Question Text</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">Answer</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">Answer</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c_text">Answer</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="d" class="answer">
+                            <label for="d" id="d_text">Answer</label>
+                        </li>
+                    </ul>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
         </div>
-    </div>
-    <script type="text/javascript" src="./scripts/quizscript.js"></script>
+        <div id="result">
+			<h2 id="You-score">Your Score is</h2>
+			<h1 id="User-score">10</h1>
+			<h2 id="Number-score">You have got 10 questions right</h2>
+		</div>
+    </section><br><br>
     <footer>
         <p>Page editor: <a href="./Sandaru.html"><span>(3)-Sandaru Vithanage</span></a></p>
         <p>Copyright &copy; All rights Reserved. </p>
