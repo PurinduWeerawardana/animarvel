@@ -22,6 +22,14 @@
   }
 }
 
+.heading-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: white;
+}
+
 .zones .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
@@ -56,7 +64,7 @@
   padding-top: 1rem;
 }
 
-.aboutAlign{
+.aboutAlign {
   margin-top: 50%;
 }
 .about {
@@ -132,8 +140,6 @@
   text-align: center;
   cursor: pointer;
 }
-
-
 
 section {
   min-height: 50vh;
@@ -222,7 +228,7 @@ section {
   letter-spacing: 1.5px;
 }
 
-.review{
+.review {
   margin-top: 250px;
   margin-bottom: 50px;
 }
@@ -235,7 +241,7 @@ section {
   transform: translateX(-50%);
 }
 
-.stars{
+.stars {
   width: max-content;
   position: relative;
   left: 50%;
