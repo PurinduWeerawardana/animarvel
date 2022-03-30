@@ -82,14 +82,14 @@
     color: white;
 }
 
-@media (min-width: 90em) and (max-width: 125em) {
+@media (min-width: 87em) and (max-width: 125em) {
     .navigation-bar-ul a.nav-bar-titles {
         font-size: 1.2em;
         letter-spacing: 1px;
     }
 }
 
-@media (min-width: 90em) {
+@media (min-width: 87em) {
     .navigation-bar-ul {
         gap: clamp(1rem, 5vw, 3rem);
         padding-block: 2rem;
@@ -97,7 +97,7 @@
     }
 }
 
-@media (max-width: 90em) {
+@media (max-width: 87em) {
     .navigation-bar-ul {
         position: fixed;
         z-index: 1000;
