@@ -22,14 +22,6 @@
   }
 }
 
-.heading-title {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 6rem;
-  text-transform: uppercase;
-  color: white;
-}
-
 .zones .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
