@@ -1,3 +1,13 @@
+/* common headings's style */
+.heading-title {
+  font-family: "poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 2vh;
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  color: white;
+}
+
 /* common button's style */
 .buttons {
     font-family: "Barlow Condensed", sans-serif;
