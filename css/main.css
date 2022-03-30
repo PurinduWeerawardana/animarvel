@@ -230,6 +230,11 @@ section {
   letter-spacing: 1.5px;
 }
 
+.review{
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+
 .rev {
   width: 96%;
   position: relative;
