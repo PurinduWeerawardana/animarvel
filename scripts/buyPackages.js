@@ -4,7 +4,7 @@ document.getElementById("clear-btn").addEventListener("click", function () {
   document.getElementById("email").value = "";
   document.getElementById("phone").value = "";
   document.getElementById("visiting-date").value = "";
-  document.getElementById("ticket-type").value = "1";
+  document.getElementById("packages-type").value = "1";
 });
 
 document.getElementById("submit-btn").addEventListener("click", function () {
@@ -13,8 +13,8 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   var email = document.getElementById("email").value;
   var phone = document.getElementById("phone").value;
   var visitingDate = document.getElementById("visiting-date").value;
-  var ticketType = document.getElementById("ticket-type").value;
-  var ticketCount = document.getElementById("ticket-count").value;
+  var ticketType = document.getElementById("packages-type").value;
+  var ticketCount = document.getElementById("packages-count").value;
 
   if (
     fName == "" ||

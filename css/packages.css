@@ -33,8 +33,73 @@ body{
 #packages-purchase{
     text-align: center;
     position: relative;
-    width:98%;
     height:auto;
     margin: 100px auto;
-    border: 5px solid #fff; solid #fff;
+}
+
+#packages-form {
+  position: relative;
+  margin: 20px 0 20px 0;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#packages-form label {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 20px 0 10px 0;
+  text-underline-offset: 4px;
+  text-decoration: underline dashed #2ee59d;
+}
+
+#packages-form input,
+#packages-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: #2ee59d;
+  font-weight: bold;
+  box-shadow: 3px 3px 4px #2ee59d;
+}
+
+#packages-form input:focus,
+#packages-form select:focus {
+  transition: all 0.5s ease 0s;
+  outline: none;
+  box-shadow: -3px -3px 4px #2ee59d;
+}
+
+.count-area {
+  width: 50%;
+  margin: auto;
+}
+
+#buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+  text-align: center;
+}
+
+.name-area {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+#packages-form option {
+  background-color: rgb(27, 27, 27);
+  font-size: larger;
 }
