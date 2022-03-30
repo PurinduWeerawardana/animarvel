@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&display=swap");
+/* will style the logo in the navigation bar */
 #logo {
     background-image: url("../nav-bar/logo.png");
     background-repeat: no-repeat;
@@ -11,29 +12,24 @@
 #primary-header-navigation,
 .navigation-bar-ul {
     display: flex;
-    gap: 2em 1rem;
+    gap: 2em;
 }
 
+/* will set the logo and the links to corners */
 #primary-header-navigation {
     align-items: center;
     justify-content: space-between;
-    font-family: "Poppins", sans-serif;
+    font-family: "Palette Mosaic", cursive;
 }
 
 .navigation-bar-ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: hsl(0 0% 0% / 0.5);
+    background: hsl(0 0% 100% / 0.1);
+    -webkit-backdrop-filter: blur(0.7rem);
+    backdrop-filter: blur(0.7rem);
     color: rgb(83, 255, 163);
-}
-
-@supports (backdrop-filter: blur(0.7rem)) {
-    .navigation-bar-ul {
-        background: hsl(0 0% 100% / 0.1);
-        -webkit-backdrop-filter: blur(0.7rem);
-        backdrop-filter: blur(0.7rem);
-    }
 }
 
 .navigation-bar-ul a.nav-bar-titles {
@@ -46,13 +42,14 @@
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
 }
 
+/* attr(data-text) will get the respective text in the html tag's data-text attribute */
 .navigation-bar-ul a.nav-bar-titles::before {
-    position: absolute;
-    width: 0;
     content: attr(data-text);
-    overflow: hidden;
-    transition: 1.1s;
+    position: absolute;
     color: rgb(83, 255, 163);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
     border-right: 8px solid rgb(83, 255, 163);
     -webkit-text-stroke: 1px rgb(83, 255, 163);
 }
@@ -77,7 +74,6 @@
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     border: 0;
 }
 
@@ -86,14 +82,14 @@
     color: white;
 }
 
-@media (min-width: 87em) and (max-width: 122em) {
+@media (min-width: 72em) and (max-width: 96em) {
     .navigation-bar-ul a.nav-bar-titles {
         font-size: 1.2em;
         letter-spacing: 1px;
     }
 }
 
-@media (min-width: 87em) {
+@media (min-width: 72em) {
     .navigation-bar-ul {
         gap: clamp(1rem, 5vw, 3rem);
         padding-block: 2rem;
@@ -101,146 +97,41 @@
     }
 }
 
-@media (max-width: 87em) {
+@media (max-width: 72em) {
     .navigation-bar-ul {
         position: fixed;
         z-index: 1000;
         gap: 2em;
         /* shorthand for margin to bottom left right */
         inset: 0 0 0 30%;
+        /* this will change the flex direction */
         flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
+        /* this will choose the smaller of the two */
+        padding: min(30vh, 10rem) 2em; /* once you got to 10rem it will locked it*/
         transform: translateX(100%);
         transition: transform 350ms ease-in;
     }
 
+    /* when the navigation.js change the data-visible attribute this will be applied */
     .navigation-bar-ul[data-visible="true"] {
-        transform: translateX(65%);
+        transform: translateX(50%);
     }
 
     .navigation-toggle {
         display: block;
-        position: fixed;
+        position: absolute;
         z-index: 9999;
         background-color: transparent;
         background: url("../nav-bar/icon-bars.svg");
         background-repeat: no-repeat;
         width: 2rem;
         border: 0;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 1;
         top: 2rem;
         right: 2rem;
     }
 
-    .navigation-toggle[aria-expanded="true"] {
-        background-image: url("../nav-bar/icon-close.svg");
-    }
-}
-
-@media (max-width: 70em) {
-    .navigation-bar-ul {
-        position: fixed;
-        z-index: 1000;
-        gap: 2em;
-        /* shorthand for margin to bottom left right */
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
-        transform: translateX(100%);
-        transition: transform 350ms ease-in;
-        font-size: 0.8em;
-    }
-
-    .navigation-bar-ul[data-visible="true"] {
-        transform: translateX(65%);
-    }
-
-    .navigation-toggle {
-        display: block;
-        position: fixed;
-        z-index: 9999;
-        background-color: transparent;
-        background: url("../nav-bar/icon-bars.svg");
-        background-repeat: no-repeat;
-        width: 2rem;
-        border: 0;
-        aspect-ratio: 1 / 1;
-        top: 2rem;
-        right: 2rem;
-    }
-
-    .navigation-toggle[aria-expanded="true"] {
-        background-image: url("../nav-bar/icon-close.svg");
-    }
-}
-@media (max-width: 60em) {
-    .navigation-bar-ul {
-        position: fixed;
-        z-index: 1000;
-        gap: 2em;
-        /* shorthand for margin to bottom left right */
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
-        transform: translateX(100%);
-        transition: transform 350ms ease-in;
-        font-size: 0.6em;
-    }
-
-    .navigation-bar-ul[data-visible="true"] {
-        transform: translateX(65%);
-    }
-
-    .navigation-toggle {
-        display: block;
-        position: fixed;
-        z-index: 9999;
-        background-color: transparent;
-        background: url("../nav-bar/icon-bars.svg");
-        background-repeat: no-repeat;
-        width: 2rem;
-        border: 0;
-        aspect-ratio: 1 / 1;
-        top: 2rem;
-        right: 2rem;
-    }
-
-    .navigation-toggle[aria-expanded="true"] {
-        background-image: url("../nav-bar/icon-close.svg");
-    }
-}
-@media (max-width: 50em) {
-    .navigation-bar-ul {
-        position: fixed;
-        z-index: 1000;
-        gap: 2em;
-        /* shorthand for margin to bottom left right */
-        inset: 0 0 0 30%;
-        flex-direction: column;
-        padding: min(30vh, 10rem) 2em;
-        transform: translateX(100%);
-        transition: transform 350ms ease-in;
-        font-size: 0.5em;
-    }
-
-    .navigation-bar-ul[data-visible="true"] {
-        transform: translateX(65%);
-    }
-
-    .navigation-toggle {
-        display: block;
-        position: fixed;
-        z-index: 9999;
-        background-color: transparent;
-        background: url("../nav-bar/icon-bars.svg");
-        background-repeat: no-repeat;
-        width: 2rem;
-        border: 0;
-        aspect-ratio: 1 / 1;
-        top: 2rem;
-        right: 2rem;
-    }
-
+    /* if the aria-expanded true close svg will be shown */
     .navigation-toggle[aria-expanded="true"] {
         background-image: url("../nav-bar/icon-close.svg");
     }
