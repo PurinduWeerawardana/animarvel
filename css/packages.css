@@ -181,7 +181,7 @@ p {
 
 .popup-box .package-information {
   margin: 1em 0;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -434,6 +434,6 @@ img {
 p{
   color: #fff;
   text-align: center;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 
