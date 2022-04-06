@@ -8,13 +8,13 @@ document.getElementById("clear-btn").addEventListener("click", function () {
 });
 
 document.getElementById("submit-btn").addEventListener("click", function () {
-  var fName = document.getElementById("fName").value;
-  var lName = document.getElementById("lName").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
-  var visitingDate = document.getElementById("visiting-date").value;
-  var ticketType = document.getElementById("packages-type").value;
-  var ticketCount = document.getElementById("packages-count").value;
+  let fName = document.getElementById("fName").value;
+  let lName = document.getElementById("lName").value;
+  let email = document.getElementById("email").value;
+  let phone = document.getElementById("phone").value;
+  let visitingDate = document.getElementById("visiting-date").value;
+  let ticketType = document.getElementById("packages-type").value;
+  let ticketCount = document.getElementById("packages-count").value;
 
   if (
     fName == "" ||

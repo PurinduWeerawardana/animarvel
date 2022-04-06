@@ -1,13 +1,4 @@
 let slideIndex = 1;
-showSlidesAuto(slideIndex);
-
-function plusSlidesAuto(n) {
-  showSlidesAuto((slideIndex += n));
-}
-
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
 
 function showSlidesAuto(n) {
   let i;
@@ -27,6 +18,12 @@ function showSlidesAuto(n) {
   }, 5000);
 }
 
+showSlidesAuto(slideIndex);
+
+function plusSlidesAuto(n) {
+  showSlidesAuto((slideIndex += n));
+}
+
 function showSlides(n) {
   let i;
   
@@ -41,6 +38,10 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
 }
 
 function reveal() {
