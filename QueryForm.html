@@ -1,276 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Query Form</title>
 
-        <link
-            rel="shortcut icon"
-            href="./images/logo.png"
-            type="image/x-icon"
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Query Form</title>
 
-        <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
-        <link rel="stylesheet" href="./css/queryForm.css" />
-        <link rel="stylesheet" href="./css/footerEditor.css" />
-        <link rel="stylesheet" href="./css/common.css" />
-        <script src="./scripts/queryValidation.js" defer></script>
-        <script src="./nav-bar/navigation.js" defer></script>
-        <script
-            src="https://kit.fontawesome.com/0357fe80c5.js"
-            crossorigin="anonymous"
-        ></script>
-    </head>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
 
-    <body>
-        <header id="primary-header-navigation">
-            <div id="logo"></div>
-            <!-- aria-controls the specific id and when you click the button 
+    <link rel="stylesheet" href="./nav-bar/navigation-bar.css" />
+    <link rel="stylesheet" href="./css/queryForm.css" />
+    <link rel="stylesheet" href="./css/footerEditor.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <script src="./scripts/queryValidation.js" defer></script>
+    <script src="./nav-bar/navigation.js" defer></script>
+    <script src="https://kit.fontawesome.com/0357fe80c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="primary-header-navigation">
+        <div id="logo"></div>
+        <!-- aria-controls the specific id and when you click the button 
                 aria-expanded will be true -->
-            <button
-                class="navigation-toggle"
-                aria-controls="navigation-bar-ul"
-                aria-expanded="false"
-            >
-                <!-- only screen readers will read -->
-                <span class="sr-only">Menu</span>
-            </button>
-            <nav class="navigation-bar">
-                <ul
-                    id="navigation-bar-ul"
-                    data-visible="false"
-                    class="navigation-bar-ul"
-                >
-                    <li>
-                        <!-- data-text will be written when you hover on the text -->
-                        <a
-                            href="./index.html"
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Home"
-                            >&nbsp;&nbsp;Home</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="./gallery.html"
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Zones"
-                            >&nbsp;&nbsp;Zones</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="./svg.html"
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Site&minus;Map"
-                            >&nbsp;&nbsp;Site&minus;Map</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="./quiz.html"
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Quiz"
-                            >&nbsp;&nbsp;Quiz</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="./buyMerch.html"
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Buy&minus;Merch"
-                            >&nbsp;&nbsp;Buy&minus;Merch</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="./packages.html"
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Packages"
-                            >&nbsp;&nbsp;Packages</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="./QueryForm.html"
-                            class="nav-bar-titles"
-                            data-text="&nbsp;&nbsp;Queries"
-                            >&nbsp;&nbsp;Queries</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <button class="navigation-toggle" aria-controls="navigation-bar-ul" aria-expanded="false">
+            <!-- only screen readers will read -->
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav class="navigation-bar">
+            <ul id="navigation-bar-ul" data-visible="false" class="navigation-bar-ul">
+                <li>
+                    <!-- data-text will be written when you hover on the text -->
+                    <a href="./index.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Home">&nbsp;&nbsp;Home</a>
+                </li>
+                <li>
+                    <a href="./gallery.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Zones">&nbsp;&nbsp;Zones</a>
+                </li>
+                <li>
+                    <a href="./svg.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Site&minus;Map">&nbsp;&nbsp;Site&minus;Map</a>
+                </li>
+                <li>
+                    <a href="./quiz.html" class="nav-bar-titles" data-text="&nbsp;&nbsp;Quiz">&nbsp;&nbsp;Quiz</a>
+                </li>
+                <li>
+                    <a href="./buyMerch.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Buy&minus;Merch">&nbsp;&nbsp;Buy&minus;Merch</a>
+                </li>
+                <li>
+                    <a href="./packages.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Packages">&nbsp;&nbsp;Packages</a>
+                </li>
+                <li>
+                    <a href="./QueryForm.html" class="nav-bar-titles"
+                        data-text="&nbsp;&nbsp;Queries">&nbsp;&nbsp;Queries</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <div id="website-container">
-            <div id="query-form-container">
-                <form
-                    id="query-form"
-                    name="queryForm"
-                    action="mailto:ginuraransika@gmail.com"
-                    method="post"
-                >
-                    <div id="scroll-set">
-                        <div class="title">Query Form</div>
-                        <div class="user-details">
-                            <div class="user-name">
-                                <label class="labels" for="name">Name : </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    class="input-text"
-                                    name="name"
-                                    placeholder="Enter Your Name"
-                                />
-                            </div>
-                            <div class="user-email">
-                                <label class="labels" for="email"
-                                    >Email :
-                                </label>
-                                <input
-                                    type="text"
-                                    class="input-text"
-                                    id="email"
-                                    name="email"
-                                    placeholder="username@example.com"
-                                />
-                            </div>
+    <div id="website-container">
+        <div id="query-form-container">
+            <form id="query-form" name="queryForm" action="mailto:ginuraransika@gmail.com" method="post">
+                <div id="scroll-set">
+                    <div class="title">Query Form</div>
+                    <div class="user-details">
+                        <div class="user-name">
+                            <label class="labels" for="name">Name : </label>
+                            <input type="text" id="name" class="input-text" name="name" placeholder="Enter Your Name" />
                         </div>
-                        <div class="query-subject">
-                            <label class="labels" for="subject"
-                                >Subject :
+                        <div class="user-email">
+                            <label class="labels" for="email">Email :
                             </label>
-                            <select id="subject" name="subject" class="select">
-                                <option
-                                    value=""
-                                    disabled
-                                    class="placeholder"
-                                    selected
-                                >
-                                    -- Select your Subject --
-                                </option>
-                                <option value="Tickets">Tickets</option>
-                                <option value="Delivery">Delivery</option>
-                                <option value="Product">Product</option>
-                                <option value="Website">Website</option>
-                                <option value="Complains">Complains</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="query-details">
-                            <label class="labels" for="details"
-                                >Details :
-                            </label>
-                            <textarea
-                                name="details"
-                                id="details"
-                                class="input-textarea"
-                            ></textarea>
+                            <input type="text" class="input-text" id="email" name="email"
+                                placeholder="username@example.com" />
                         </div>
                     </div>
-                    <div class="form-button">
-                        <button
-                            id="view-query-button"
-                            type="button"
-                            class="buttons"
-                        >
-                            View Query
+                    <div class="query-subject">
+                        <label class="labels" for="subject">Subject :
+                        </label>
+                        <select id="subject" name="subject" class="select">
+                            <option value="" disabled class="placeholder" selected>
+                                -- Select your Subject --
+                            </option>
+                            <option value="Tickets">Tickets</option>
+                            <option value="Delivery">Delivery</option>
+                            <option value="Product">Product</option>
+                            <option value="Website">Website</option>
+                            <option value="Complains">Complains</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="query-details">
+                        <label class="labels" for="details">Details :
+                        </label>
+                        <textarea name="details" id="details" class="input-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <button id="view-query-button" type="button" class="buttons">
+                        View Query
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="filled-query">
+            <div class="title">Query Details</div>
+            <form>
+                <div class="filled-inputs">
+                    <div class="list">
+                        <div class="img">
+                            <img src="./images/queryForm-img/name-badge.png" alt="image of name badge" />
+                        </div>
+                        <div class="content">
+                            <h4 class="filled-labels">Name:</h4>
+                            <p class="filled-details" id="filled-name"></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="img">
+                            <img src="./images/queryForm-img/gmail.png" alt="image of a gmail logo" />
+                        </div>
+                        <div class="content">
+                            <h4 class="filled-labels">Email:</h4>
+                            <p class="filled-details" id="filled-email"></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="img">
+                            <img src="./images/queryForm-img/query-subject.jpg" alt="image of a
+                                question mark" />
+                        </div>
+                        <div class="content">
+                            <h4 class="filled-labels">Subject:</h4>
+                            <p class="filled-details" id="filled-subject"></p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="img">
+                            <img src="./images/queryForm-img/details.jpg" alt="Image of a details word" />
+                        </div>
+                        <div class="content">
+                            <h4 class="filled-labels">Details:</h4>
+                            <p class="filled-details" id="filled-details"></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="filled-query-button">
+                    <div id="edit-button">
+                        <button id="edit-query-button" type="button" class="buttons">
+                            Edit
                         </button>
                     </div>
-                </form>
-            </div>
-            <div id="filled-query">
-                <div class="title">Query Details</div>
-                <form>
-                    <div class="filled-inputs">
-                        <div class="list">
-                            <div class="img">
-                                <img
-                                    src="./images/queryForm-img/name-badge.png"
-                                    alt="image of name badge"
-                                />
-                            </div>
-                            <div class="content">
-                                <h4 class="filled-labels">Name:</h4>
-                                <p class="filled-details" id="filled-name"></p>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="img">
-                                <img
-                                    src="./images/queryForm-img/gmail.png"
-                                    alt="image of a gmail logo"
-                                />
-                            </div>
-                            <div class="content">
-                                <h4 class="filled-labels">Email:</h4>
-                                <p class="filled-details" id="filled-email"></p>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="img">
-                                <img
-                                    src="./images/queryForm-img/query-subject.jpg"
-                                    alt="image of a
-                                question mark"
-                                />
-                            </div>
-                            <div class="content">
-                                <h4 class="filled-labels">Subject:</h4>
-                                <p
-                                    class="filled-details"
-                                    id="filled-subject"
-                                ></p>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="img">
-                                <img
-                                    src="./images/queryForm-img/details.jpg"
-                                    alt="Image of a details word"
-                                />
-                            </div>
-                            <div class="content">
-                                <h4 class="filled-labels">Details:</h4>
-                                <p
-                                    class="filled-details"
-                                    id="filled-details"
-                                ></p>
-                            </div>
-                        </div>
+                    <div id="send-button">
+                        <button id="send-query-button" type="button" class="buttons">
+                            Send
+                        </button>
                     </div>
-                    <div id="filled-query-button">
-                        <div id="edit-button">
-                            <button
-                                id="edit-query-button"
-                                type="button"
-                                class="buttons"
-                            >
-                                Edit
-                            </button>
-                        </div>
-                        <div id="send-button">
-                            <button
-                                id="send-query-button"
-                                type="button"
-                                class="buttons"
-                            >
-                                Send
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
-        <footer>
-            <p>
-                Page editor:
-                <a href="../Ginura.html"><span>(2)-Ginura Ransika</span></a>
-            </p>
-            <p>Copyright &copy; All rights Reserved.</p>
-            <p>Last Updated 28/03/2022</p>
-        </footer>
-    </body>
+    </div>
+    <footer>
+        <p>
+            Page editor:
+            <a href="../Ginura.html"><span>(2)-Ginura Ransika</span></a>
+        </p>
+        <p>Copyright &copy; All rights Reserved.</p>
+        <p>Last Updated 28/03/2022</p>
+    </footer>
+</body>
+
 </html>
