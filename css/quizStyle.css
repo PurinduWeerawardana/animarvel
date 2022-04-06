@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+  width: 100vw;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -35,7 +36,7 @@ body {
   font-size: 2.2rem;
   background-color: white;
   border-radius: 10px;
-  color: purple;
+  color: black;
   display: block;
   width: 10rem;
   cursor: pointer;
@@ -150,10 +151,9 @@ ul {
   padding: 0px;
 }
 
-ul li {
+.answer-display {
   padding-bottom: 6px;
-  font-size: 1.6rem;
-  margin: 2 rem 0;
+  font-size : 1.5rem;
 }
 
 ul li label {
@@ -183,22 +183,29 @@ button:focus {
 #result {
   display: none;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 50px;
   box-shadow: 0 0 10px 20x rgba(100, 100, 100, 0.1);
   width: 600px;
   overflow: hidden;
 }
 
 #active-result {
+  margin-right: 32rem;
+  height: auto;
   background-color: white;
-  border-radius: 5px;
-  width: 700px;
+  border-radius: 10px;
+  width: 100rem
 }
+
+.answer-display{
+  font-size: 1.5rem;
+}
+
 #User-score {
   display: inline;
-  padding: 0 0 0 18rem;
+  padding: 0 0 0 14rem;
   font-size: 7rem;
-  color: red;
+  color: purple;
 }
 
 #You-score {
