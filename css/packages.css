@@ -43,7 +43,6 @@ html {
   font-family: sans-serif;
   display: grid;
   align-items: center;
-  border: 1px solid white;
 }
 
 #packages-body {
