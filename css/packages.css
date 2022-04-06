@@ -9,19 +9,23 @@ html {
 
 
 #packages-description {
-  text-align: center;
+  font-size: 2.5vw;
+  overflow: none;
   position: relative;
-  width: 98%;
+  width: 90%;
   height: auto;
-  margin: 100px auto;
-  border: 5px solid #fff;
+  margin: 200px auto;
   background: rgb(0, 255, 111);
   background: radial-gradient(
     circle,
     rgba(0, 255, 111, 0.28335084033613445) 0%,
-    rgba(0, 0, 0, 0) 48%,
+    rgba(0, 0, 0, 0) 18%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+#packages-description p{
+  text-align: justify;
 }
 
 #packages-comparison {
