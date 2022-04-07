@@ -195,8 +195,8 @@ p {
     padding: 0.5em 0.5em 0.75em;
 
     background-color: rgba(0, 0, 0, 0.712);
-    clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
-    transition: transform 250ms cubic-bezier(0.21, 1i, 0.81, 1);
+    clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0); /*bottom design of the subject number tag*/
+    transition: transform 250ms cubic-bezier(0.21, 1, 0.81, 1); /*cubic-bezier controls the animation timing function*/
 } /* subject number will fit the popup box's edge */
 .subject:hover .subject-number {
     transform: translate(90%, -28%);
