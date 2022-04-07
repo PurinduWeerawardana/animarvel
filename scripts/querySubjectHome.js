@@ -1,4 +1,5 @@
-// will update the link according to the selected subject
+//when the user selects a subject it will redirect and URL will be updated the link according 
+// to the selected subject
 document.getElementById("Tickets-button").onclick = function () {location.href = "./QueryForm.html?button=Tickets-button";};
 document.getElementById("Deliver-button").onclick = function () {location.href = "/QueryForm.html?button=Deliver-button";};
 document.getElementById("Product-button").onclick = function () {location.href = "/QueryForm.html?button=Product-button";};
@@ -6,7 +7,7 @@ document.getElementById("Website-button").onclick = function () {location.href =
 document.getElementById("Complains-button").onclick = function () {location.href = "/QueryForm.html?button=Complains-button";};
 document.getElementById("Other-button").onclick = function () {location.href = "/QueryForm.html?button=Other-button";};
 
-//  if user click on the ghosting title query-subjects-box wil be shown
+//  if user clicks on the ghosting title query-subjects-box will be shown
 function changeToSubjects(){
     document.getElementById("ghosting-title").classList.remove("display");
     document.getElementById("ghosting-title").classList.add("not-display");

@@ -166,6 +166,7 @@ header {
   text-align: center;
 }
 
+/* add some media queries so when the window is getting small the content won't overflow  */
 @media (max-width: 1300px) {
   .zones {
     height: 100vh;

@@ -1,5 +1,6 @@
 // get the updated url from the QuerySubjectHome.js
 let querySubjects = window.location.search;
+// parse the query string’s parameters using URLSearchParams
 urlParams = new URLSearchParams(querySubjects);
 
 
@@ -33,7 +34,7 @@ function checkAndValidateEmail(){
         alert("Please enter a valid email ('@' is missing)");
         document.getElementById("email").classList.add("empty-input-text");
     }
-    else if(email_object.value.includes(".") ==false){
+    else if(email_object.value.includes(".") == false){
         document.getElementById("email").classList.remove("filled-input-text");
         alert("Please enter a valid email ('.' is missing)");
         document.getElementById("email").classList.add("empty-input-text");
@@ -205,6 +206,7 @@ function printUnfilledFields(unfilled_fields){
 
 
 // if user select a subject from the main page that will be updated on the query form
+// will return the first value associated with the "button" parameter 
 if (urlParams.get("button")==="Tickets-button"){
     let subject_name="Tickets"
     document.getElementById("subject").value=subject_name;
