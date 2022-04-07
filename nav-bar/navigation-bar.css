@@ -43,6 +43,7 @@
 }
 
 /* attr(data-text) will get the respective text in the html tag's data-text attribute */
+/* because of the width value these text will be hidden until someone hover */
 .navigation-bar-ul a.nav-bar-titles::before {
     content: attr(data-text);
     position: absolute;
@@ -59,8 +60,8 @@
     filter: drop-shadow(0 0 25px rgb(83, 255, 163));
 }
 
-.navigation-bar-ul a:active {
-    transform: translateY(-7px);
+.navigation-bar-ul a.nav-bar-titles:active {
+    transform: translateX(-7px);
 }
 
 .navigation-toggle {
