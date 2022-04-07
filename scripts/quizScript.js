@@ -205,6 +205,7 @@ nextbtn.addEventListener("click", () => {
 function endTime() {
   document.getElementById("quiz-start").id = "quiz"
   document.getElementById("result").id = "active-result"
+  document.getElementById("Time-show").innerHTML=`Time-UP!`
   changeBackground();
 }
  
