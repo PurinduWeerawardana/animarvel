@@ -90,7 +90,6 @@ function updateCart() {
     ".selected-product-price"
   ).innerHTML;
   let quantity = document.getElementsByName("quantity")[0].value;
-  // let size = productView.querySelector('input[name="size"]:checked').value;
   let cartItem = [];
   if (
     productView.querySelector(".size-selector").className === "size-selector"
